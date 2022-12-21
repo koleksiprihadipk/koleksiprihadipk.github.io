@@ -1,5 +1,5 @@
 title = "Panduan Koding"
-baseurl = "localhost"
+baseurl = "https://panduankoding.com"
 
 # Agar front-matter pakai format YAML
 MetaDataFormat = "yaml"

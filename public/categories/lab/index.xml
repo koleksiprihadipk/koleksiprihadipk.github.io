@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>LAB on Panduan Koding</title>
-    <link>localhost/categories/lab/</link>
+    <link>https://panduankoding.com/categories/lab/</link>
     <description>Recent content in LAB on Panduan Koding</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 20 Dec 2022 20:26:12 +0700</lastBuildDate><atom:link href="localhost/categories/lab/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 Dec 2022 20:26:12 +0700</lastBuildDate><atom:link href="https://panduankoding.com/categories/lab/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lab HTML, CSS dan Javascript</title>
-      <link>localhost/lab/html-css-js/</link>
+      <link>https://panduankoding.com/lab/html-css-js/</link>
       <pubDate>Tue, 20 Dec 2022 20:26:12 +0700</pubDate>
       
-      <guid>localhost/lab/html-css-js/</guid>
+      <guid>https://panduankoding.com/lab/html-css-js/</guid>
       <description> </description>
     </item>
     
