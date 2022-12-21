@@ -1,0 +1,25 @@
+title = "Panduan Koding"
+baseurl = "localhost"
+
+# Agar front-matter pakai format YAML
+MetaDataFormat = "yaml"
+
+# untuk apply temanya
+themesDir = "themes"
+theme = "koleksiprihadiblog"
+
+# Shortname disqus, silahkan sesuaikan
+# DisqusShortname = "panduankoding"
+
+# Untuk Google Analytic, silahkan sesuikan
+# googleAnalytics = "UA-80517197-1" 
+
+# Untuk deskripsi tag meta di homepage
+descriptionblog = "Blog belajar koding "
+
+# Biodata Author
+[author]
+    name = "Krisna Prihadiyanto (koleksiprihadi)"
+    homepage = "https://koleksiprihadi.github.io/"
+    bio = "Pengamat Langit"
+    image = "https://koleksiprihadi.github.io/images/koleksiprihadi.jpeg"
