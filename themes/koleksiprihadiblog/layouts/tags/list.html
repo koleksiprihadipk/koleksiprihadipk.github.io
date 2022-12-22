@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {{ partial "head.html" . }}
+    </head>
+    <body>
+
+        {{ partial "nav.html" . }}
+        {{ partial "header.html" . }}
+
+        <article class="card-post">
+            <div class="container">
+                <div class="list-group">
+        
+                    {{ $paginator := .Paginate (where .Pages "Type" "tags") 6 }}
+                    {{ range $paginator.Pages }}
+                                <a href="{{ .RelPermalink }}" class="list-group-item list-group-item-action text-center"><i class="bi bi-tags"></i>{{ .Title }}</a>
+
+                    {{ end }}
+        
+                </div>
+            </div>
+        </article>
+        
+        <br>
+        
+        <div class="container">
+            {{ partial "pagination.html" . }}
+        </div>
+
+        {{ partial "footer.html" . }}
+        {{ partial "js-init.html" . }}
+    </body>
+</html>

@@ -28,9 +28,9 @@
                                 </div>
                                 <div class="card-footer">
                                     {{ range .Params.tags }}
-                                    <span class="badge badge-success">
-                                         <a class="text-success" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">#{{ . }}</a>
-                                    </span> 
+                                    <div class="badge">
+                                        <span class="text-success" aria-disabled="true"><i class="bi bi-tags"></i>{{ . }}</span>
+                                   </div> 
                                     {{ end }}
                                 </div>
                             </div>
