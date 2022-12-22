@@ -7,57 +7,23 @@
 
         {{ partial "nav.html" . }}
         {{ partial "header.html" . }}
-        <h2 class="line-divider "><span class="span-line-divider ">Artikel</span></h2>
-        <article class="card-post">
-            <div class="container">
-                <div class="row">
-        
-                    {{ $paginator := .Paginate (where .Site.Pages "Type" "post") 6 }}
-                    {{ range $paginator.Pages }}
-                        <div class="col-md-4 mb-4 d-flex">
-                            <div class="card">
-                                <a href="{{ .RelPermalink }}">
-                                <img class='card-img-top' 
-                                    src='{{ if eq .Params.Image "" }}https://placeholder.pics/svg/320x160{{else}}{{ .Params.Image}}{{end}}'
-                                    alt='{{ .Title }}'>
-                                </a>
-                                <div class="card-body">
-                                    <h4 class="card-title">
-                                        <a class="text-dark" href="{{ .RelPermalink }}">{{ .Title }}</a>
-                                    </h4>
-                                </div>
-                                <div class="card-footer">
-                                    {{ range .Params.tags }}
-                                    <div class="badge">
-                                        <span class="text-success" aria-disabled="true"><i class="bi bi-tags"></i>{{ . }}</span>
-                                   </div> 
-                                    {{ end }}
-                                </div>
-                            </div>
-        
-                        </div>
-                    {{ end }}
-        
-                </div>
-            </div>
-        </article>
-        
-        <br>
-        
         <div class="container">
-            {{ partial "pagination.html" . }}
+            <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                {{ range .Paginator.Pages }}
+                    {{ .Render "post" }}
+                {{ end }}
+                {{ template "_internal/pagination.html" . }}
+            </div>
+            </div>
         </div>
-
-        <br>
-
-
-        <h2 class="line-divider "><span class="span-line-divider ">Lab</span></h2>
+        <h2 class="line-divider "><span class="span-line-divider ">{{ .Title }}</span></h2>
         <article class="card-post">
             <div class="container">
                 <div class="row">
         
-                    {{ $paginator := .Paginate (where .Site.Pages "Type" "lab") 6 }}
-                    {{ range $paginator.Pages }}
+                    {{ $paginatora := .Paginate (where .Site.Pages "Type" "post") 6 }}
+                    {{ range $paginatora.Pages }}
                         <div class="col-md-4 mb-4 d-flex">
                             <div class="card">
                                 <a href="{{ .RelPermalink }}">
@@ -91,6 +57,11 @@
         <div class="container">
             {{ partial "pagination.html" . }}
         </div>
+
+        <br>
+
+
+        
 
         {{ partial "footer.html" . }}
         {{ partial "js-init.html" . }}

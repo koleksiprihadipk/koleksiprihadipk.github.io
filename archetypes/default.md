@@ -8,7 +8,7 @@ tags:
     - Python
 
 categories:
-    - Pemrograman
+
 authorname: "koleksiprihadi"
 authorlink: "https://koleksiprihadi.github.io/"
 

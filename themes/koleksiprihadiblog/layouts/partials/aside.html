@@ -19,12 +19,13 @@
             <a href="{{ .RelPermalink }}">
               
                         <div class="row card-body">
-                           <div class="col-sm-6">
+                           <!-- <div class="col-sm-6"> -->
+                            <div>
                               <h5 class="card-title">{{ .Title }}</h5>
                                <p class="card-text">⌚ : <time>{{ .Date.Format "02-01-2006" }}</time></p>
                             </div>
-                            <img class="col-sm-6 rounded-circle" src='{{ if eq .Params.Image "" }}/images/koleksiprihadi.jpeg{{else}}{{ .Params.Image}}{{end}}'
-                            alt='{{ .Title }}'  alt="sans" style="width: 100px;"/>
+                            <!-- <img class="col-sm-6 rounded-circle img-thumbnail" src='{{ if eq .Params.Image "" }}/images/koleksiprihadi.jpeg{{else}}{{ .Params.Image}}{{end}}'
+                            alt='{{ .Title }}'  alt="sans" style="width: 100px; border-color: transparent;"/> -->
                         </div>
                     
               </a>
@@ -38,11 +39,11 @@
 
                   
           
-                  <div class="p-4">
+                  <!-- <div class="p-4">
                     <h4 class="fst-italic">Author Link</h4>
                     <ol class="list-unstyled">
                       <li><a href="github.com/koleksiprihadi">GitHub</a></li>
                     </ol>
-                  </div>
+                  </div> -->
     
     </aside>

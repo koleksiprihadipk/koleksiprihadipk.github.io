@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bot Telegram Sederhana Dengan Python</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<meta itemprop="name" content="Bot Telegram Sederhana Dengan Python">
+<meta itemprop="description" content="Cara pembuatan BOT Telegram menggunakan bahasa pemrograman Python"><meta itemprop="datePublished" content="2022-12-23T01:44:12+07:00" />
+<meta itemprop="dateModified" content="2022-12-23T01:44:12+07:00" />
+<meta itemprop="wordCount" content="792">
+<meta itemprop="keywords" content="Python," />
+
+<meta property="og:title" content="Bot Telegram Sederhana Dengan Python" />
+<meta property="og:description" content="Cara pembuatan BOT Telegram menggunakan bahasa pemrograman Python" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://panduankoding.com/artikel/python/bot-telegram-sederhana-dengan-python/" /><meta property="article:section" content="artikel" />
+<meta property="article:published_time" content="2022-12-23T01:44:12+07:00" />
+<meta property="article:modified_time" content="2022-12-23T01:44:12+07:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Bot Telegram Sederhana Dengan Python"/>
+<meta name="twitter:description" content="Cara pembuatan BOT Telegram menggunakan bahasa pemrograman Python"/>
+
+
+
+
+<link rel="icon" href="/img/logo.svg?1" />
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/style.css" />
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+<script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+
+
+    </head>
+    <body>
+
+        <div class="container">
+    <header class="fixed-top d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom nav-down">
+        <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none nav-kiri">
+            <img src="/images/koleksiprihadi.svg" width="40px">
+        </a>
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="/" id="nav" class="nav-link px-2 link-dark">Home</a></li>
+          <li><a href="/tutorial" id="nav" class="nav-link px-2 link-dark">Tutorial</a></li>
+          <li><a href="/artikel" id="nav" class="nav-link px-2 link-dark">Artikel</a></li>
+          <li><a href="/lab" id="nav" class="nav-link px-2 link-dark">Lab</a></li>
+          <li><a href="#" id="nav" class="nav-link px-2 link-dark">Newsletter</a></li>
+        </ul>
+  
+        <div class="col-md-3 text-end nav-kanan">
+          <button type="button" class="btn" data-bs-toggle="offcanvas" aria-controls="sosialmedia" href="#sosialmedia"><span class="emoji anim" role="img" aria-label="anim"></span></button>
+          <button type="button" id="theme_toggle" class="btn me-2"><i id="dark-btn" class="bi bi-cloud-sun"></i><i id="light-btn" class="bi bi-cloud-moon"></i></button>
+        </div>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="sosialmedia" aria-labelledby="sosialmediaLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="sosialmediaLabel">Sosial Media Panduan Koding</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              
+            </div>
+          </div>
+      </header>  
+</div>
+        <main class="container">
+            <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+              <div class="col-md-6 px-0">
+                <h1 class="display-4 fst-italic">Bot Telegram Sederhana Dengan Python</h1>
+                <p class="lead my-3">Cara pembuatan BOT Telegram menggunakan bahasa pemrograman Python</p>
+                
+              </div>
+            </div>
+
+
+        <div class="row g-5">
+            <div class="col-md-8">
+                <div class="mb-3">
+                    <img src="/images/koleksiprihadi.jpeg" class="rounded-circle" width="32" height="32" />
+                    <a href="https://koleksiprihadi.github.io/">koleksiprihadi</a> | <time>23-12-2022</time>
+                </div>
+                <h1>Bot Telegram Sederhana Dengan Python</h1>
+                <div>
+                    
+                    <div class="badge">
+                         <span class="text-success" aria-disabled="true"><i class="bi bi-tags"></i>Python</span>
+                    </div> 
+                    
+                </div>
+                <p>hallo teman-teman pada artikel ini saya akan memberikan sebuah tutorial implementasi bahasa pemrograman python untuk membuat sebuah telegram bot dimana bot yang akan kita buat disini adalah bot yang akan mengirim kembali pesan dari user bot kita. Tujuan dari artikel ini adalah untuk memberikan gambaran untuk teman-teman bagaimana cara membuat sebuah bot telegram menggunakan python, pada tutorial ini author menggunakan python 3 ya teman-teman. yuk langsung aja.</p>
+<h2 id="persiapan-awal">Persiapan Awal</h2>
+<p>sebelum kita bisa membuat bot telegram pertama yang harus kita siapkan terlebih dahulu adalah:</p>
+<ol>
+<li>Token Bot Telegram</li>
+<li>Modul python-telegram-bot</li>
+<li>kodingan botnya</li>
+</ol>
+<p>langsung aja yuk kita bahas satu-persatu</p>
+<h3 id="membuat-token-bot-telegram">Membuat Token Bot Telegram</h3>
+<p>langkah pertama yang harus teman-teman lakukan untuk membuat bot telegram adalah mendapatkan token bot teman-teman, tenang saja ya teman-teman telegram menyediakan fitur untuk mendapatkan token ini secara mudah dan gratis lo yaa&hellip;</p>
+<ul>
+<li>
+<p>Oke, pertama teman-teman buka dulu telegram, dan selanjutnya pada bilah pencarian carilah sebuah bot dengan nama &ldquo;BotFather&rdquo; seperti dibawah ini</p>
+<p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiE6dr-YreODGADt26KWUPM3Q1_4YF-uZncUI_tbJKBByD55YY0NUM-J9ZH9bNEjV0wxH3iXMomcNsE71oLUVe8D2JKVspveuRT5XbFIkwiu0ip4W6i2MdgSCAeMs6mT-4edypZRytvyzIJAe5m97nuMFOQZkkgfAKxIA_nsbjwsTUofWLmgbaeH-VT/s419/Membuat%20Bot%20Telegram%201.png"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiE6dr-YreODGADt26KWUPM3Q1_4YF-uZncUI_tbJKBByD55YY0NUM-J9ZH9bNEjV0wxH3iXMomcNsE71oLUVe8D2JKVspveuRT5XbFIkwiu0ip4W6i2MdgSCAeMs6mT-4edypZRytvyzIJAe5m97nuMFOQZkkgfAKxIA_nsbjwsTUofWLmgbaeH-VT/s320/Membuat%20Bot%20Telegram%201.png" alt=""></a></p>
+</li>
+<li>
+<p>Setelah teman-teman menemukan &ldquo;BotFather&rdquo; yang ada tanda ceklisnya selanjutnya buka bot tersebut dan tekan start dan akan muncul beberapa petunjuk perintah yang dapat dijalankan baik untuk membuat maupun untuk mengelola sebuah bot</p>
+<p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhnPpgugZ1NRdjalpncjaRbKDnQtOplIBYXtkxnMv25Wgf9UAFKrvO_0y-C2Bj2w5aWUQEh5w1CjxuCgt4hZ8vMrNo0FjW7QONJlSve2YrxZVIxBbyffx-vrJ9uf_dVlPtmVmbnEb9rCbVhcUHTJI8v9jWmQDnGWGNcirr38ZSeGTrwySVnNdt95c3/s947/Membuat%20Bot%20Telegram%202.png"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhnPpgugZ1NRdjalpncjaRbKDnQtOplIBYXtkxnMv25Wgf9UAFKrvO_0y-C2Bj2w5aWUQEh5w1CjxuCgt4hZ8vMrNo0FjW7QONJlSve2YrxZVIxBbyffx-vrJ9uf_dVlPtmVmbnEb9rCbVhcUHTJI8v9jWmQDnGWGNcirr38ZSeGTrwySVnNdt95c3/s320/Membuat%20Bot%20Telegram%202.png" alt=""></a></p>
+</li>
+<li>
+<p>Selanjutnya teman-teman klik saja perintah &ldquo;/newbot&rdquo; atau teman-teman bisa mengetik dan mengirimnya, maka selanjutnya bot tersebut meminta kita mengirimkan nama yang akan kita gunakan untuk bot kita, disini author akan mencontohkan dengan nama &ldquo;Panduan Koding&rdquo;</p>
+<p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibsODvOSXyixQH26fnRqiB4068oa58YPbmC_tDg1NOFiPk0YOHOCIIFZ3gcUNNRt3NGQuVw_Myees0paqVGeeHsYQ6nS63B5ZZ8IBTI5YGOlkzkTfwaLMk8TAJOg1IiFzjEvNa5nrvCDz3fGg04ObChiIMcB_7-Krhu_1xiEUzhJQlcLXTtwnu3qf9/s945/Membuat%20Bot%20Telegram%203.png"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibsODvOSXyixQH26fnRqiB4068oa58YPbmC_tDg1NOFiPk0YOHOCIIFZ3gcUNNRt3NGQuVw_Myees0paqVGeeHsYQ6nS63B5ZZ8IBTI5YGOlkzkTfwaLMk8TAJOg1IiFzjEvNa5nrvCDz3fGg04ObChiIMcB_7-Krhu_1xiEUzhJQlcLXTtwnu3qf9/s320/Membuat%20Bot%20Telegram%203.png" alt=""></a></p>
+</li>
+<li>
+<p>Selanjutnya teman-teman akan diminta untuk mengirimkan username yang akan digunakan untuk bot teman-teman, untuk pemberian username ini teman-teman jangan gunakan spasi ya, jika ingin menggunakan pemisah(spasi) teman-teman bisa menggantinya dengan tanda underscore( _ ) dan akhiri username teman-dengan bot, misal disini author akan mencontohkan dengan &ldquo;panduankoding_bot&rdquo;</p>
+<p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgv6w0DFLqV71O6NIRQFJ-vQ-7FqSQt1wORhAZHkZV04yiCierUaYBwWcqxA2CbHpQBDp8cSHJumIJtzVMC8Vl5r8gDbDcwAt4GLT7VheqGH8k9R_M6-xxrX8JZS9I09MQs6FdAC1u6n5eGpqFEimOqeQ5ARwbJ_nHU-SFB-gKA9ZZOchbMUcZ4xQBi/s945/Membuat%20Bot%20Telegram%204.png"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgv6w0DFLqV71O6NIRQFJ-vQ-7FqSQt1wORhAZHkZV04yiCierUaYBwWcqxA2CbHpQBDp8cSHJumIJtzVMC8Vl5r8gDbDcwAt4GLT7VheqGH8k9R_M6-xxrX8JZS9I09MQs6FdAC1u6n5eGpqFEimOqeQ5ARwbJ_nHU-SFB-gKA9ZZOchbMUcZ4xQBi/s320/Membuat%20Bot%20Telegram%204.png" alt=""></a></p>
+</li>
+<li>
+<p>Selanjutnya BotFather akan mengirimkan link untuk menuju bot teman-teman dan juga tokennya, oh iya token tersebut simpan lah ditempat aman dan jangan sampai orang lain tahu karena dengan token tersebutlah kita bisa mengontrol bot kita.</p>
+<p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMO2dbuLKYyAZ9sfyaOSsxRCaIPQTL-q-ivrWtkYJHeROrbOhIM1cOPZh6_bKpxSBWlXCrmLR3KS60fjs6xE_fkb-RHptjfsbwIQGl0m6qItfZZuAL7H25OWgJOjc6ONjDrvFg_E-6s6jVJ0Qx12mERJfnfvS49p7JyahjkrD11qY9A62nFfkB0r6Y/s945/Membuat%20Bot%20Telegram%205.png"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMO2dbuLKYyAZ9sfyaOSsxRCaIPQTL-q-ivrWtkYJHeROrbOhIM1cOPZh6_bKpxSBWlXCrmLR3KS60fjs6xE_fkb-RHptjfsbwIQGl0m6qItfZZuAL7H25OWgJOjc6ONjDrvFg_E-6s6jVJ0Qx12mERJfnfvS49p7JyahjkrD11qY9A62nFfkB0r6Y/s320/Membuat%20Bot%20Telegram%205.png" alt=""></a></p>
+</li>
+</ul>
+<h3 id="install-modul-bot-telegram">Install Modul Bot Telegram</h3>
+<p>Setelah teman-teman sudah mendapatkan token dari bot teman-teman, selanjutnya sebelum kita melakukan koding untuk mengatur bot teman-teman, teman-teman harus menginstall sebuah library python dengan nama &ldquo;python-telegram-bot&rdquo; dengan menggunakan pip</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>pip3 install python<span style="color:#f92672">-</span>telegram<span style="color:#f92672">-</span>bot
+</span></span></code></pre></div><p>disini author mencontohkan dengan menggunakan python3 ya teman-teman dan juga perintah pip pada python3 juga menggunakan pip3</p>
+<h3 id="membuat-bot-telegram">Membuat BOT Telegram</h3>
+<p>setelah teman-teman selesai menginstall library yang diperlukan selanjutnya kita akan melakukan koding untuk bot kita</p>
+<p>pertama teman-teman buatlah file python dengan nama bebas bisa saja dengan nama bot teman-teman atau bisa juga dengan bot.py saja</p>
+<p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQCYUPaPFSGXdYLoQFDrXjeCRb3gx9lDYSgLv1weZ6YdGVR4l7a81BvNXsj3uPGu0wXzJOVuaWwvcW_o2yf6_9W9uyM7FsC7TI4EC53Fsa0hxjEEoo_3iu1mNRmNmd7rED7Admy8NfJYb990ye4DJg-MJZbBqosdi0usY6SAqZfiI8xMCDmtfn00FI/s539/Membuat%20Bot%20Telegram%206.png"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQCYUPaPFSGXdYLoQFDrXjeCRb3gx9lDYSgLv1weZ6YdGVR4l7a81BvNXsj3uPGu0wXzJOVuaWwvcW_o2yf6_9W9uyM7FsC7TI4EC53Fsa0hxjEEoo_3iu1mNRmNmd7rED7Admy8NfJYb990ye4DJg-MJZbBqosdi0usY6SAqZfiI8xMCDmtfn00FI/s320/Membuat%20Bot%20Telegram%206.png" alt=""></a></p>
+<p>setelah file python sudah teman-teman buat selanjutnya kita akan mulai kodingnya dengan langkah awal teman-teman harus melakukan import fungsi-fungsi dari library yang kita install sebelumnya</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> telegram
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> telegram <span style="color:#f92672">import</span> Update
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> telegram.ext <span style="color:#f92672">import</span> Updater, CommandHandler, CallbackQueryHandler, CallbackContext, MessageHandler, Filters
+</span></span></code></pre></div><p>selanjutnya kita akan membuat fungsi untuk mengirim salam kepada pengguna bot teman-teman saat mereka klik start pada bot teman-teman</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">start</span>(update: Update, context: CallbackContext) <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>    update<span style="color:#f92672">.</span>message<span style="color:#f92672">.</span>reply_text(<span style="color:#e6db74">&#34;Hallo&#34;</span>)
+</span></span></code></pre></div><p>selanjutnya kita akan membuat fungsi untuk menjalankannya</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>() <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Run the bot.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    updater <span style="color:#f92672">=</span> Updater(<span style="color:#e6db74">&#34;Token teman-teman disini&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    updater<span style="color:#f92672">.</span>dispatcher<span style="color:#f92672">.</span>add_handler(CommandHandler(<span style="color:#e6db74">&#39;start&#39;</span>, start))   
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    updater<span style="color:#f92672">.</span>start_polling()
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    updater<span style="color:#f92672">.</span>idle()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;__main__&#39;</span>:
+</span></span><span style="display:flex;"><span>    main()
+</span></span></code></pre></div><p>silahkan teman-masukan token yang didapatkan pada langkah awal kita sebelumnya pada &ldquo;Token teman-teman disini&rdquo; dan jadikan sebagai string ya teman-teman atau gampangnya masukan token teman-teman didalam tanda petik. selanjutnya mari kita test terlebih dahulu bot teman-teman silahkan jalankan program teman-teman dan buka dan jalankan bot teman-teman jika bot teman-teman mengirimkan pesan &ldquo;hallo&rdquo; maka bot pertama teman-teman sudah selesai dibuat</p>
+<p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmSfA_gEDt9yJJiFE63jKWXYNH2riYb5lq32HK1qpoK4Axy9OsbnIJF3Xb0MgjOHy8ahKfM2alqMfsTa0KEOWaWtV_-tYFMJOVh6dBA2heBAsufwog8WKG2AQ6XW8qzj4K0JdBW71oIClim6jDusK01CPXBl8ezWFVNw0VOGSaB5UwYlCK8bJKyEY2/s944/Membuat%20Bot%20Telegram%207.png"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmSfA_gEDt9yJJiFE63jKWXYNH2riYb5lq32HK1qpoK4Axy9OsbnIJF3Xb0MgjOHy8ahKfM2alqMfsTa0KEOWaWtV_-tYFMJOVh6dBA2heBAsufwog8WKG2AQ6XW8qzj4K0JdBW71oIClim6jDusK01CPXBl8ezWFVNw0VOGSaB5UwYlCK8bJKyEY2/s320/Membuat%20Bot%20Telegram%207.png" alt=""></a></p>
+<p>selanjutnya kita akan membuat fungsi dimana setiap pesan yang teman-teman atau pengguna bot teman-teman kirimkan maka bot kita akan mengirimkan pesan yang sama, cara nya cukup gampang loh. pertama teman-teman buatlah fungsi &ldquo;echo&rdquo;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">echo</span>(update, context):
+</span></span><span style="display:flex;"><span>    update<span style="color:#f92672">.</span>message<span style="color:#f92672">.</span>reply_text(update<span style="color:#f92672">.</span>message<span style="color:#f92672">.</span>text)
+</span></span></code></pre></div><p>letakan fungsi diatas pada bagian sebelum fungsi main dan setelah fungsi start, jika sudah selanjutnya kita daftarkan fungsi tersebut pada fungsi main dengan cara masukan kode berikut pada fungsi main</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>updater<span style="color:#f92672">.</span>dispatcher<span style="color:#f92672">.</span>add_handler(MessageHandler(Filters<span style="color:#f92672">.</span>text, echo))
+</span></span></code></pre></div><p>letakan kode diatas pada baian sebelum kode &ldquo;updater.start_polling()&rdquo;, jika sudah, selanjutnya restart program teman-teman dan test kembali bot teman-teman, jika bot tersebut mengirimkan kembali pesan teman-teman maka teman-teman telah berhasil membuat BOT Telegram Sederhana dengan menggunakan bahasa pemrograman python, berikut kode full dari tutorial ini</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> telegram
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> telegram <span style="color:#f92672">import</span> Update
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> telegram.ext <span style="color:#f92672">import</span> Updater, CommandHandler, CallbackQueryHandler, CallbackContext, MessageHandler, Filters
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">start</span>(update: Update, context: CallbackContext) <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>    update<span style="color:#f92672">.</span>message<span style="color:#f92672">.</span>reply_text(<span style="color:#e6db74">&#34;Hallo&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">echo</span>(update, context):
+</span></span><span style="display:flex;"><span>    update<span style="color:#f92672">.</span>message<span style="color:#f92672">.</span>reply_text(update<span style="color:#f92672">.</span>message<span style="color:#f92672">.</span>text)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>() <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Run the bot.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    updater <span style="color:#f92672">=</span> Updater(<span style="color:#e6db74">&#34;Token teman-teman disini&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    updater<span style="color:#f92672">.</span>dispatcher<span style="color:#f92672">.</span>add_handler(CommandHandler(<span style="color:#e6db74">&#39;start&#39;</span>, start))
+</span></span><span style="display:flex;"><span>    updater<span style="color:#f92672">.</span>dispatcher<span style="color:#f92672">.</span>add_handler(MessageHandler(Filters<span style="color:#f92672">.</span>text, echo))   
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    updater<span style="color:#f92672">.</span>start_polling()
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    updater<span style="color:#f92672">.</span>idle()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;__main__&#39;</span>:
+</span></span><span style="display:flex;"><span>    main()
+</span></span></code></pre></div><p>selanjutnya author juga akan membuat tutorial untuk membuat BOT telegram dengan lebih kompleks lagi jadi pantengin terus ya teman-teman web panduankoding.com ini atau teman-teman bisa mendaftarkan email teman-teman untuk menerima notifikasi artikel terbaru dari web ini pada menu langganan diatas tenang saja ini gratis ya teman-teman</p>
+<h2 id="kesimpulan">Kesimpulan</h2>
+<p>untuk membuat sebuah bot telegram kita memerlukan sebuah token yang kita dapatkan dari bot BotFather dimana pada bot tersebut kita mendaftarkan bot kita, dan teman-teman juga memerlukan library python-telegram-bot dan mengimportkan library tersebut pada program teman-teman</p>
+
+            </div>
+            <div class="col-md-4">
+                <div class="sticky-top sidebar">
+                  
+                  <aside>
+<div class="p-4 mb-3 card rounded">
+                    <h5 class="fst-italic">About</h4>
+                    <p class="mb-0">Cara pembuatan BOT Telegram menggunakan bahasa pemrograman Python</p>
+                  </div>
+          
+                    <div class="row">
+                      <div class="col">
+                          <div class="p-4 mb-3 card rounded" style="width: 100vn;">
+    <div class="related-content">
+        <h3>Related Posts</h3>
+            <a href="/tutorial/python/bahasa-pemrograman-python-untuk-pemula/">
+              
+                        <div class="row card-body">
+                           
+                            <div>
+                              <h5 class="card-title">Bahasa Pemrograman Python Untuk Pemula</h5>
+                               <p class="card-text">⌚ : <time>23-12-2022</time></p>
+                            </div>
+                            
+                        </div>
+                    
+              </a>
+              <br>
+          
+        </div>
+      </div>
+      </div>
+    </div>
+
+
+                  
+          
+                  
+    
+    </aside>
+                </div>
+                
+              </div>
+            </div>
+
+        
+
+            
+        
+</main>
+
+<div class="line-divider"></div>
+<footer>
+  
+  <center>
+    <p>
+      Panduan Koding &copy; 2022 koleksiprihadi <br>
+      &#183; Made with ❤️ using <a href=https://gohugo.io class=hover:text-teal-400 target=_blank rel=noopener>Hugo</a> &#183;
+    </p>
+  </center>
+</footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+    </body>
+</html>

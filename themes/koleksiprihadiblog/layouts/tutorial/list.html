@@ -2,12 +2,24 @@
 <html>
     <head>
         {{ partial "head.html" . }}
+        <style>
+            .all {
+                padding: 10px 20px;
+                border-radius: 100px;
+            }
+
+            #viewall {
+                position: fixed;
+                bottom: 4px;
+                right: 10px;
+            }
+        </style>
     </head>
     <body>
 
         {{ partial "nav.html" . }}
         {{ partial "header.html" . }}
-
+        <h2 class="line-divider "><span class="span-line-divider ">Semua Tutorial</span></h2>
         <article class="card-post">
             <div class="container">
                 <div class="row">
@@ -47,7 +59,9 @@
         <div class="container">
             {{ partial "pagination.html" . }}
         </div>
-
+        <div id="viewall">
+            <button class="all bg-primary"><a href="/categories">Lihat Perkategori</a> </button>
+            </div>
         {{ partial "footer.html" . }}
         {{ partial "js-init.html" . }}
     </body>

@@ -19,7 +19,7 @@ authorphoto: "/images/koleksiprihadi.jpeg"
 
 image: https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEge04vam-EFHZ1zfsE2_PQl8Dl6rItws3MExEhAJfPn7hU5rQQp0qQSjOhE8YsQMzdl2duF8A_gFBbpd921sEySMDaCHgL9zrvCSyceAEBRLOwGNouqIrtGfOnf-ZxFPH4HcNioFzvZOcL099t8y6moDL9Piv_0bsJkuKguS2lVm4XkGTC4HqaXUwB5/w320-h180/Bahasa%20Pemrograman%20Python%20Untuk%20Pemula.PNG
 thumbnail: /images/koleksiprihadi.jpeg
-description: "test"
+description: "Belajar bahasa pemrograman python untuk pemula bagian 1 pengenalan"
 ---
 
 Hallo teman-teman yang sedang mencoba belajar bahasa pemrograman python baik yang sudah lumayan lama berada di dunia perkodingan maupun yang baru mau belajar. Pada web ini author akan membantu teman teman yang ingin belajar bahasa pemrograman python baik bagi teman teman yang sudah terjun kedunia perkodingan maupun yang baru akan terjun. Author akan membahas dari awal mulai dari pengenalan apa itu bahasa pemrograman python, syntaxnya, hingga beberapa contoh penggunaan bahasa pemrograman python untuk membuat beberapa aplikasi sederhana hingga lumayan kompleks, bagi teman teman yang serius ingin belaja mengenai bahasa pemrograman python ini pantengin terus web panduankoding.com ini yaa..., Author akan membagi materi menjadi beberapa artikel supaya teman teman mudah dalam memahami bahasa pemrograman python ini, tenang saja ya teman-teman semua artikel yang ada di web ini akan disediakan secara gratis untuk teman-teman semua tanpa terkecuali, yuk langsung aja kita bahas topik yang pertama.

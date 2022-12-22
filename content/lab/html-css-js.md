@@ -10,7 +10,6 @@ tags:
     - css
 
 categories:
-    - LAB
 
 authorname: "koleksiprihadi"
 authorlink: "https://koleksiprihadi.github.io/"
