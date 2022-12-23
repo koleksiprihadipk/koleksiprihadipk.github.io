@@ -27,7 +27,7 @@ hallo teman-teman pada artikel kali ini author akan membagikan kepada teman-tema
 Bagaimana Cara Menjalankan Program Python?
 ------------------------------------------
 
-pada artikel sebelumnya yang berjudul [bahasa pemrograman python untuk pemula](https://www.panduankoding.com/2022/06/bahasa-pemrograman-python-untuk-pemula.html) author juga telah memberikan contoh bagaimana cara mengeksekusi program python teman-teman tetapi itu hanya sekilas dan tanpa ada penjelasannya, nah pada artikel kali ini author akan menjelaskan lagi secara mendalam bagaimana cara untuk menjalankan program python.
+pada artikel sebelumnya yang berjudul [bahasa pemrograman python untuk pemula](https://panduankoding.com/tutorial/python/bahasa-pemrograman-python-untuk-pemula/) author juga telah memberikan contoh bagaimana cara mengeksekusi program python teman-teman tetapi itu hanya sekilas dan tanpa ada penjelasannya, nah pada artikel kali ini author akan menjelaskan lagi secara mendalam bagaimana cara untuk menjalankan program python.
 
   
 
