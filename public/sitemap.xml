@@ -2,31 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://panduankoding.com/categories/</loc>
+    <lastmod>2022-12-23T23:46:08+07:00</lastmod>
+  </url><url>
+    <loc>https://panduankoding.com/</loc>
+    <lastmod>2022-12-23T23:46:08+07:00</lastmod>
+  </url><url>
+    <loc>https://panduankoding.com/tags/python/</loc>
+    <lastmod>2022-12-23T23:46:08+07:00</lastmod>
+  </url><url>
+    <loc>https://panduankoding.com/tags/</loc>
+    <lastmod>2022-12-23T23:46:08+07:00</lastmod>
+  </url><url>
+    <loc>https://panduankoding.com/categories/tutorial-python/</loc>
+    <lastmod>2022-12-23T23:46:08+07:00</lastmod>
+  </url><url>
+    <loc>https://panduankoding.com/tutorial/python/dasar-dasar-bahasa-pemrograman-python/</loc>
+    <lastmod>2022-12-23T23:46:08+07:00</lastmod>
+  </url><url>
+    <loc>https://panduankoding.com/tutorial/</loc>
+    <lastmod>2022-12-23T23:46:08+07:00</lastmod>
+  </url><url>
     <loc>https://panduankoding.com/artikel/</loc>
     <lastmod>2022-12-23T01:44:12+07:00</lastmod>
   </url><url>
     <loc>https://panduankoding.com/artikel/python/bot-telegram-sederhana-dengan-python/</loc>
     <lastmod>2022-12-23T01:44:12+07:00</lastmod>
   </url><url>
-    <loc>https://panduankoding.com/</loc>
-    <lastmod>2022-12-23T01:44:12+07:00</lastmod>
-  </url><url>
-    <loc>https://panduankoding.com/tags/python/</loc>
-    <lastmod>2022-12-23T01:44:12+07:00</lastmod>
-  </url><url>
-    <loc>https://panduankoding.com/tags/</loc>
-    <lastmod>2022-12-23T01:44:12+07:00</lastmod>
-  </url><url>
     <loc>https://panduankoding.com/tutorial/python/bahasa-pemrograman-python-untuk-pemula/</loc>
-    <lastmod>2022-12-23T00:43:44+07:00</lastmod>
-  </url><url>
-    <loc>https://panduankoding.com/categories/</loc>
-    <lastmod>2022-12-23T00:43:44+07:00</lastmod>
-  </url><url>
-    <loc>https://panduankoding.com/categories/tutorial-python/</loc>
-    <lastmod>2022-12-23T00:43:44+07:00</lastmod>
-  </url><url>
-    <loc>https://panduankoding.com/tutorial/</loc>
     <lastmod>2022-12-23T00:43:44+07:00</lastmod>
   </url><url>
     <loc>https://panduankoding.com/tags/css/</loc>

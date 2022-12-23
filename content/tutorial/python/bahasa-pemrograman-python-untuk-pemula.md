@@ -1,7 +1,7 @@
 ---
 draft: false
 date: 2022-12-23T00:43:44+07:00
-title: "Bahasa Pemrograman Python Untuk Pemula"
+title: "Tutorial Python Bagian 1: Bahasa Pemrograman Python Untuk Pemula"
 slug: bahasa-pemrograman-python-untuk-pemula
 
 tags:

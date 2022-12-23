@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tutorial Python Bagian 2: Dasar Dasar Bahasa Pemrograman Python</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<meta itemprop="name" content="Tutorial Python Bagian 2: Dasar Dasar Bahasa Pemrograman Python">
+<meta itemprop="description" content="Belajar bahasa pemrograman python untuk pemula bagian 2 yang harus di ketahui sebelum koding menggunakan bahasa pemrograman python"><meta itemprop="datePublished" content="2022-12-23T23:46:08+07:00" />
+<meta itemprop="dateModified" content="2022-12-23T23:46:08+07:00" />
+<meta itemprop="wordCount" content="1260">
+<meta itemprop="keywords" content="Python," />
+
+<meta property="og:title" content="Tutorial Python Bagian 2: Dasar Dasar Bahasa Pemrograman Python" />
+<meta property="og:description" content="Belajar bahasa pemrograman python untuk pemula bagian 2 yang harus di ketahui sebelum koding menggunakan bahasa pemrograman python" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://panduankoding.com/tutorial/python/dasar-dasar-bahasa-pemrograman-python/" /><meta property="article:section" content="tutorial" />
+<meta property="article:published_time" content="2022-12-23T23:46:08+07:00" />
+<meta property="article:modified_time" content="2022-12-23T23:46:08+07:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Tutorial Python Bagian 2: Dasar Dasar Bahasa Pemrograman Python"/>
+<meta name="twitter:description" content="Belajar bahasa pemrograman python untuk pemula bagian 2 yang harus di ketahui sebelum koding menggunakan bahasa pemrograman python"/>
+
+
+
+
+<link rel="icon" href="/img/logo.svg?1" />
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/style.css" />
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+<script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+
+
+    </head>
+    <body>
+
+        <div class="container">
+    <header class="fixed-top d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom nav-down">
+        <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none nav-kiri">
+            <img src="/images/koleksiprihadi.svg" width="40px">
+        </a>
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="/" id="nav" class="nav-link px-2 link-dark">Home</a></li>
+          <li><a href="/tutorial" id="nav" class="nav-link px-2 link-dark">Tutorial</a></li>
+          <li><a href="/artikel" id="nav" class="nav-link px-2 link-dark">Artikel</a></li>
+          <li><a href="/lab" id="nav" class="nav-link px-2 link-dark">Lab</a></li>
+          <li><a href="#" id="nav" class="nav-link px-2 link-dark">Newsletter</a></li>
+        </ul>
+  
+        <div class="col-md-3 text-end nav-kanan">
+          <button type="button" class="btn" data-bs-toggle="offcanvas" aria-controls="sosialmedia" href="#sosialmedia"><span class="emoji anim" role="img" aria-label="anim"></span></button>
+          <button type="button" id="theme_toggle" class="btn me-2"><i id="dark-btn" class="bi bi-cloud-sun"></i><i id="light-btn" class="bi bi-cloud-moon"></i></button>
+        </div>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="sosialmedia" aria-labelledby="sosialmediaLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="sosialmediaLabel">Sosial Media Panduan Koding</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              
+            </div>
+          </div>
+      </header>  
+</div>
+        <main class="container">
+            <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+              <div class="col-md-6 px-0">
+                <h1 class="display-4 fst-italic">Tutorial Python Bagian 2: Dasar Dasar Bahasa Pemrograman Python</h1>
+                <p class="lead my-3">Belajar bahasa pemrograman python untuk pemula bagian 2 yang harus di ketahui sebelum koding menggunakan bahasa pemrograman python</p>
+                
+              </div>
+            </div>
+
+
+        <div class="row g-5">
+            <div class="col-md-8">
+                <div class="mb-3">
+                    <img src="/images/koleksiprihadi.jpeg" class="rounded-circle" width="32" height="32" />
+                    <a href="https://koleksiprihadi.github.io/">koleksiprihadi</a> | <time>23-12-2022</time>
+                </div>
+                <h1>Tutorial Python Bagian 2: Dasar Dasar Bahasa Pemrograman Python</h1>
+                <div>
+                    
+                    <div class="badge">
+                         <span class="text-success" aria-disabled="true"><i class="bi bi-tags"></i>Python</span>
+                    </div> 
+                    
+                </div>
+                <p>hallo teman-teman pada artikel kali ini author akan membagikan kepada teman-teman tentang dasar-dasar dari bahasa pemrograman python, artikel ini adalah lanjutan dari seri belajar bahasa pemrograman python. jika sebelumnya kita mempelajari apa itu python, perbedan python 2 dan python 3 dan juga cara menginstall python pada komputer teman-teman. nah pada bagian ini kita akan mempelajari dasar-dasar yang harus teman-teman ketahui tentang bahasa pemrograman python terutama pada python 3.</p>
+<h2 id="bagaimana-cara-menjalankan-program-python">Bagaimana Cara Menjalankan Program Python?</h2>
+<p>pada artikel sebelumnya yang berjudul <a href="https://www.panduankoding.com/2022/06/bahasa-pemrograman-python-untuk-pemula.html">bahasa pemrograman python untuk pemula</a> author juga telah memberikan contoh bagaimana cara mengeksekusi program python teman-teman tetapi itu hanya sekilas dan tanpa ada penjelasannya, nah pada artikel kali ini author akan menjelaskan lagi secara mendalam bagaimana cara untuk menjalankan program python.</p>
+<p>Untuk menjalankan program python ada beberapa cara yang dapat dilakukan seperti menjalankan kodingan langsung pada terminal/cmd dimana program akan dieksekusi baris-perbaris maupun dengan menggunakan file dimana program akan dieksekusi setelah teman-teman menuliskan keseluruhan baris kode program teman-teman.</p>
+<blockquote>
+<p>perlu teman-teman ketahui kedua cara diatas sebenarnya sama saja, karena python merupakan bahasa interpreter dimana komputer akan mengeksekusi kode program secara baris-perbaris</p>
+</blockquote>
+<h3 id="menjalankan-melalui-terminalcmd"> Menjalankan melalui terminal/cmd</h3>
+<p>Cara pertama adalah dengan menulis dan menjalankan program python langsung pada terminal/cmd cara ini biasa disebut dengan <em>interactive mode</em> dimana setiap baris kode yang kita ketikan akan langsung dieksekusi dan disimpan di dalam memori sementara, berikut tampilan dari <em>interactive mode</em> pada bahasa pemrograman python</p>
+<p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjN_O7fnxdEzNpDpe1EETzbnEp231L6X0nmHGVzlvEUh575yMMNDAMg39i4V1h2Oyoybk79ZQtmSzu8MDjD4jO1Kz5dXIf8uZae2J8srEp6W6wG_-S_153O_XChZG2zl7HqAUgAg-MDbh8c4a16V2h6hN4Cj0GiKDI4801x3bILkdIoumGoe9vLXKWC/s735/dasar-dasar%20bahasa%20pemrograman%20python%201.png"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjN_O7fnxdEzNpDpe1EETzbnEp231L6X0nmHGVzlvEUh575yMMNDAMg39i4V1h2Oyoybk79ZQtmSzu8MDjD4jO1Kz5dXIf8uZae2J8srEp6W6wG_-S_153O_XChZG2zl7HqAUgAg-MDbh8c4a16V2h6hN4Cj0GiKDI4801x3bILkdIoumGoe9vLXKWC/w320-h92/dasar-dasar%20bahasa%20pemrograman%20python%201.png" alt="cara menggunakan interactive mode pada python 3" title="cara menggunakan interactive mode pada python 3"></a></p>
+<p>untuk masuk ke <em>interactive mode</em> pada bahasa pemrograman python teman-teman cukup dengan membuka terminal/cmd pada komputer teman-teman dan selanjutnya teman-teman dapat menjalankan perintah</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># menjalankan pada linux</span>
+</span></span><span style="display:flex;"><span>python3
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Untuk mac ataupun windows (terkadang cukup dengan)</span>
+</span></span><span style="display:flex;"><span>python
+</span></span></code></pre></div><p>Jika teman-teman menggunakan linux teman-teman bisa menjalankan <em>interactive mode</em> pada python 3 dengan cara menambahakan nomor versi setelah kata python, sedangkan untuk di mac dan windows terkadang hanya cukup mengeksekusi perintah python saja, kecuali teman-teman dulunya pernah menginstal python 2 terlebih dahulu baru menginstal python 3 maka teman-teman untuk masuk ke <em>interactive mode</em> pada python tiga juga perlu menuliskan nomor versi setelah kata python</p>
+<p>Teman-teman bisa menuliskan kode program pada baris yang diberi tanda &ldquo;&raquo;&gt;&rdquo;, sekarang kita coba membuat sebuah program pada <em>interactive mode</em> ini </p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt;&gt;&gt; print<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;saya membuat program pada interactive mode&#34;</span><span style="color:#f92672">)</span> 
+</span></span></code></pre></div><p>pada saat teman-teman menekan enter setelah kode program diatas maka kode program tersebut akan langsung tereksekusi</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt;&gt;&gt; print<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;saya membuat program pada interactive mode&#34;</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>saya membuat program pada interactive mode
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt;
+</span></span></code></pre></div><p>dapat dilihat dari contoh di atas kode program teman-teman akan langsung tereksekusi di bawahnya dan akan memberikan kepada teman-teman sebuah baris baru untuk menetikan kode program lagi (dengan tanda &ldquo;&raquo;&gt;&rdquo;), untuk menghentikan <em>interactive mode</em> teman-teman bisa menggunkan fungsi &ldquo;exit()&rdquo;.</p>
+<p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjiR5LODEPTsGWoQmQsC60wU2wUvoOlDwKAZ-WvOr1P2POq4EJTIfcXCkJq6Gdq1EryiRKtyV5mZaqYkz45MdCEjKkByWIq3YUFRuD8zlO_6WW2fsn8CSfchaSO9PA_0-NsNEwyPzcq81EYZEzYGYcDu1GHi48UXQdLR-_o_WRskBitOHEh0fxwbh3/s742/dasar-dasar%20bahasa%20pemrograman%20python%202.png"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjiR5LODEPTsGWoQmQsC60wU2wUvoOlDwKAZ-WvOr1P2POq4EJTIfcXCkJq6Gdq1EryiRKtyV5mZaqYkz45MdCEjKkByWIq3YUFRuD8zlO_6WW2fsn8CSfchaSO9PA_0-NsNEwyPzcq81EYZEzYGYcDu1GHi48UXQdLR-_o_WRskBitOHEh0fxwbh3/w320-h115/dasar-dasar%20bahasa%20pemrograman%20python%202.png" alt="penggunaan fungsi exit() pada interactive mode python" title="penggunaan fungsi exit() pada interactive mode python"></a></p>
+<h3 id="menjalankan-melalui-file">Menjalankan melalui file</h3>
+<p>Selanjutnya kita akan menjalankan program python kita dimana program tersebut terlebih dahulu akan kita tulis dalam sebuah file, perlu teman-teman ketahui file program dari python itu berekstensi &ldquo;py&rdquo; yuk langsung saja pertama teman-teman buka text editor kesayangan teman-teman dan buka lah direktori dimana teman-teman akan menuliskan program teman-teman dan terakhir buatlah file dengan nama &ldquo;programpython.py&rdquo;, untuk penamaan file author sarankan keteman-teman untuk tidak menggunakan spasi yaa..</p>
+<p>oke setelah teman-teman sudah membuat file silahkan untuk menuliskan kode program seperti sebelumnya diatas pada file program python teman-teman.</p>
+<p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0hieHKOpGb1QqEILx-gKtYM_PpczdxKY1qkNtGfEifO1E-Ch1euZAQUs71nZz1gYNcMemVvtA28IgfGCT-M0f6v1QBa9a8jGF842mbJFaIXtS8vKDUSiIg4imp8abcEZGGtWiO4fJAWEVMcMqJaPX2ZRrWr64ZPMhhDOvkreS6kdGl3yshB08GCX0/s1075/dasar-dasar%20bahasa%20pemrograman%20python%203.png"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0hieHKOpGb1QqEILx-gKtYM_PpczdxKY1qkNtGfEifO1E-Ch1euZAQUs71nZz1gYNcMemVvtA28IgfGCT-M0f6v1QBa9a8jGF842mbJFaIXtS8vKDUSiIg4imp8abcEZGGtWiO4fJAWEVMcMqJaPX2ZRrWr64ZPMhhDOvkreS6kdGl3yshB08GCX0/w320-h129/dasar-dasar%20bahasa%20pemrograman%20python%203.png" alt="membuat file program python" title="membuat file program python"></a></p>
+<p>Setelah teman-teman sudah menuliskan kode program seperti pada gambar diatas, selanjutnya teman-teman save dulu dengan cara ctrl+s.</p>
+<p>selanjutnya teman-teman buka terminal/cmd teman-teman selanjutnya pada terminal/cmd teaman-teman bukalah direktori dimana teman-teman menyimpan file program tadi dengan perintah cd</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd direktori
+</span></span></code></pre></div><p>misal teman-teman yang menggunakan windows menyimpan pada direktori D:/programku atau pada folder &ldquo;programku&rdquo; yang tersimpan pada data &ldquo;D&rdquo; maka teman-teman bisa menjalankan perintah cd seperti berikut</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd D:<span style="color:#ae81ff">\p</span>rogramku
+</span></span></code></pre></div><p>untuk teman-teman pengguna mac/linux dan menyimpan file pada direktori ~/Document/programku atau pada folder &ldquo;programku&rdquo; yang tersimpan pada folder &ldquo;Document&rdquo; maka perintahnya seperti berikut</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># pada mac</span>
+</span></span><span style="display:flex;"><span>cd ~/Document/programku
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># pada linux</span>
+</span></span><span style="display:flex;"><span>cd Document/programku
+</span></span></code></pre></div><p>terlihat di atas perbedaan penggunaan cd pada terminal dan cmd untuk cmd (windows) pemisah antara sub folder dan folder utama menggunkan backslash &quot; \ &quot; sedangkan pada terminal (mac dan linux) menggunakan slash &quot; / &ldquo;.</p>
+<p>setelah terminal/cmd teman-teman sudah berada pada direktori dimana teman-teman menyimpan file program teman-teman, selanjutnya teman-teman bisa menjalankan program python teman-teman dengan cara </p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python3 programpython.py
+</span></span></code></pre></div><p>atau jika teman-teman menggunakan text editor VScode (visual studio code) teman-teman bisa langsung menjalankan program teman-teman tanpa harus membuka terminal/cmd teman-teman dengan hanya menekan ctrl+f5 atau bisa menekan tombol run seperti pada gambar dibawah (yang dilingkar merah ya teman-teman) dan program teman-teman akan berjalan pada terminal yang akan terbuka pada layout dibawah pada vscode</p>
+<p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrCw6CueytVSgcc8dTIC4Y2HU8BkfoNBy98N6o4uUX2SKJoGOaCMkyf0gnFoCNcGkY6RigoKV-10RGWta-mytTOfVIt2UJ1yIyoOp8ORQMakKrg1F0mypO1xypk2ZcYVRzqAJ4PlCRQcT9v9j4gx3-vYQLIgmbUshujGiHNP0fOYRuV9h28W0q5_BP/s1366/dasar-dasar%20bahasa%20pemrograman%20python%204.png"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrCw6CueytVSgcc8dTIC4Y2HU8BkfoNBy98N6o4uUX2SKJoGOaCMkyf0gnFoCNcGkY6RigoKV-10RGWta-mytTOfVIt2UJ1yIyoOp8ORQMakKrg1F0mypO1xypk2ZcYVRzqAJ4PlCRQcT9v9j4gx3-vYQLIgmbUshujGiHNP0fOYRuV9h28W0q5_BP/s320/dasar-dasar%20bahasa%20pemrograman%20python%204.png" alt=""></a></p>
+<h2 id="python-indentation">Python Indentation</h2>
+<p><em>Indentation</em> adalah jarak spasi pada awal baris kode, tidak seperti bahasa pemrograman lain yang menggunakan tanda kurung kurawal &ldquo;{}&rdquo; untuk kode blok atau kode yang memerlukan beberapa baris untuk mendefinisikannya misal untuk perintah percabangan, pada bahasa pemrograman python ini kita menggunakan <em>indentation</em> atau jarak awal pada baris kode misal</p>
+<p>pada bahasa php</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#66d9ef">if</span>(<span style="color:#ae81ff">5</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1</span>){
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">echo</span> <span style="color:#e6db74">&#34;ini programku&#34;</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>pada python</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">if</span>(<span style="color:#ae81ff">5</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1</span>):
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;ini programku&#34;</span>)
+</span></span></code></pre></div><p>spasi sebelum fungsi print dan echo itulah yang disebut <em>indentation,</em> pada bahasa pemrograman python <em>indentation</em> ini sangat penting tidak seperti bahasa pemrograman lain, misal pada bahasa php seperti kode diatas jika <em>indentation</em> pada sebelum echo di hapus program akan tetap jalan, tetapi pada bahasa python jika <em>indentation</em> dihapus maka program akan mengalami error</p>
+<p>menghapus <em>indentation</em> pada php</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#66d9ef">if</span>(<span style="color:#ae81ff">5</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1</span>){
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">echo</span> <span style="color:#e6db74">&#34;ini programku&#34;</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>menghapus <em>indentation</em> pada python</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">if</span>(<span style="color:#ae81ff">5</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1</span>):
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;ini programku&#34;</span>)
+</span></span></code></pre></div><p>berikut detail error yang kita dapatkan jika tidak ada <em>indentation</em> pada python (<em>expected an indented block</em>)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>  File <span style="color:#e6db74">&#34;/home/koleksiprihadi/WEB/tutor/programpython.py&#34;</span>, line <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>    print<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;ini programku&#34;</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>    ^
+</span></span><span style="display:flex;"><span>IndentationError: expected an indented block
+</span></span></code></pre></div><h2 id="python-commenting">Python Commenting</h2>
+<p>Selanjutnya adalah <em>commenting</em> atau pemberian komen, pemberian komen ini sendiri berguna untuk kita menuliskan penjelasan tentang kode yang kita tuliskan yang berguna untuk teman-teman nanti untuk memahami maksud dari program yang teman-teman tuliskan.</p>
+<p>pemberian komen ini tidak akan ikut tereksekusi jika teman-teman menjalankan program teman-teman, jadi pemberian komen ini juga bisa untuk jika sewaktu-waktu teman-teman ingin ada beberapa baris kode yang tidak ingin dijalankan dahulu tapi teman-teman tidak ingin menghapus baris kode tersebut</p>
+<p>pada python pemberian tanda komen menggunakan tanda pagar &ldquo;#&rdquo; pada awal baris kode program atau tulisan yang ingin teman-teman jadikan komen. ada dua jenis <em>commenting</em> yang bisa teman-teman gunakan sesuai kebutuhan:</p>
+<h3 id="single-line-commenting">Single line commenting</h3>
+<p>Yang pertama adalah <em>single line commenting</em> atau pemberian tanda komen untuk hanya satu baris, seperti dengan namanya metode ini berguna untuk teman-teman jika hanya menggunakan komen pada satu baris saja</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># ini adalah komentar (commenting)</span>
+</span></span></code></pre></div><p>jika pada kode program akan terlihat seperti ini</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># print(&#34;saya membuat program pada interactive mode&#34;)</span>
+</span></span></code></pre></div><h3 id="multi-line-commenting">Multi line Commenting</h3>
+<p>Jika teman-teman ingin memberi komen tidak hanya satu baris sebenarnya teman-teman juga bisa menggunakan metode yang pertama hanya saja setiap baris teman-teman harus memberikan tanda pagar &ldquo;#&quot;, </p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># if(5 &gt; 1):</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#     print(&#34;ini programku&#34;)</span>
+</span></span></code></pre></div><p>sehingga itu tidak efisien jika teman-teman ingin membuat dokumentasi atau hanya agar kode program tidak ikut tereksekusi, untuk melakukannya teman-teman bisa menggunakan tanda 3 petik satu (&rsquo;&rsquo;&rsquo;) tanpa ada spasi</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#e6db74">&#39;&#39;&#39;if(5 &gt; 1):
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        print(&#34;ini programku&#34;)&#39;&#39;&#39;</span>
+</span></span></code></pre></div><p>atau bisa juga seperti ini</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#e6db74">&#39;&#39;&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">if(5 &gt; 1):
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    print(&#34;ini programku&#34;)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;&#39;&#39;</span>
+</span></span></code></pre></div><p>silahkan teman-teman coba kedua metode <em>commenting</em> diatas</p>
+<h2 id="cara-menginstal-library">Cara Menginstal Library</h2>
+<p>Library adalah kumpulan kode program yang bisa teman-teman gunakan untuk meningkatkan fungsionalitas dari kode program teman-teman, misal untuk visualisasi data pada python kita bisa menggunakan library &ldquo;<em>matplotlib</em>&rdquo; dan mengimportkan library tersebut ke program kita seperti yang terlihat di bawah ini</p>
+<div><br /><script src="https://gist.github.com/koleksiprihadi/9440231d0f21ea940ff1ec8324012d26.js"></script></div>
+<p>untuk menginstall library kita bisa menggunakan perintah pip</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install nama-library
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># contoh menginstal matplotlib</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>pip install matplotlib
+</span></span></code></pre></div><p>dan untuk mencari nama library untuk menginstalnya teman-teman bisa mengunjungi website <a href="http://pypi.org">pypi.org</a></p>
+<h2 id="kesimpulan">Kesimpulan</h2>
+<p>Dasar-dasar bahasa pemrograman python seperti bagaimana cara untuk menjalankan program python, bagaimana pengaruh <em>indentation</em> berpengaruh pada bahasa pemrograman python, bagaimana membuat dokumentasi atau <em>commenting</em> dan bagaimana cara menginstal library harus teman-teman ketahui terlebih dahulu sebelum belajar koding dengan bahasa pemrograman python ini</p>
+
+            </div>
+            <div class="col-md-4">
+                <div class="sticky-top sidebar">
+                  
+                  <aside>
+<div class="p-4 mb-3 card rounded">
+                    <h5 class="fst-italic">About</h4>
+                    <p class="mb-0">Belajar bahasa pemrograman python untuk pemula bagian 2 yang harus di ketahui sebelum koding menggunakan bahasa pemrograman python</p>
+                  </div>
+          
+                    <div class="row">
+                      <div class="col">
+                          <div class="p-4 mb-3 card rounded" style="width: 100vn;">
+    <div class="related-content">
+        <h3>Related Posts</h3>
+            <a href="/artikel/python/bot-telegram-sederhana-dengan-python/">
+              
+                        <div class="row card-body">
+                           
+                            <div>
+                              <h5 class="card-title">Bot Telegram Sederhana Dengan Python</h5>
+                               <p class="card-text">⌚ : <time>23-12-2022</time></p>
+                            </div>
+                            
+                        </div>
+                    
+              </a>
+              <br>
+          
+            <a href="/tutorial/python/bahasa-pemrograman-python-untuk-pemula/">
+              
+                        <div class="row card-body">
+                           
+                            <div>
+                              <h5 class="card-title">Tutorial Python Bagian 1: Bahasa Pemrograman Python Untuk Pemula</h5>
+                               <p class="card-text">⌚ : <time>23-12-2022</time></p>
+                            </div>
+                            
+                        </div>
+                    
+              </a>
+              <br>
+          
+        </div>
+      </div>
+      </div>
+    </div>
+
+
+                  
+          
+                  
+    
+    </aside>
+                </div>
+                
+              </div>
+            </div>
+
+        
+
+            
+        
+</main>
+
+<div class="line-divider"></div>
+<footer>
+  
+  <center>
+    <p>
+      Panduan Koding &copy; 2022 koleksiprihadi <br>
+      &#183; Made with ❤️ using <a href=https://gohugo.io class=hover:text-teal-400 target=_blank rel=noopener>Hugo</a> &#183;
+    </p>
+  </center>
+</footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+    </body>
+</html>

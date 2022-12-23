@@ -23,8 +23,8 @@
                 <div class="list-group">
         
                     {{ $paginator := .Paginate (where .Pages "Type" "tutorial") 6 }}
-                    {{ range $paginator.Pages }}
-                                <a href="{{ .RelPermalink }}" class="list-group-item list-group-item-action text-center"><i class="bi bi-tags"></i>{{ .Title }}</a>
+                    {{ range (sort $paginator.Pages "Title") }}
+                                <a href="{{ .RelPermalink }}" class="list-group-item list-group-item-action text-center"><i class="bi bi-journal-richtext"></i>{{ .Title }}</a>
 
                     {{ end }}
         

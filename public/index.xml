@@ -5,7 +5,17 @@
     <link>https://panduankoding.com/</link>
     <description>Recent content on Panduan Koding</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 23 Dec 2022 01:44:12 +0700</lastBuildDate><atom:link href="https://panduankoding.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 23 Dec 2022 23:46:08 +0700</lastBuildDate><atom:link href="https://panduankoding.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tutorial Python Bagian 2: Dasar Dasar Bahasa Pemrograman Python</title>
+      <link>https://panduankoding.com/tutorial/python/dasar-dasar-bahasa-pemrograman-python/</link>
+      <pubDate>Fri, 23 Dec 2022 23:46:08 +0700</pubDate>
+      
+      <guid>https://panduankoding.com/tutorial/python/dasar-dasar-bahasa-pemrograman-python/</guid>
+      <description>hallo teman-teman pada artikel kali ini author akan membagikan kepada teman-teman tentang dasar-dasar dari bahasa pemrograman python, artikel ini adalah lanjutan dari seri belajar bahasa pemrograman python. jika sebelumnya kita mempelajari apa itu python, perbedan python 2 dan python 3 dan juga cara menginstall python pada komputer teman-teman. nah pada bagian ini kita akan mempelajari dasar-dasar yang harus teman-teman ketahui tentang bahasa pemrograman python terutama pada python 3.
+Bagaimana Cara Menjalankan Program Python?</description>
+    </item>
+    
     <item>
       <title>Bot Telegram Sederhana Dengan Python</title>
       <link>https://panduankoding.com/artikel/python/bot-telegram-sederhana-dengan-python/</link>
@@ -17,7 +27,7 @@ Persiapan Awal sebelum kita bisa membuat bot telegram pertama yang harus kita si
     </item>
     
     <item>
-      <title>Bahasa Pemrograman Python Untuk Pemula</title>
+      <title>Tutorial Python Bagian 1: Bahasa Pemrograman Python Untuk Pemula</title>
       <link>https://panduankoding.com/tutorial/python/bahasa-pemrograman-python-untuk-pemula/</link>
       <pubDate>Fri, 23 Dec 2022 00:43:44 +0700</pubDate>
       
