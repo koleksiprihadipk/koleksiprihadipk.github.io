@@ -12,7 +12,7 @@ theme = "koleksiprihadiblog"
 # DisqusShortname = "panduankoding"
 
 # Untuk Google Analytic, silahkan sesuikan
-# googleAnalytics = "UA-80517197-1" 
+googleAnalytics = "G-0DW7K9CN62" 
 
 # Untuk deskripsi tag meta di homepage
 descriptionblog = "Blog belajar koding "
