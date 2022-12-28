@@ -19,9 +19,10 @@ header.dark-theme {
     background-color: #464e69;
     color: white;
 }
-a:link { text-decoration: none; }
+
 a{
     color: black;
+    text-decoration: underline;
     text-underline-offset: none;
 }
 a.dark-theme {
@@ -146,4 +147,13 @@ blockquote {
     padding: 0 20px;
     position: relative;
     z-index: 5;
+}
+
+table {
+    text-align: left;
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    display: block;
+    overflow: scroll;
 }

@@ -23,3 +23,7 @@ descriptionblog = "Blog belajar koding "
     homepage = "https://koleksiprihadi.github.io/"
     bio = "Pengamat Langit"
     image = "https://koleksiprihadi.github.io/images/koleksiprihadi.jpeg"
+
+[params.flowchartDiagrams]
+  enable = true
+  options = ""

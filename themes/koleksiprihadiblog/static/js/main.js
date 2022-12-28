@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    $('table').toggleClass('table');
     document
   .querySelectorAll(".highlight")
   .forEach((highlightDiv) => createNameButton(highlightDiv));

@@ -236,7 +236,7 @@ Cara Menginstal Library
 
 Library adalah kumpulan kode program yang bisa teman-teman gunakan untuk meningkatkan fungsionalitas dari kode program teman-teman, misal untuk visualisasi data pada python kita bisa menggunakan library "_matplotlib_" dan mengimportkan library tersebut ke program kita seperti yang terlihat di bawah ini
 
-{{< E-T-P-2 >}}
+{{< gist "https://gist.github.com/koleksiprihadi/9440231d0f21ea940ff1ec8324012d26.js" >}}
 
 untuk menginstall library kita bisa menggunakan perintah pip
 

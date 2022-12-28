@@ -5,7 +5,17 @@
     <link>https://panduankoding.com/tutorial/</link>
     <description>Recent content in Tutorials on Panduan Koding</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 23 Dec 2022 23:46:08 +0700</lastBuildDate><atom:link href="https://panduankoding.com/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 28 Dec 2022 10:56:58 +0700</lastBuildDate><atom:link href="https://panduankoding.com/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tutorial Python Bagian 3: Variabel Pada Bahasa Pemrograman Python</title>
+      <link>https://panduankoding.com/tutorial/python/variabel-pada-bahasa-pemrograman-python/</link>
+      <pubDate>Wed, 28 Dec 2022 10:56:58 +0700</pubDate>
+      
+      <guid>https://panduankoding.com/tutorial/python/variabel-pada-bahasa-pemrograman-python/</guid>
+      <description>hallo teman-teman mari kita lanjutkan seri belajar bahasa pemrograman python, dimana pada artikel sebelumnya author telah memberikan penjelasan tentang bagaimana cara menjalankan program python, apa itu python indentation, python commenting dan bagaimana cara menginstal dan mencari library python. Pada artikel ini author akan menjelaskan tentang variabel pada bahasa pemrograman python, yuk langsung saja kita masuk ke materinya
+Apa Itu Variabel? variabel adalah suatu lokasi penyimpanan pada memori yang memiliki nama simbolis dimana penyimpanan ini akan menyimpan sebuah informasi (nilai) yang akan digunakan oleh program kita dan juga bisa diisi oleh program kita, penamaan dari penyimpanan tersebut pada bahasa pemrograman python memiliki beberapa aturan yang harus teman-teman ikuti, jika tidak maka program teman-teman akan mengalami error, aturan-aturan tersebut adalah seperti berikut ini:</description>
+    </item>
+    
     <item>
       <title>Tutorial Python Bagian 2: Dasar Dasar Bahasa Pemrograman Python</title>
       <link>https://panduankoding.com/tutorial/python/dasar-dasar-bahasa-pemrograman-python/</link>
