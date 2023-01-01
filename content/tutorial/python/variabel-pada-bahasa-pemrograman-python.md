@@ -21,7 +21,7 @@ image: https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9GkgzIRxPLbB0
 thumbnail: https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9GkgzIRxPLbB0LN4Og7R8PQprj-F8LxIJnMagkVtYm6DNJg7FiE0gAYMIHdsPZFEC74Aov1z7ti9KSsMLWzj0CoA_SraaRXiuQk3Jfjy5n-ymGez3hKUrJPY5-ITg7vZ-axn9P1zd8m_6TdBCCF4Ovdur0pouie26fynapTLQigFfMg4Z7qGkR1aD/s1280/Variabel%20Pada%20Bahasa%20Pemrograman%20Python.png
 description: "Belajar bahasa pemrograman python untuk pemula bagian 3 variabel dan tipe data pada bahasa pemrograman python"
 ---
-hallo teman-teman mari kita lanjutkan seri belajar bahasa pemrograman python, dimana pada artikel [sebelumnya](https://www.panduankoding.com/2022/06/dasar-dasar-bahasa-pemrograman-python.html) author telah memberikan penjelasan tentang bagaimana cara menjalankan program python, apa itu python indentation, python commenting dan bagaimana cara menginstal dan mencari library python. Pada artikel ini author akan menjelaskan tentang variabel pada bahasa pemrograman python, yuk langsung saja kita masuk ke materinya
+hallo teman-teman mari kita lanjutkan seri belajar bahasa pemrograman python, dimana pada artikel [sebelumnya🏹](https://www.panduankoding.com/2022/06/dasar-dasar-bahasa-pemrograman-python.html) author telah memberikan penjelasan tentang bagaimana cara menjalankan program python, apa itu python indentation, python commenting dan bagaimana cara menginstal dan mencari library python. Pada artikel ini author akan menjelaskan tentang variabel pada bahasa pemrograman python, yuk langsung saja kita masuk ke materinya
 
 Apa Itu Variabel?
 -----------------

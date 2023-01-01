@@ -1,0 +1,13 @@
+<div id="trinket"></div>
+<script>
+    var url_string = window.location.href; 
+    var url = new URL(url_string);
+    var c = url.searchParams.get("id");
+    if (c !== null) {
+        divframe = '<iframe src="https://trinket.io/embed/python3/'+c+'" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>'
+        $("#trinket").append(divframe);
+        console.log(link)
+    } else {
+        $("#trinket").append('<iframe src="https://trinket.io/embed/python3" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>');
+    }
+</script>

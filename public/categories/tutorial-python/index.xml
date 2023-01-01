@@ -12,7 +12,7 @@
       <pubDate>Wed, 28 Dec 2022 10:56:58 +0700</pubDate>
       
       <guid>https://panduankoding.com/tutorial/python/variabel-pada-bahasa-pemrograman-python/</guid>
-      <description>hallo teman-teman mari kita lanjutkan seri belajar bahasa pemrograman python, dimana pada artikel sebelumnya author telah memberikan penjelasan tentang bagaimana cara menjalankan program python, apa itu python indentation, python commenting dan bagaimana cara menginstal dan mencari library python. Pada artikel ini author akan menjelaskan tentang variabel pada bahasa pemrograman python, yuk langsung saja kita masuk ke materinya
+      <description>hallo teman-teman mari kita lanjutkan seri belajar bahasa pemrograman python, dimana pada artikel sebelumnya🏹 author telah memberikan penjelasan tentang bagaimana cara menjalankan program python, apa itu python indentation, python commenting dan bagaimana cara menginstal dan mencari library python. Pada artikel ini author akan menjelaskan tentang variabel pada bahasa pemrograman python, yuk langsung saja kita masuk ke materinya
 Apa Itu Variabel? variabel adalah suatu lokasi penyimpanan pada memori yang memiliki nama simbolis dimana penyimpanan ini akan menyimpan sebuah informasi (nilai) yang akan digunakan oleh program kita dan juga bisa diisi oleh program kita, penamaan dari penyimpanan tersebut pada bahasa pemrograman python memiliki beberapa aturan yang harus teman-teman ikuti, jika tidak maka program teman-teman akan mengalami error, aturan-aturan tersebut adalah seperti berikut ini:</description>
     </item>
     

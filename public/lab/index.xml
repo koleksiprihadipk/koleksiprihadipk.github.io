@@ -5,7 +5,16 @@
     <link>https://panduankoding.com/lab/</link>
     <description>Recent content in Labs on Panduan Koding</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 20 Dec 2022 20:26:12 +0700</lastBuildDate><atom:link href="https://panduankoding.com/lab/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Jan 2023 22:30:15 +0700</lastBuildDate><atom:link href="https://panduankoding.com/lab/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lab Python3</title>
+      <link>https://panduankoding.com/lab/python3/</link>
+      <pubDate>Sun, 01 Jan 2023 22:30:15 +0700</pubDate>
+      
+      <guid>https://panduankoding.com/lab/python3/</guid>
+      <description>Powered by trinket</description>
+    </item>
+    
     <item>
       <title>Lab HTML, CSS dan Javascript</title>
       <link>https://panduankoding.com/lab/html-css-js/</link>
