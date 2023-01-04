@@ -238,15 +238,15 @@ for i in range(10):
   print(i)
 ```
 {{< terminal id="10" command="python3 aplikasisaya.py" class="terminalSukses" >}}
-0
-1
-2
-3
-4
-5
-6
-7
-8
+0<br>
+1<br>
+2<br>
+3<br>
+4<br>
+5<br>
+6<br>
+7<br>
+8<br>
 9
 {{< /terminal >}}
 
@@ -259,15 +259,15 @@ for kata in range(10):
   print(kata)
 ```
 {{< terminal id="11" command="python3 aplikasisaya.py" class="terminalSukses" >}}
-0
-1
-2
-3
-4
-5
-6
-7
-8
+0<br>
+1<br>
+2<br>
+3<br>
+4<br>
+5<br>
+6<br>
+7<br>
+8<br>
 9
 {{< /terminal >}}
 
@@ -278,15 +278,15 @@ for kata_kata in range(10):
   print(kata_kata)
 ```
 {{< terminal id="12" command="python3 aplikasisaya.py" class="terminalSukses" >}}
-0
-1
-2
-3
-4
-5
-6
-7
-8
+0<br>
+1<br>
+2<br>
+3<br>
+4<br>
+5<br>
+6<br>
+7<br>
+8<br>
 9
 {{< /terminal >}}
 
@@ -316,7 +316,7 @@ for i in listkita:
   print(i)
 ```
 {{< terminal id="14" command="python3 aplikasisaya.py" class="terminalSukses" >}}
-nilai index pertama (0)
+nilai index pertama (0) <br>
 nilai index kedua (1)
 {{< /terminal >}}
 
@@ -339,13 +339,13 @@ for i in range(11):
         break
 ```
 {{< terminal id="15" command="python3 aplikasisaya.py" class="terminalSukses" >}}
-0
-1
-2
-3
-4
-5
-6
+0<br>
+1<br>
+2<br>
+3<br>
+4<br>
+5<br>
+6<br>
 7
 {{< /terminal >}}
 
@@ -359,19 +359,19 @@ for i in "saya belajar python":
         break
 ```
 {{< terminal id="16" command="python3 aplikasisaya.py" class="terminalSukses" >}}
-s
-a
-y
-a
- 
-b
-e
-l
-a
-j
-a
-r
- 
+s<br>
+a<br>
+y<br>
+a<br>
+ <br>
+b<br>
+e<br>
+l<br>
+a<br>
+j<br>
+a<br>
+r<br>
+ <br>
 p
 {{< /terminal >}}
 
@@ -385,12 +385,12 @@ for i in range(11):
     print(i)
 ```
 {{< terminal id="17" command="python3 aplikasisaya.py" class="terminalSukses" >}}
-0
-1
-2
-3
-4
-5
+0<br>
+1<br>
+2<br>
+3<br>
+4<br>
+5<br>
 6
 {{< /terminal >}}
 
@@ -404,15 +404,15 @@ for i in range(11):
     print(i)
 ```
 {{< terminal id="18" command="python3 aplikasisaya.py" class="terminalSukses" >}}
-0
-1
-2
-3
-4
-5
-6
-8
-9
+0<br>
+1<br>
+2<br>
+3<br>
+4<br>
+5<br>
+6<br>
+8<br>
+9<br>
 10
 {{< /terminal >}}
 
