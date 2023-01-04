@@ -299,7 +299,7 @@ print(listkita[0])
 print(listkita[1])
 ```
 {{< terminal id="13" command="python3 aplikasisaya.py" class="terminalSukses" >}}
-nilai index pertama (0)
+nilai index pertama (0) <br>
 nilai index kedua (1)
 {{< /terminal >}}
 
