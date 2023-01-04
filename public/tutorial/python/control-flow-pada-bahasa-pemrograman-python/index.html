@@ -8,7 +8,7 @@
 <meta itemprop="name" content="Tutorial Python Bagian 4: Control Flow Pada Bahasa Pemrograman Python">
 <meta itemprop="description" content="Belajar bahasa pemrograman python untuk pemula bagian 4 pengeambil keputusan, percabangan dan perulangan pada bahasa pemrograman python"><meta itemprop="datePublished" content="2022-12-27T21:17:05+07:00" />
 <meta itemprop="dateModified" content="2022-12-27T21:17:05+07:00" />
-<meta itemprop="wordCount" content="1923">
+<meta itemprop="wordCount" content="2031">
 <meta itemprop="keywords" content="Python," />
 
 <meta property="og:title" content="Tutorial Python Bagian 4: Control Flow Pada Bahasa Pemrograman Python" />
@@ -163,9 +163,26 @@
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span>(x <span style="color:#f92672">==</span> <span style="color:#ae81ff">5</span>):
 </span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Variabel berniali 5&#34;</span>)
-</span></span></code></pre></div><p>menghasilkan</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Variabel bernilai <span style="color:#ae81ff">5</span>
-</span></span></code></pre></div><a class="btn btn-outline-success" target="_blank" href="https://panduankoding.com/lab/python3/?id=c30f8df90f" role="button"><i class="bi bi-filetype-py"></i>yuk dicoba!</a>
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal1" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal1").click(function(){
+            $('#terminal1').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal1" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 aplikasisaya.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+Variabel bernilai 5
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<a class="btn btn-outline-success" target="_blank" href="https://panduankoding.com/lab/python3/?id=c30f8df90f" role="button"><i class="bi bi-filetype-py"></i>yuk dicoba!</a>
 <p>pada baris pertama kita akan memberikan nilai terhadap sebuah variabel yang kemuadian akan kita cek apakah variabel tersebut bernilai 5 dengan menggunakan fungsi <code>if</code> dan menggunkan operator sama dengan (<code>==</code>) seperti tampak di atas, jika iya maka akan ditampilkan output pada terminal <code>Variabel bernilai 5</code>, silahkan teman-teman mencoba pada lab yang telah author sediakan di atas dengan mengganti ganti nilai pada variabel dan operator sesuai tabel di atas dan amati perbedaannya.</p>
 <h2 id="if-else-statement">if else statement</h2>
 <p><em>if else statement</em> merupakan sebuah fungsi untuk mengambil keputusan pada saat suatu kondisi yang diinginkan terpenuhi dan menjalankan keputusan lain jika kondisi tersebut tidak terpenuhi.</p>
@@ -175,9 +192,26 @@
 </span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Variabel berniali 5&#34;</span>)
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>:
 </span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Variabel tidak berniali 5&#34;</span>)
-</span></span></code></pre></div><p>menghasilkan</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Variabel tidak bernilai <span style="color:#ae81ff">5</span>
-</span></span></code></pre></div><a class="btn btn-outline-success" target="_blank" href="https://panduankoding.com/lab/python3/?id=9b4bcf8615" role="button"><i class="bi bi-filetype-py"></i>yuk dicoba!</a>
+</span></span></code></pre></div><p><br>
+<button type="button" id="btn-terminal2" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal2").click(function(){
+            $('#terminal2').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal2" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 aplikasisaya.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+Variabel tidak bernilai 5
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<a class="btn btn-outline-success" target="_blank" href="https://panduankoding.com/lab/python3/?id=9b4bcf8615" role="button"><i class="bi bi-filetype-py"></i>yuk dicoba!</a></p>
 <p>berbeda bukan dengan program yang menggunakan <em>if statement</em> dimana pada program <em>if statement</em> jika kondisi tidak terpenuhi maka tidak akan menampilkan apa-apa pada terminal, sedangkan dengan menggunakan <em>if else statement</em> ini akan menampilkan pesan lain</p>
 <h2 id="elif-statement">elif statement</h2>
 <p>jika kita menginginkan lebih dari satu kondisi yang dapat kita cek apakah terpenuhi atau tidak maka kita dapat menggunakan <em>elif statement</em> bahkan penggunaan <em>elif statement</em> ini juga dapat digunakan untuk bisa sampai tak terhingga pengecekan kondisi yang dilakukan berikut</p>
@@ -193,9 +227,26 @@
 </span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Variabel berniali 2&#34;</span>)
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">elif</span>(x <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>):
 </span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Variabel berniali 1&#34;</span>)
-</span></span></code></pre></div><p>menghasilkan</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Variabel bernilai <span style="color:#ae81ff">4</span>
-</span></span></code></pre></div><a class="btn btn-outline-success" target="_blank" href="https://panduankoding.com/lab/python3/?id=e24ca70c5f" role="button"><i class="bi bi-filetype-py"></i>yuk dicoba!</a>
+</span></span></code></pre></div><p><br>
+<button type="button" id="btn-terminal3" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal3").click(function(){
+            $('#terminal3').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal3" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 aplikasisaya.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+Variabel bernilai 4
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<a class="btn btn-outline-success" target="_blank" href="https://panduankoding.com/lab/python3/?id=e24ca70c5f" role="button"><i class="bi bi-filetype-py"></i>yuk dicoba!</a></p>
 <p>atau bisa juga jika ingin menambahkan <code>else</code> seperti dibawah ini</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span>(x <span style="color:#f92672">==</span> <span style="color:#ae81ff">5</span>):
@@ -210,9 +261,26 @@
 </span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Variabel berniali 1&#34;</span>)
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>:
 </span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Variabel tidak berniali 1,2,3,4 atau 5&#34;</span>)
-</span></span></code></pre></div><p>menghasilkan</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Variabel tidak berniali 1,2,3,4 atau <span style="color:#ae81ff">5</span>
-</span></span></code></pre></div><a class="btn btn-outline-success" target="_blank" href="https://panduankoding.com/lab/python3/?id=ad43cff00c" role="button"><i class="bi bi-filetype-py"></i>yuk dicoba!</a>
+</span></span></code></pre></div><p><br>
+<button type="button" id="btn-terminal4" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal4").click(function(){
+            $('#terminal4').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal4" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 aplikasisaya.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+Variabel tidak berniali 1,2,3,4 atau 5
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<a class="btn btn-outline-success" target="_blank" href="https://panduankoding.com/lab/python3/?id=ad43cff00c" role="button"><i class="bi bi-filetype-py"></i>yuk dicoba!</a></p>
 <p>penggunaan dari <em>elif statement</em> ini juga bisa digunakan dengan kondisi yang berbeda tipe data contohnya</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;a&#39;</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span>(x <span style="color:#f92672">==</span> <span style="color:#ae81ff">5</span>):
@@ -223,9 +291,26 @@
 </span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Variabel berniali &#39;a&#39;&#34;</span>)
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>:
 </span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Variabel tidak berniali &#39;a&#39;,4.5 atau 5&#34;</span>)
-</span></span></code></pre></div><p>menghasilkan</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Variabel berniali <span style="color:#e6db74">&#39;a&#39;</span>
-</span></span></code></pre></div><a class="btn btn-outline-success" target="_blank" href="https://panduankoding.com/lab/python3/?id=d2285e6630" role="button"><i class="bi bi-filetype-py"></i>yuk dicoba!</a>
+</span></span></code></pre></div><p><br>
+<button type="button" id="btn-terminal5" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal5").click(function(){
+            $('#terminal5').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal5" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 aplikasisaya.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+Variabel berniali 'a'
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<a class="btn btn-outline-success" target="_blank" href="https://panduankoding.com/lab/python3/?id=d2285e6630" role="button"><i class="bi bi-filetype-py"></i>yuk dicoba!</a></p>
 <h2 id="match-statement">match statement</h2>
 <p>selanjutnya adalah <em>match statement</em> merupakan sebuah pencocokan pola struktural, <em>match statement</em> ini hanya ada pada python verisi 3.10 keatas.
 fungsi dari <em>match statement</em> ini hampir sama dengan <em>statement</em> percabangan <em>elif</em> di atas, tetapi jenis kondisi yang dapat digunakan sedikit terbatas karena tidak bisa menggunakan operator karena penggunaan <em>match statement</em> ini hanya untuk mengecek apakah nilai dari sebuah variabel sesuai dengan case yang kita berikan</p>
@@ -240,9 +325,26 @@ fungsi dari <em>match statement</em> ini hampir sama dengan <em>statement</em> p
 </span></span><span style="display:flex;"><span>        print (<span style="color:#e6db74">&#34;variabel bernilai a&#34;</span>)
 </span></span><span style="display:flex;"><span>    case <span style="color:#e6db74">&#39;b&#39;</span>:
 </span></span><span style="display:flex;"><span>        print (<span style="color:#e6db74">&#34;variabel bernilai b&#34;</span>)
-</span></span></code></pre></div><p>menghasilkan</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>variabel bernilai <span style="color:#ae81ff">1</span>
-</span></span></code></pre></div><a class="btn btn-outline-success" target="_blank" href="https://panduankoding.com/lab/python3/?id=21c2279105" role="button"><i class="bi bi-filetype-py"></i>yuk dicoba!</a>
+</span></span></code></pre></div><p><br>
+<button type="button" id="btn-terminal6" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal6").click(function(){
+            $('#terminal6').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal6" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 aplikasisaya.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+variabel bernilai 1
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<a class="btn btn-outline-success" target="_blank" href="https://panduankoding.com/lab/python3/?id=21c2279105" role="button"><i class="bi bi-filetype-py"></i>yuk dicoba!</a></p>
 <p>seperti yang kita lihat diatas fungsinya mirip dengan <em>elif statement</em> yang berbeda hanya sintaks nya saja, bahkan untuk jika kita ingin menampilkan pesan jika nilai sebuah variabel tidak ada yang cocok maka kita bisa menggunakan sintaks seperti <code>else</code>, berikut sintaksnya pada <em>match statement</em></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;nilai&#34;</span>
 </span></span><span style="display:flex;"><span>match x:
@@ -256,9 +358,26 @@ fungsi dari <em>match statement</em> ini hampir sama dengan <em>statement</em> p
 </span></span><span style="display:flex;"><span>        print (<span style="color:#e6db74">&#34;variabel bernilai b&#34;</span>)
 </span></span><span style="display:flex;"><span>    case _:
 </span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;Variabel tidak bernilai 1, 2, a ataupun b&#34;</span>)
-</span></span></code></pre></div><p>menghasilkan</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Variabel tidak bernilai 1, 2, a ataupun b
-</span></span></code></pre></div><a class="btn btn-outline-success" target="_blank" href="https://panduankoding.com/lab/python3/?id=dbeaba8cf6" role="button"><i class="bi bi-filetype-py"></i>yuk dicoba!</a>
+</span></span></code></pre></div><p><br>
+<button type="button" id="btn-terminal7" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal7").click(function(){
+            $('#terminal7').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal7" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 aplikasisaya.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+Variabel tidak bernilai 1, 2, a ataupun b
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<a class="btn btn-outline-success" target="_blank" href="https://panduankoding.com/lab/python3/?id=dbeaba8cf6" role="button"><i class="bi bi-filetype-py"></i>yuk dicoba!</a></p>
 <p>seperti yang terlihat diatas kita hanya menambah sebuah case <em>underscore</em> ( <code>case _:</code> ) saja</p>
 <h2 id="for-dan-statement">for dan statement</h2>
 <p><em>for statement</em> merupakan fungsi untuk melakukan perintah secara berulang-ulang, sebagai contoh kita akan membuat sebuah program untuk menampilkan kata &ldquo;saya membuat program python&rdquo; sebanyak 10 kali, jika kita tidak menggunakan <em>for statement</em> maka code programnya akan seperti berikut ini</p>
@@ -272,95 +391,214 @@ fungsi dari <em>match statement</em> ini hampir sama dengan <em>statement</em> p
 </span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;saya membuat program python&#34;</span>)
 </span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;saya membuat program python&#34;</span>)
 </span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;saya membuat program python&#34;</span>)
-</span></span></code></pre></div><p>menghasilkan</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>saya membuat program python
-</span></span><span style="display:flex;"><span>saya membuat program python
-</span></span><span style="display:flex;"><span>saya membuat program python
-</span></span><span style="display:flex;"><span>saya membuat program python
-</span></span><span style="display:flex;"><span>saya membuat program python
-</span></span><span style="display:flex;"><span>saya membuat program python
-</span></span><span style="display:flex;"><span>saya membuat program python
-</span></span><span style="display:flex;"><span>saya membuat program python
-</span></span><span style="display:flex;"><span>saya membuat program python
-</span></span><span style="display:flex;"><span>saya membuat program python
-</span></span></code></pre></div><p>masih tidak masalah dengan jumlahnya, jika kita ingin menampilkan sebanyak 200 maka kita akan memakan banyak waktu untuk membuat program tersebut, jadi disini kita akan menggunakan <em>for statement</em>, berikut kode programnya</p>
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal8" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal8").click(function(){
+            $('#terminal8').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal8" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 aplikasisaya.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+saya membuat program python <br>
+saya membuat program python<br>
+saya membuat program python<br>
+saya membuat program python<br>
+saya membuat program python<br>
+saya membuat program python<br>
+saya membuat program python<br>
+saya membuat program python<br>
+saya membuat program python<br>
+saya membuat program python
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<p>masih tidak masalah dengan jumlahnya, jika kita ingin menampilkan sebanyak 200 maka kita akan memakan banyak waktu untuk membuat program tersebut, jadi disini kita akan menggunakan <em>for statement</em>, berikut kode programnya</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">200</span>):
 </span></span><span style="display:flex;"><span>  print(<span style="color:#e6db74">&#34;saya membuat program python&#34;</span>)
-</span></span></code></pre></div><p>menghasilkan</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>saya membuat program python
-</span></span><span style="display:flex;"><span>saya membuat program python
-</span></span><span style="display:flex;"><span>saya membuat program python
-</span></span><span style="display:flex;"><span>saya membuat program python
-</span></span><span style="display:flex;"><span>saya membuat program python
-</span></span><span style="display:flex;"><span>saya membuat program python
-</span></span><span style="display:flex;"><span>saya membuat program python
-</span></span><span style="display:flex;"><span>saya membuat program python
-</span></span><span style="display:flex;"><span>saya membuat program python
-</span></span><span style="display:flex;"><span>saya membuat program python
-</span></span><span style="display:flex;"><span>...
-</span></span></code></pre></div><a class="btn btn-outline-success" target="_blank" href="https://panduankoding.com/lab/python3/?id=f648f59303" role="button"><i class="bi bi-filetype-py"></i>yuk dicoba!</a>
+</span></span></code></pre></div><p><br>
+<button type="button" id="btn-terminal9" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal9").click(function(){
+            $('#terminal9').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal9" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 aplikasisaya.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+saya membuat program python <br>
+saya membuat program python<br>
+saya membuat program python<br>
+saya membuat program python<br>
+saya membuat program python<br>
+saya membuat program python<br>
+saya membuat program python<br>
+saya membuat program python<br>
+saya membuat program python<br>
+saya membuat program python <br>
+...
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<a class="btn btn-outline-success" target="_blank" href="https://panduankoding.com/lab/python3/?id=f648f59303" role="button"><i class="bi bi-filetype-py"></i>yuk dicoba!</a></p>
 <p>dapat kita lihat pada kode program di atas untuk melakukan perulangan perintah menampilkan text <code>&quot;saya membuat program python&quot;</code> sebanyak 200 kali kita memerlukan sebuah fungsi <code>range()</code>. Fungsi range ini berfungsi untuk menghasilkan list yang berisi deret bilangan cacah yang dimulai dari 0 hingga range yang kita tentukan didalam fungsi <code>range()</code> yang kemudian akan dilakukan perulangan untuk membaca deret bilangan tadi dan memasukan setiap bilangan per deret kedalam sebuah variabel, dimana pada kode program di atas variabel tersebut kita inisialisasi dengan huruf <code>i</code>, yuk kita lihat nilai dari <code>i</code> saat kita menggunakan <em>for statement</em> ini</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">10</span>):
 </span></span><span style="display:flex;"><span> print(i)
-</span></span></code></pre></div><p>menghasilkan</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">2</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">3</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">4</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">5</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">6</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">7</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">8</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">9</span>
-</span></span></code></pre></div><a class="btn btn-outline-success" target="_blank" href="https://panduankoding.com/lab/python3/?id=40d7a0c9c1" role="button"><i class="bi bi-filetype-py"></i>yuk dicoba!</a>
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal10" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal10").click(function(){
+            $('#terminal10').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal10" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 aplikasisaya.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<a class="btn btn-outline-success" target="_blank" href="https://panduankoding.com/lab/python3/?id=40d7a0c9c1" role="button"><i class="bi bi-filetype-py"></i>yuk dicoba!</a>
 <p>apakah harus <code>i</code>? tentu saja tidak, karena itu hanya sebuah variabel jadi kita bisa mengubahnya sesuai dengan selera kita bisa saja kita gunain huruf lain, kata dan lain-lain sesuai aturan pada penamaan variabel pada bahasa pemrograman python (teman-teman bisa mempelajari aturan nya di artikel ini ya <a href="https://panduankoding.com/tutorial/python/variabel-pada-bahasa-pemrograman-python/">&ldquo;Variabel pada bahasa pemrograman python&rdquo;</a>, sebagai contoh silahkan teman-teman coba kode di bawah ini satu satu ya</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> kata <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">10</span>):
 </span></span><span style="display:flex;"><span> print(kata)
-</span></span></code></pre></div><p>menghasilkan</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">2</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">3</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">4</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">5</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">6</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">7</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">8</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">9</span>
-</span></span></code></pre></div><a class="btn btn-outline-success" target="_blank" href="https://panduankoding.com/lab/python3/?id=62b5e05d12" role="button"><i class="bi bi-filetype-py"></i>yuk dicoba!</a>
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal11" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal11").click(function(){
+            $('#terminal11').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal11" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 aplikasisaya.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<a class="btn btn-outline-success" target="_blank" href="https://panduankoding.com/lab/python3/?id=62b5e05d12" role="button"><i class="bi bi-filetype-py"></i>yuk dicoba!</a>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> kata_kata <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">10</span>):
 </span></span><span style="display:flex;"><span> print(kata_kata)
-</span></span></code></pre></div><p>menghasilkan</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">2</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">3</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">4</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">5</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">6</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">7</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">8</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">9</span>
-</span></span></code></pre></div><a class="btn btn-outline-success" target="_blank" href="https://panduankoding.com/lab/python3/?id=521790b733" role="button"><i class="bi bi-filetype-py"></i>yuk dicoba!</a>
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal12" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal12").click(function(){
+            $('#terminal12').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal12" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 aplikasisaya.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<a class="btn btn-outline-success" target="_blank" href="https://panduankoding.com/lab/python3/?id=521790b733" role="button"><i class="bi bi-filetype-py"></i>yuk dicoba!</a>
 <p><em>for statement</em> juga bisa kita gunakan untuk membaca nilai setiap index dari variabel list, contoh kita mempunyai sebuah list seperti ini <code>listkita = ['nilai index pertama (0)','nilai index kedua (1)']</code>, selanjutnya kita akan menampilkan nilai dari setiap indeks nya, jika secara manual kan menjadi seperti ini</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>listkita <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;nilai index pertama (0)&#39;</span>,<span style="color:#e6db74">&#39;nilai index kedua (1)&#39;</span>]
 </span></span><span style="display:flex;"><span>print(listkita[<span style="color:#ae81ff">0</span>])
 </span></span><span style="display:flex;"><span>print(listkita[<span style="color:#ae81ff">1</span>])
-</span></span></code></pre></div><p>menghasilkan</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nilai index pertama <span style="color:#f92672">(</span>0<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>nilai index kedua <span style="color:#f92672">(</span>1<span style="color:#f92672">)</span>
-</span></span></code></pre></div><a class="btn btn-outline-success" target="_blank" href="https://panduankoding.com/lab/python3/?id=70a5b8c4c6" role="button"><i class="bi bi-filetype-py"></i>yuk dicoba!</a>
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal13" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal13").click(function(){
+            $('#terminal13').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal13" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 aplikasisaya.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+nilai index pertama (0)
+nilai index kedua (1)
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<a class="btn btn-outline-success" target="_blank" href="https://panduankoding.com/lab/python3/?id=70a5b8c4c6" role="button"><i class="bi bi-filetype-py"></i>yuk dicoba!</a>
 <p>kelemahannya jika kita menampilkann secara manual🤔, pertama kita harus tahu dulu berapa jumlah dari indeks yang ada pada list, selanjutnya kita harus menuliskan fungsi <code>print()</code> secara berulang-ulang, sehingga kurang efektif jika nanti list yang akan kita tampilkan bersifat dinamis, contohnya pada saat kita membuat program <em>TO DO</em>.</p>
 <p>jika menggunakan <em>for statement</em> kode programnya kan seperti ini</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>listkita <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;nilai index pertama (0)&#39;</span>,<span style="color:#e6db74">&#39;nilai index kedua (1)&#39;</span>]
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> listkita:
 </span></span><span style="display:flex;"><span>  print(i)
-</span></span></code></pre></div><p>menghasilkan</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nilai index pertama <span style="color:#f92672">(</span>0<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>nilai index kedua <span style="color:#f92672">(</span>1<span style="color:#f92672">)</span>
-</span></span></code></pre></div><a class="btn btn-outline-success" target="_blank" href="https://panduankoding.com/lab/python3/?id=a7b6dd669b" role="button"><i class="bi bi-filetype-py"></i>yuk dicoba!</a>
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal14" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal14").click(function(){
+            $('#terminal14').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal14" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 aplikasisaya.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+nilai index pertama (0)
+nilai index kedua (1)
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<a class="btn btn-outline-success" target="_blank" href="https://panduankoding.com/lab/python3/?id=a7b6dd669b" role="button"><i class="bi bi-filetype-py"></i>yuk dicoba!</a>
 <p>dapat kita lihat pada kode program di atas variabel <code>i</code> sekarang tidak lagi berisi deret bilangan cacah tapi sekarang berisi nilai dari setiap index pada list <strong>&ldquo;listkita&rdquo;</strong>.</p>
 <h2 id="break-dan-continue-statement">Break dan Continue Statement</h2>
 <p>selanjutnya adalah <em>break</em> dan <em>continue statement</em>, kedua <em>statement</em> ini akan sering kita gunakan untuk mengatur alur perulangan (loop control flow).</p>
@@ -371,68 +609,136 @@ fungsi dari <em>match statement</em> ini hampir sama dengan <em>statement</em> p
 </span></span><span style="display:flex;"><span>    print(i)
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span>(i <span style="color:#f92672">==</span> <span style="color:#ae81ff">7</span>):
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">break</span>
-</span></span></code></pre></div><p>menghasilkan</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">2</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">3</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">4</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">5</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">6</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">7</span>
-</span></span></code></pre></div><a class="btn btn-outline-success" target="_blank" href="https://panduankoding.com/lab/python3/?id=7a119059aa" role="button"><i class="bi bi-filetype-py"></i>yuk dicoba!</a>
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal15" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal15").click(function(){
+            $('#terminal15').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal15" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 aplikasisaya.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+0
+1
+2
+3
+4
+5
+6
+7
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<a class="btn btn-outline-success" target="_blank" href="https://panduankoding.com/lab/python3/?id=7a119059aa" role="button"><i class="bi bi-filetype-py"></i>yuk dicoba!</a>
 <p>dapat kita lihat di atas program akan langsung berhenti setelah terdapat angka 7, contoh lainnya akan seperti dibawah ini</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> <span style="color:#e6db74">&#34;saya belajar python&#34;</span>:
 </span></span><span style="display:flex;"><span>    print(i)
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span>(i <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;p&#39;</span>):
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">break</span>
-</span></span></code></pre></div><p>menghasilkan</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>s
-</span></span><span style="display:flex;"><span>a
-</span></span><span style="display:flex;"><span>y
-</span></span><span style="display:flex;"><span>a
-</span></span><span style="display:flex;"><span> 
-</span></span><span style="display:flex;"><span>b
-</span></span><span style="display:flex;"><span>e
-</span></span><span style="display:flex;"><span>l
-</span></span><span style="display:flex;"><span>a
-</span></span><span style="display:flex;"><span>j
-</span></span><span style="display:flex;"><span>a
-</span></span><span style="display:flex;"><span>r
-</span></span><span style="display:flex;"><span> 
-</span></span><span style="display:flex;"><span>p
-</span></span></code></pre></div><a class="btn btn-outline-success" target="_blank" href="https://panduankoding.com/lab/python3/?id=d5d6fa8668" role="button"><i class="bi bi-filetype-py"></i>yuk dicoba!</a>
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal16" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal16").click(function(){
+            $('#terminal16').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal16" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 aplikasisaya.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+s
+a
+y
+a
+ 
+b
+e
+l
+a
+j
+a
+r
+ 
+p
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<a class="btn btn-outline-success" target="_blank" href="https://panduankoding.com/lab/python3/?id=d5d6fa8668" role="button"><i class="bi bi-filetype-py"></i>yuk dicoba!</a>
 <p>oh iya bagaimana jika kita tidak mau angka atau huruf yang menjadi kondisi pada break tidak ikut di tampilkan? untuk melakukannya teman-teman hanya perlu merubah logika nya saja dengan cara merubah posisi fungsi <code>print</code> setelah fungsi <code>if</code> seperti kode di bawah ini</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">11</span>):
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span>(i <span style="color:#f92672">==</span> <span style="color:#ae81ff">7</span>):
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">break</span>
 </span></span><span style="display:flex;"><span>    print(i)
-</span></span></code></pre></div><p>menghasilkan</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">2</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">3</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">4</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">5</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">6</span>
-</span></span></code></pre></div><a class="btn btn-outline-success" target="_blank" href="https://panduankoding.com/lab/python3/?id=40f74158db" role="button"><i class="bi bi-filetype-py"></i>yuk dicoba!</a>
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal17" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal17").click(function(){
+            $('#terminal17').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal17" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 aplikasisaya.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+0
+1
+2
+3
+4
+5
+6
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<a class="btn btn-outline-success" target="_blank" href="https://panduankoding.com/lab/python3/?id=40f74158db" role="button"><i class="bi bi-filetype-py"></i>yuk dicoba!</a>
 <p>berikutnya adalah penggunaan <em>continue satatement</em> dimana kita ingin melompati sebuah iterasi perulangan pada saat kondisi tertentu, contohnya kita akan membuat sebuah program untuk menampilkan deret angka mulai dari 0-10 tetapi akan melangkaui angka 7, berikut contoh kode programnya</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">11</span>):
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span>(i <span style="color:#f92672">==</span> <span style="color:#ae81ff">7</span>):
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">continue</span>
 </span></span><span style="display:flex;"><span>    print(i)
-</span></span></code></pre></div><p>menghasilkan</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">2</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">3</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">4</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">5</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">6</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">8</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">9</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">10</span>
-</span></span></code></pre></div><a class="btn btn-outline-success" target="_blank" href="https://panduankoding.com/lab/python3/?id=cab9e50395" role="button"><i class="bi bi-filetype-py"></i>yuk dicoba!</a>
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal18" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal18").click(function(){
+            $('#terminal18').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal18" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 aplikasisaya.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+0
+1
+2
+3
+4
+5
+6
+8
+9
+10
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<a class="btn btn-outline-success" target="_blank" href="https://panduankoding.com/lab/python3/?id=cab9e50395" role="button"><i class="bi bi-filetype-py"></i>yuk dicoba!</a>
 <p>dapat kita lihat pada program di atas pada saat perulangan sudah menemukan angka 7 maka fungsi setelahnya yaitu fungsi <code>print()</code> akan dilompati dan melanjutkan perulangan pada iterasi berikutnya.</p>
 <h1 id="kesimpulan">Kesimpulan</h1>
 <p>dengan menggunakan <em>control flow</em> kita bisa menggunakan logika yang lebih kompleks pada program kita dimana kita bisa menggunakan pengambilan keputusan (<em>decision</em>), perulangan (<em>loop</em>) dan percabangan (<em>jump</em>).</p>

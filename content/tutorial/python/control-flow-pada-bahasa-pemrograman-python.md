@@ -54,10 +54,10 @@ x = 5
 if(x == 5):
     print("Variabel berniali 5")
 ```
-menghasilkan
-```bash
+{{< terminal id="1" command="python3 aplikasisaya.py" class="terminalSukses" >}}
 Variabel bernilai 5
-```
+{{< /terminal >}}
+
 {{< btn-python3 "c30f8df90f" "yuk dicoba!" >}}
 
 pada baris pertama kita akan memberikan nilai terhadap sebuah variabel yang kemuadian akan kita cek apakah variabel tersebut bernilai 5 dengan menggunakan fungsi ```if``` dan menggunkan operator sama dengan (```==```) seperti tampak di atas, jika iya maka akan ditampilkan output pada terminal ```Variabel bernilai 5```, silahkan teman-teman mencoba pada lab yang telah author sediakan di atas dengan mengganti ganti nilai pada variabel dan operator sesuai tabel di atas dan amati perbedaannya.
@@ -73,10 +73,9 @@ if(x == 5):
 else:
     print("Variabel tidak berniali 5")
 ```
-menghasilkan
-```bash
+{{< terminal id="2" command="python3 aplikasisaya.py" class="terminalSukses" >}}
 Variabel tidak bernilai 5
-```
+{{< /terminal >}}
 {{< btn-python3 "9b4bcf8615" "yuk dicoba!" >}}
 
 berbeda bukan dengan program yang menggunakan *if statement* dimana pada program *if statement* jika kondisi tidak terpenuhi maka tidak akan menampilkan apa-apa pada terminal, sedangkan dengan menggunakan *if else statement* ini akan menampilkan pesan lain
@@ -98,10 +97,9 @@ elif(x == 2):
 elif(x == 1):
     print("Variabel berniali 1")
 ```
-menghasilkan
-```bash
+{{< terminal id="3" command="python3 aplikasisaya.py" class="terminalSukses" >}}
 Variabel bernilai 4
-```
+{{< /terminal >}}
 {{< btn-python3 "e24ca70c5f" "yuk dicoba!" >}}
 
 atau bisa juga jika ingin menambahkan ```else``` seperti dibawah ini
@@ -120,10 +118,9 @@ elif(x == 1):
 else:
     print("Variabel tidak berniali 1,2,3,4 atau 5")
 ```
-menghasilkan
-```bash
+{{< terminal id="4" command="python3 aplikasisaya.py" class="terminalSukses" >}}
 Variabel tidak berniali 1,2,3,4 atau 5
-```
+{{< /terminal >}}
 {{< btn-python3 "ad43cff00c" "yuk dicoba!" >}}
 
 penggunaan dari *elif statement* ini juga bisa digunakan dengan kondisi yang berbeda tipe data contohnya
@@ -138,10 +135,9 @@ elif(x == 'a'):
 else:
     print("Variabel tidak berniali 'a',4.5 atau 5")
 ```
-menghasilkan
-```bash
+{{< terminal id="5" command="python3 aplikasisaya.py" class="terminalSukses" >}}
 Variabel berniali 'a'
-```
+{{< /terminal >}}
 {{< btn-python3 "d2285e6630" "yuk dicoba!" >}}
 
 ## match statement
@@ -161,10 +157,9 @@ match x:
     case 'b':
         print ("variabel bernilai b")
 ```
-menghasilkan
-```bash
+{{< terminal id="6" command="python3 aplikasisaya.py" class="terminalSukses" >}}
 variabel bernilai 1
-```
+{{< /terminal >}}
 {{< btn-python3 "21c2279105" "yuk dicoba!" >}}
 
 seperti yang kita lihat diatas fungsinya mirip dengan *elif statement* yang berbeda hanya sintaks nya saja, bahkan untuk jika kita ingin menampilkan pesan jika nilai sebuah variabel tidak ada yang cocok maka kita bisa menggunakan sintaks seperti ```else```, berikut sintaksnya pada *match statement*
@@ -183,10 +178,9 @@ match x:
     case _:
         print("Variabel tidak bernilai 1, 2, a ataupun b")
 ```
-menghasilkan
-```bash
+{{< terminal id="7" command="python3 aplikasisaya.py" class="terminalSukses" >}}
 Variabel tidak bernilai 1, 2, a ataupun b
-```
+{{< /terminal >}}
 {{< btn-python3 "dbeaba8cf6" "yuk dicoba!" >}}
 
 seperti yang terlihat diatas kita hanya menambah sebuah case *underscore* ( ```case _:``` ) saja
@@ -205,38 +199,37 @@ print("saya membuat program python")
 print("saya membuat program python")
 print("saya membuat program python")
 ```
-menghasilkan
-```bash
+{{< terminal id="8" command="python3 aplikasisaya.py" class="terminalSukses" >}}
+saya membuat program python <br>
+saya membuat program python<br>
+saya membuat program python<br>
+saya membuat program python<br>
+saya membuat program python<br>
+saya membuat program python<br>
+saya membuat program python<br>
+saya membuat program python<br>
+saya membuat program python<br>
 saya membuat program python
-saya membuat program python
-saya membuat program python
-saya membuat program python
-saya membuat program python
-saya membuat program python
-saya membuat program python
-saya membuat program python
-saya membuat program python
-saya membuat program python
-```
+{{< /terminal >}}
+
 masih tidak masalah dengan jumlahnya, jika kita ingin menampilkan sebanyak 200 maka kita akan memakan banyak waktu untuk membuat program tersebut, jadi disini kita akan menggunakan *for statement*, berikut kode programnya
 ```python
 for i in range(200):
   print("saya membuat program python")
 ```
-menghasilkan
-```bash
-saya membuat program python
-saya membuat program python
-saya membuat program python
-saya membuat program python
-saya membuat program python
-saya membuat program python
-saya membuat program python
-saya membuat program python
-saya membuat program python
-saya membuat program python
+{{< terminal id="9" command="python3 aplikasisaya.py" class="terminalSukses" >}}
+saya membuat program python <br>
+saya membuat program python<br>
+saya membuat program python<br>
+saya membuat program python<br>
+saya membuat program python<br>
+saya membuat program python<br>
+saya membuat program python<br>
+saya membuat program python<br>
+saya membuat program python<br>
+saya membuat program python <br>
 ...
-```
+{{< /terminal >}}
 {{< btn-python3 "f648f59303" "yuk dicoba!" >}}
 
 dapat kita lihat pada kode program di atas untuk melakukan perulangan perintah menampilkan text ```"saya membuat program python"``` sebanyak 200 kali kita memerlukan sebuah fungsi ```range()```. Fungsi range ini berfungsi untuk menghasilkan list yang berisi deret bilangan cacah yang dimulai dari 0 hingga range yang kita tentukan didalam fungsi ```range()``` yang kemudian akan dilakukan perulangan untuk membaca deret bilangan tadi dan memasukan setiap bilangan per deret kedalam sebuah variabel, dimana pada kode program di atas variabel tersebut kita inisialisasi dengan huruf ```i```, yuk kita lihat nilai dari ```i``` saat kita menggunakan *for statement* ini
@@ -244,8 +237,7 @@ dapat kita lihat pada kode program di atas untuk melakukan perulangan perintah m
 for i in range(10):
   print(i)
 ```
-menghasilkan
-```bash
+{{< terminal id="10" command="python3 aplikasisaya.py" class="terminalSukses" >}}
 0
 1
 2
@@ -256,7 +248,8 @@ menghasilkan
 7
 8
 9
-```
+{{< /terminal >}}
+
 {{< btn-python3 "40d7a0c9c1" "yuk dicoba!" >}}
 
 apakah harus ```i```? tentu saja tidak, karena itu hanya sebuah variabel jadi kita bisa mengubahnya sesuai dengan selera kita bisa saja kita gunain huruf lain, kata dan lain-lain sesuai aturan pada penamaan variabel pada bahasa pemrograman python (teman-teman bisa mempelajari aturan nya di artikel ini ya ["Variabel pada bahasa pemrograman python"](https://panduankoding.com/tutorial/python/variabel-pada-bahasa-pemrograman-python/), sebagai contoh silahkan teman-teman coba kode di bawah ini satu satu ya
@@ -265,8 +258,7 @@ apakah harus ```i```? tentu saja tidak, karena itu hanya sebuah variabel jadi ki
 for kata in range(10):
   print(kata)
 ```
-menghasilkan
-```bash
+{{< terminal id="11" command="python3 aplikasisaya.py" class="terminalSukses" >}}
 0
 1
 2
@@ -277,15 +269,15 @@ menghasilkan
 7
 8
 9
-```
+{{< /terminal >}}
+
 {{< btn-python3 "62b5e05d12" "yuk dicoba!" >}}
 
  ```python
 for kata_kata in range(10):
   print(kata_kata)
 ```
-menghasilkan
-```bash
+{{< terminal id="12" command="python3 aplikasisaya.py" class="terminalSukses" >}}
 0
 1
 2
@@ -296,7 +288,8 @@ menghasilkan
 7
 8
 9
-```
+{{< /terminal >}}
+
 {{< btn-python3 "521790b733" "yuk dicoba!" >}}
 
 *for statement* juga bisa kita gunakan untuk membaca nilai setiap index dari variabel list, contoh kita mempunyai sebuah list seperti ini ```listkita = ['nilai index pertama (0)','nilai index kedua (1)']```, selanjutnya kita akan menampilkan nilai dari setiap indeks nya, jika secara manual kan menjadi seperti ini
@@ -305,11 +298,11 @@ listkita = ['nilai index pertama (0)','nilai index kedua (1)']
 print(listkita[0])
 print(listkita[1])
 ```
-menghasilkan
-```bash
+{{< terminal id="13" command="python3 aplikasisaya.py" class="terminalSukses" >}}
 nilai index pertama (0)
 nilai index kedua (1)
-```
+{{< /terminal >}}
+
 {{< btn-python3 "70a5b8c4c6" "yuk dicoba!" >}}
 
 kelemahannya jika kita menampilkann secara manual🤔, pertama kita harus tahu dulu berapa jumlah dari indeks yang ada pada list, selanjutnya kita harus menuliskan fungsi ```print()``` secara berulang-ulang, sehingga kurang efektif jika nanti list yang akan kita tampilkan bersifat dinamis, contohnya pada saat kita membuat program *TO DO*.
@@ -322,11 +315,11 @@ listkita = ['nilai index pertama (0)','nilai index kedua (1)']
 for i in listkita:
   print(i)
 ```
-menghasilkan
-```bash
+{{< terminal id="14" command="python3 aplikasisaya.py" class="terminalSukses" >}}
 nilai index pertama (0)
 nilai index kedua (1)
-```
+{{< /terminal >}}
+
 {{< btn-python3 "a7b6dd669b" "yuk dicoba!" >}}
 
 dapat kita lihat pada kode program di atas variabel ```i``` sekarang tidak lagi berisi deret bilangan cacah tapi sekarang berisi nilai dari setiap index pada list **"listkita"**.
@@ -345,8 +338,7 @@ for i in range(11):
     if(i == 7):
         break
 ```
-menghasilkan
-```bash
+{{< terminal id="15" command="python3 aplikasisaya.py" class="terminalSukses" >}}
 0
 1
 2
@@ -355,7 +347,8 @@ menghasilkan
 5
 6
 7
-```
+{{< /terminal >}}
+
 {{< btn-python3 "7a119059aa" "yuk dicoba!" >}}
 
 dapat kita lihat di atas program akan langsung berhenti setelah terdapat angka 7, contoh lainnya akan seperti dibawah ini
@@ -365,8 +358,7 @@ for i in "saya belajar python":
     if(i == 'p'):
         break
 ```
-menghasilkan
-```bash
+{{< terminal id="16" command="python3 aplikasisaya.py" class="terminalSukses" >}}
 s
 a
 y
@@ -381,7 +373,8 @@ a
 r
  
 p
-```
+{{< /terminal >}}
+
 {{< btn-python3 "d5d6fa8668" "yuk dicoba!" >}}
 
 oh iya bagaimana jika kita tidak mau angka atau huruf yang menjadi kondisi pada break tidak ikut di tampilkan? untuk melakukannya teman-teman hanya perlu merubah logika nya saja dengan cara merubah posisi fungsi ```print``` setelah fungsi ```if``` seperti kode di bawah ini
@@ -391,8 +384,7 @@ for i in range(11):
         break
     print(i)
 ```
-menghasilkan
-```bash
+{{< terminal id="17" command="python3 aplikasisaya.py" class="terminalSukses" >}}
 0
 1
 2
@@ -400,7 +392,8 @@ menghasilkan
 4
 5
 6
-```
+{{< /terminal >}}
+
 {{< btn-python3 "40f74158db" "yuk dicoba!" >}}
 
 berikutnya adalah penggunaan *continue satatement* dimana kita ingin melompati sebuah iterasi perulangan pada saat kondisi tertentu, contohnya kita akan membuat sebuah program untuk menampilkan deret angka mulai dari 0-10 tetapi akan melangkaui angka 7, berikut contoh kode programnya
@@ -410,8 +403,7 @@ for i in range(11):
         continue
     print(i)
 ```
-menghasilkan
-```bash
+{{< terminal id="18" command="python3 aplikasisaya.py" class="terminalSukses" >}}
 0
 1
 2
@@ -422,7 +414,8 @@ menghasilkan
 8
 9
 10
-```
+{{< /terminal >}}
+
 {{< btn-python3 "cab9e50395" "yuk dicoba!" >}}
 
 dapat kita lihat pada program di atas pada saat perulangan sudah menemukan angka 7 maka fungsi setelahnya yaitu fungsi ```print()``` akan dilompati dan melanjutkan perulangan pada iterasi berikutnya.

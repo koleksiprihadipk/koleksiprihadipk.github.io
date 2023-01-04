@@ -1,0 +1,17 @@
+<br>
+<button type="button" {{ with .Get "id" }}id="btn-terminal{{.}}"{{ end }} class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        {{ with .Get "id" }}$("#btn-terminal{{.}}"{{ end }}).click(function(){
+            {{ with .Get "id" }}$('#terminal{{.}}'{{ end }}).toggleClass('terminal');
+        });
+    </script>
+        <div {{ with .Get "id" }}id="terminal{{.}}"{{ end }} class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">{{ with .Get "command" }}${{.}}{{ end }}<span class="cursor1">_</span></p>
+                <p {{ with .Get "class" }}class="{{.}}"{{ end }}>{{ .Inner }}<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
