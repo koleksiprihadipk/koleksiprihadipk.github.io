@@ -311,7 +311,6 @@ jika menggunakan *for statement* kode programnya kan seperti ini
 
 ```python
 listkita = ['nilai index pertama (0)','nilai index kedua (1)']
-
 for i in listkita:
   print(i)
 ```
