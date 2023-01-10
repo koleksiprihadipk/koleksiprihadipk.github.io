@@ -1,0 +1,158 @@
+<div class="treeView" {{ with .Get "id" }}id="treeView{{.}}"{{ end }}></div>
+  <script>
+    /* shorthand functions (createElement is defined at bottom)*/
+var div = (props, ...children) => createElement("div", props, ...children);
+var ul = (props, ...children) => createElement("ul", props, ...children);
+var li = (props, ...children) => createElement("li", props, ...children);
+var i = (props, ...children) => createElement("i", props, ...children);
+var span = (props, ...children) => createElement("span", props, ...children);
+var header = (props, ...children) =>
+  createElement("div", props, ...children);
+var p = (props, ...children) => createElement("p", props, ...children);
+var section = (props, ...children) =>
+  createElement("section", props, ...children);
+var button = (props, ...children) =>
+  createElement("button", props, ...children);
+
+/* File */
+
+var File = ({ name }) => {
+  return div(
+    { className: "file" },
+    i({ className: "material-icons", style: "opacity: 0;" }, "arrow_right"),
+    i({ className: "material-icons" }, "insert_drive_file"),
+    span(null, name)
+  );
+};
+
+/* Folder */
+
+var openedFolderIcon = "folder_open";
+var closedFolderIcon = "folder";
+var openedArrowIcon = "arrow_drop_down";
+var closedArrowIcon = "arrow_right";
+
+function changeOpened(event) {
+  var folderHeader = event.target.classList.contains("folder-header")
+    ? event.target
+    : event.target.parentElement;
+  var opened = folderHeader.getAttribute("opened") == "true";
+  var newOpened = !opened;
+
+  let icons = folderHeader.querySelectorAll(".material-icons");
+  icons.forEach(icon => {
+    if (/arrow/i.test(icon.textContent)) {
+      icon.textContent = newOpened ? openedArrowIcon : closedArrowIcon;
+    } else {
+      icon.textContent = newOpened ? openedFolderIcon : closedFolderIcon;
+    }
+  });
+
+  try {
+    var sibling = folderHeader.nextElementSibling;
+    if (newOpened) {
+      sibling.classList.remove("hide");
+    } else {
+      sibling.classList.add("hide");
+    }
+  } catch (e) {
+    console.warn(`No sibling of elem ${folderHeader} found ...`);
+  }
+
+  folderHeader.setAttribute("opened", newOpened);
+}
+
+var Folder = (props, ...children) => {
+  var opened = props.opened || false;
+  var arrowIcon = opened ? openedArrowIcon : closedArrowIcon;
+  var folderIcon = opened ? openedFolderIcon : closedFolderIcon;
+  var folderName = props.name || "unknown";
+
+  return div(
+    { className: "folder" },
+    header(
+      {
+        onClick: changeOpened,
+        className: "folder-header",
+        opened: opened
+      },
+      i({ className: "material-icons" }, arrowIcon),
+      i({ className: "material-icons" }, folderIcon),
+      span(null, folderName)
+    ),
+    ul({ className: opened ? "" : "hide" }, ...children)
+  );
+};
+
+/* TreeView */
+</script>
+{{ .Inner }}
+<script>
+var app = document.querySelector({{ with .Get "id" }}"#treeView{{.}}"{{ end }});
+app.appendChild(createElement(TreeView));
+console.log(TreeView)
+/* My react-clone mini library */
+
+function appendChildren(parent, children) {
+  for (let child of children) {
+    if (!child) continue;
+    switch (typeof child) {
+      case "string":
+        var el = document.createTextNode(child);
+        parent.appendChild(el);
+        break;
+      default:
+        parent.appendChild(child);
+        break;
+    }
+  }
+}
+function setStyle(el, style) {
+  if (typeof style == "string") {
+    el.setAttribute("style", style);
+  } else {
+    Object.assign(el.style, style);
+  }
+}
+function setClass(el, className) {
+  className.split(/\s/).forEach(element => {
+    if (element) {
+      el.classList.add(element);
+    }
+  });
+}
+function setProps(el, props) {
+  var eventRegex = /^on([a-z]+)$/i;
+  for (let propName in props) {
+    if (!propName) continue;
+
+    if (propName === "style") {
+      setStyle(el, props[propName]);
+    } else if (propName === "className") {
+      setClass(el, props[propName]);
+    } else if (eventRegex.test(propName)) {
+      var eventToListen = propName.replace(eventRegex, "$1").toLowerCase();
+      el.addEventListener(eventToListen, props[propName]);
+    } else {
+      el.setAttribute(propName, props[propName]);
+    }
+  }
+}
+
+//type, [props], [...children] 
+function createElement(type, props, ...children) {
+  if (typeof type === "function") {
+    return type(props);
+  } else {
+    var el = document.createElement(type);
+    if (props && typeof props === "object") {
+      setProps(el, props);
+    }
+    if (children) {
+      appendChildren(el, children);
+    }
+    return el;
+  }
+}
+
+  </script>
