@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {{ partial "head.html" . }}
+    </head>
+    <body>
+
+        {{ partial "nav.html" . }}
+        {{ partial "header.html" . }}
+
+        <article class="card-post">
+            <center>
+                <h1>404</h1>
+                <h5>mohon maaf page tidak ditemukan</h5>
+                <a href="/" class="btn btn-primary">Home</a>
+            </center>
+        </article>
+        
+        <br>
+        
+        <div class="container">
+            {{ partial "pagination.html" . }}
+        </div>
+
+        {{ partial "footer.html" . }}
+        {{ partial "js-init.html" . }}
+    </body>
+</html>
