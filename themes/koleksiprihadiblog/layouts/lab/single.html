@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {{ partial "head.html" . }}
+    </head>
+    <body>
+
+        {{ partial "nav.html" . }}
+        <main class="container">
+            <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+              <div class="col-md-6 px-0">
+                <h1 class="display-4 fst-italic">{{ .Title }}</h1>
+                <p class="lead my-3">{{ .Description }}</p>
+                <!-- <p class="lead mb-0"><a href="#artikel" class="text-white fw-bold">Continue reading...</a></p> -->
+              </div>
+            </div>
+
+
+        <div class="row g-5">
+            <div class="col-md-8">
+                <div class="mb-3">
+                    <img src="{{ .Params.Authorphoto }}" class="rounded-circle" width="32" height="32" />
+                    <a href="{{ .Params.Authorlink }}">{{ .Params.Authorname}}</a> | <time>{{ .Date.Format "02-01-2006" }}</time>
+                </div>
+                <h1>{{ .Title }}</h1>
+                <div>
+                    {{ range .Params.tags }}
+                    <div class="badge">
+                         <span class="text-success" aria-disabled="true"><i class="bi bi-tags"></i>{{ . }}</span>
+                    </div> 
+                    {{ end }}
+                </div>
+                {{ .Content }}
+
+                <div style="margin-top: 100px;">
+                    <!-- disqus -->
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col">
+                        <div class="p-4 mb-3 card rounded" style="width: 100vn;">
+                  {{- range first 1 (where (where .Site.Pages ".Params.tags" "intersect" .Params.tags) "Permalink" "!=" .Permalink) -}}
+  {{- $.Scratch.Set "has_related" true -}}
+{{- end -}}
+
+{{ if $.Scratch.Get "has_related" }}
+  <div class="related-content">
+      <h3>Related Posts</h3>
+          {{- $num_to_show := .Site.Params.related_content_limit | default 3 -}}
+          {{ range first $num_to_show (where (where .Site.Pages ".Params.tags" "intersect" .Params.tags) "Permalink" "!=" .Permalink) }}
+          <a href="{{ .RelPermalink }}">
+            
+                      <div class="row card-body">
+                         <!-- <div class="col-sm-6"> -->
+                          <div>
+                            <h5 class="card-title">{{ .Title }}</h5>
+                             <p class="card-text">⌚ : <time>{{ .Date.Format "02-01-2006" }}</time></p>
+                          </div>
+                          <!-- <img class="col-sm-6 rounded-circle img-thumbnail" src='{{ if eq .Params.Image "" }}/images/koleksiprihadi.jpeg{{else}}{{ .Params.Image}}{{end}}'
+                          alt='{{ .Title }}'  alt="sans" style="width: 100px; border-color: transparent;"/> -->
+                      </div>
+                  
+            </a>
+            <br>
+        {{ end }}
+      </div>
+    </div>
+    </div>
+  </div>
+{{ end }}
+                <div class="sticky-top sidebar">
+                  
+                  {{ partial "aside.html" . }}
+                </div>
+                
+              </div>
+            </div>
+
+        
+
+            
+        {{ partial "footer.html" . }}
+        {{ partial "js-init.html" . }}
+    </body>
+</html>
