@@ -5,7 +5,16 @@
     <link>https://panduankoding.com/tags/python/</link>
     <description>Recent content in Python on Panduan Koding</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 01 Jan 2023 22:30:15 +0700</lastBuildDate><atom:link href="https://panduankoding.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 13 Jan 2023 09:49:12 +0700</lastBuildDate><atom:link href="https://panduankoding.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lab Python3 Dengan Pyscript</title>
+      <link>https://panduankoding.com/lab/lab-python3-dengan-pyscript/</link>
+      <pubDate>Fri, 13 Jan 2023 09:49:12 +0700</pubDate>
+      
+      <guid>https://panduankoding.com/lab/lab-python3-dengan-pyscript/</guid>
+      <description>Lab python3 ini dibangun menggunakan teknologi pyscript, teman-teman bisa mempelajari tentang pyscript di website resminya ya pyscript.net</description>
+    </item>
+    
     <item>
       <title>Lab Python3</title>
       <link>https://panduankoding.com/lab/python3/</link>
