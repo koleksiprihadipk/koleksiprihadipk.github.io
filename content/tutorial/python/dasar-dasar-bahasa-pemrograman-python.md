@@ -10,10 +10,10 @@ tags:
 categories:
     - Tutorial Python
 
-authorname: "koleksiprihadi"
+authorname: "krisna prihadiyanto"
 authorlink: "https://koleksiprihadi.github.io/"
 
-authorname: "koleksiprihadi"
+authorname: "krisna prihadiyanto"
 authorlink: "https://koleksiprihadi.github.io/"
 authorphoto: "/images/koleksiprihadi.jpeg"
 

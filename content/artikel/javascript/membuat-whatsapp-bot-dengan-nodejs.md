@@ -11,16 +11,16 @@ tags:
 
 categories:
 
-authorname: "koleksiprihadi"
+authorname: "krisna prihadiyanto"
 authorlink: "https://koleksiprihadi.github.io/"
 
-authorname: "koleksiprihadi"
+authorname: "krisna prihadiyanto"
 authorlink: "https://koleksiprihadi.github.io/"
 authorphoto: "/images/koleksiprihadi.jpeg"
 
 image: /images/Membuat-whatsapp-bot-sederhana-dengan-nodejs.png
 thumbnail: /images/Membuat-whatsapp-bot-sederhana-dengan-nodejs.png
-description: "Cara membuat whatsapp bot menggunakan javascript dan nodejs"
+description: "Cara membuat whatsapp bot menggunakan javascript dan nodejs dengan bantuan library whatsapp-web.js"
 ---
 halo teman-teman, pada artikel ini author akan memberikan sebuah tutorial bagaimana cara membuat whatsapp bot, untuk membuat whatsapp bot ini kita akan menggunakan bahasa pemrograman javascript dan menggunakan platform node.js.
 
