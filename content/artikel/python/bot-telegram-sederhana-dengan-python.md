@@ -9,10 +9,10 @@ tags:
 
 categories:
 
-authorname: "koleksiprihadi"
+authorname: "krisna prihadiyanto"
 authorlink: "https://koleksiprihadi.github.io/"
 
-authorname: "koleksiprihadi"
+authorname: "krisna prihadiyanto"
 authorlink: "https://koleksiprihadi.github.io/"
 authorphoto: "/images/koleksiprihadi.jpeg"
 
