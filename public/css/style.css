@@ -168,6 +168,20 @@ table {
     background:rgba(255, 255, 255, 0.164); 
   }
   
+  body::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgba(68, 68, 67, 0);
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(2, 2, 2);
+    border-radius: 20px;
+    border: 3px solid rgb(59, 59, 59);
+  }
+  
   .fakeMenu {
     width: 350px;
     box-sizing: border-box;
