@@ -5,7 +5,18 @@
     <link>https://panduankoding.com/categories/tutorial-python/</link>
     <description>Recent content in Tutorial Python on Panduan Koding</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 28 Dec 2022 10:56:58 +0700</lastBuildDate><atom:link href="https://panduankoding.com/categories/tutorial-python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 13 Jan 2023 10:07:36 +0700</lastBuildDate><atom:link href="https://panduankoding.com/categories/tutorial-python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tutorial Python Bagian 5: Struktur Data Pada Bahasa Pemrograman Python</title>
+      <link>https://panduankoding.com/tutorial/python/struktur-data-pada-bahasa-pemrograman-python/</link>
+      <pubDate>Fri, 13 Jan 2023 10:07:36 +0700</pubDate>
+      
+      <guid>https://panduankoding.com/tutorial/python/struktur-data-pada-bahasa-pemrograman-python/</guid>
+      <description>halo teman-teman pada artikel ini author akan membagikan tentang struktur data pada bahasa pemrograman python
+struktur data itu sendiri merupakan struktur/variabel yang bisa menyimpan lebih dari satu value, pada bahasa pemrograman python ini terdapat beberapa jenis struktur data yang bisa menyimpan lebih dari 1 value seperti list, tuple, set dan dictionary.
+pada artikel ini kita akan membahas satu-persatu struktur data untuk struktur data ini. baik langsung saja kita bahas ya teman-teman.</description>
+    </item>
+    
     <item>
       <title>Tutorial Python Bagian 3: Variabel Pada Bahasa Pemrograman Python</title>
       <link>https://panduankoding.com/tutorial/python/variabel-pada-bahasa-pemrograman-python/</link>

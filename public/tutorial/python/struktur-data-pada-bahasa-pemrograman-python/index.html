@@ -1,0 +1,1708 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tutorial Python Bagian 5: Struktur Data Pada Bahasa Pemrograman Python</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<meta itemprop="name" content="Tutorial Python Bagian 5: Struktur Data Pada Bahasa Pemrograman Python">
+<meta itemprop="description" content="bagaimana cara penggunaan struktur data seperti list, set, tuple dan dictionary pada bahasa pemrograman python"><meta itemprop="datePublished" content="2023-01-13T10:07:36+07:00" />
+<meta itemprop="dateModified" content="2023-01-13T10:07:36+07:00" />
+<meta itemprop="wordCount" content="4829">
+<meta itemprop="keywords" content="Python," />
+
+<meta property="og:title" content="Tutorial Python Bagian 5: Struktur Data Pada Bahasa Pemrograman Python" />
+<meta property="og:description" content="bagaimana cara penggunaan struktur data seperti list, set, tuple dan dictionary pada bahasa pemrograman python" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://panduankoding.com/tutorial/python/struktur-data-pada-bahasa-pemrograman-python/" /><meta property="article:section" content="tutorial" />
+<meta property="article:published_time" content="2023-01-13T10:07:36+07:00" />
+<meta property="article:modified_time" content="2023-01-13T10:07:36+07:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Tutorial Python Bagian 5: Struktur Data Pada Bahasa Pemrograman Python"/>
+<meta name="twitter:description" content="bagaimana cara penggunaan struktur data seperti list, set, tuple dan dictionary pada bahasa pemrograman python"/>
+
+<meta name="description" content="bagaimana cara penggunaan struktur data seperti list, set, tuple dan dictionary pada bahasa pemrograman python">
+
+
+
+<link rel="icon" href="/img/logo.svg" />
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/style.css?1" />
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+<script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YESJNR0352"></script>
+
+<script>
+  var host = window.location.hostname;
+  if(host != "localhost")
+  {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-YESJNR0352');
+  }
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5541603196469443"
+  crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+        <div class="container">
+  <header class="fixed-top d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom nav-down">
+      <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none nav-kiri">
+          <img src="/images/koleksiprihadi.svg" width="40px">
+      </a>
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="/" id="nav" class="nav-link px-2 link-dark">Home</a></li>
+        <li><a href="/tutorial" id="nav" class="nav-link px-2 link-dark">Tutorial</a></li>
+        <li><a href="/artikel" id="nav" class="nav-link px-2 link-dark">Artikel</a></li>
+        <li><a href="/lab" id="nav" class="nav-link px-2 link-dark">Lab</a></li>
+        <li><a href="https://visitor.panduankoding.com/subscribe/" target="_blank" id="nav" class="nav-link px-2 link-dark">Newsletter</a></li>
+      </ul>
+
+      <div class="col-md-3 text-end nav-kanan">
+        <button type="button" class="btn" data-bs-toggle="offcanvas" aria-controls="sosialmedia" href="#sosialmedia"><span class="emoji anim" role="img" aria-label="anim"></span></button>
+        <button type="button" id="theme_toggle" class="btn me-2"><i id="dark-btn" class="bi bi-cloud-sun"></i><i id="light-btn" class="bi bi-cloud-moon"></i></button>
+      </div>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="sosialmedia" aria-labelledby="labeltoc">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="labeltoc">Daftar isi pada halaman ini</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul id="toc"></ul>
+          </div>
+        </div>
+    </header>  
+</div>
+        <main class="container">
+            <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+              <div class="col-md-6 px-0">
+                <h1 class="display-4 fst-italic">Tutorial Python Bagian 5: Struktur Data Pada Bahasa Pemrograman Python</h1>
+                <p class="lead my-3">bagaimana cara penggunaan struktur data seperti list, set, tuple dan dictionary pada bahasa pemrograman python</p>
+                
+              </div>
+            </div>
+
+
+        <div class="row g-5">
+            <div class="col-md-8">
+                <div class="mb-3">
+                    <img src="/images/koleksiprihadi.jpeg" class="rounded-circle" width="32" height="32" />
+                    <a href="https://koleksiprihadi.github.io/">krisna prihadiyanto</a> | <time>13-01-2023</time>
+                </div>
+                <h1>Tutorial Python Bagian 5: Struktur Data Pada Bahasa Pemrograman Python</h1>
+                <div>
+                    
+                    <div class="badge">
+                         <span class="text-success" aria-disabled="true"><i class="bi bi-tags"></i>Python</span>
+                    </div> 
+                    
+                </div>
+                <p>halo teman-teman pada artikel ini author akan membagikan tentang struktur data pada bahasa pemrograman python</p>
+<p>struktur data itu sendiri merupakan struktur/variabel yang bisa menyimpan lebih dari satu value, pada bahasa pemrograman python ini terdapat beberapa jenis struktur data yang bisa menyimpan lebih dari 1 value seperti list, tuple, set dan dictionary.</p>
+<p>pada artikel ini kita akan membahas satu-persatu struktur data untuk struktur data ini. baik langsung saja kita bahas ya teman-teman.</p>
+<h2 id="1-list">1. List</h2>
+<p>list merupakan sebuah struktur data yang bisa menyimpan lebih dari satu value didalamnya, dimana tipe data dari setiap value yang di masukan di dalam struktur data list ini bisa bermacam-macam bahkan bisa juga kita memasukan sebuah struktur data baru seperti contoh di bawah ini.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>listsaya <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;nilai 1&#39;</span>, [<span style="color:#e6db74">&#39;nilai 2.1&#39;</span>, <span style="color:#e6db74">&#39;nilai 2.2&#39;</span>], <span style="color:#e6db74">&#39;nilai 3&#39;</span>]
+</span></span><span style="display:flex;"><span>print(listsaya)
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal0" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal0").click(function(){
+            $('#terminal0').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal0" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 strukturdata.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+['nilai 1', ['nilai 2.1', 'nilai 2.2'], 'nilai 3']
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<p>nilai-nilai didalam list tersebut kita sebut dengan elemen dimana setiap elemen disusun secara berurutan.</p>
+<p><strong>Bagaimana mengakses setiap elemen didalam list?</strong> elemen di dalam list sendiri memiliki nomor urutan (atau yang bisa kita sebut dengan index) yang dimulai dari 0, maka pada contoh list di atas elemen dengan index 0 adalah <code>'nilai 1'</code> dan index 1 adalah <code>['nilai 2.1', 'nilai 2.2']</code> dan index 2 adalah <code>'nilai 3'</code>,</p>
+<table>
+<thead>
+<tr>
+<th>Elemen</th>
+<th>:</th>
+<th>nilai 1</th>
+<th>[&rsquo;nilai 2.1&rsquo;, &rsquo;nilai 2.2']</th>
+<th style="text-align:left">nilai 3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Index</td>
+<td>:</td>
+<td>0</td>
+<td>1</td>
+<td style="text-align:left">2</td>
+</tr>
+</tbody>
+</table>
+<p>untuk mencobanya silahkan teman-teman coba program di bawah ini ya</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>listsaya <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;nilai 1&#39;</span>, [<span style="color:#e6db74">&#39;nilai 2.1&#39;</span>, <span style="color:#e6db74">&#39;nilai 2.2&#39;</span>], <span style="color:#e6db74">&#39;nilai 3&#39;</span>]
+</span></span><span style="display:flex;"><span>print(listsaya[<span style="color:#ae81ff">0</span>])
+</span></span><span style="display:flex;"><span>print(listsaya[<span style="color:#ae81ff">1</span>])
+</span></span><span style="display:flex;"><span>print(listsaya[<span style="color:#ae81ff">2</span>])
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal1" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal1").click(function(){
+            $('#terminal1').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal1" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 strukturdata.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+nilai 1 <br>
+['nilai 2.1', 'nilai 2.2']<br>
+nilai 3<br>
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<p>dan untuk mengakses setiap elemen yang berada di dalam list pada elemen dengan index 1 di atas teman-teman bisa menggunakan cara ini ya</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>listsaya <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;nilai 1&#39;</span>, [<span style="color:#e6db74">&#39;nilai 2.1&#39;</span>, <span style="color:#e6db74">&#39;nilai 2.2&#39;</span>], <span style="color:#e6db74">&#39;nilai 3&#39;</span>]
+</span></span><span style="display:flex;"><span>print(listsaya[<span style="color:#ae81ff">1</span>][<span style="color:#ae81ff">0</span>])
+</span></span><span style="display:flex;"><span>print(listsaya[<span style="color:#ae81ff">1</span>][<span style="color:#ae81ff">1</span>])
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal2" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal2").click(function(){
+            $('#terminal2').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal2" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 strukturdata.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+nilai 2.1 <br>
+nilai 2.2
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<p>dapat kita lihat di atas pada kurung siku pertama merupakan index dimana list itu berada di dalam listsaya, sedangkan untuk kurung siku kedua merupakan index dari nilai yang berada didalam list tersebut, sebagai contoh kita akan memindahkan list yang berada di dalam list saya ke index 0, seperti di bawah ini</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>listsaya <span style="color:#f92672">=</span> [[<span style="color:#e6db74">&#39;nilai 2.1&#39;</span>, <span style="color:#e6db74">&#39;nilai 2.2&#39;</span>], <span style="color:#e6db74">&#39;nilai 1&#39;</span>, <span style="color:#e6db74">&#39;nilai 3&#39;</span>]
+</span></span></code></pre></div><p>maka untuk mengaksesnya kita hanya cukup merubah nilai index pada kurung siku pertama, seperti di bawah ini</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>listsaya <span style="color:#f92672">=</span> [[<span style="color:#e6db74">&#39;nilai 2.1&#39;</span>, <span style="color:#e6db74">&#39;nilai 2.2&#39;</span>], <span style="color:#e6db74">&#39;nilai 1&#39;</span>, <span style="color:#e6db74">&#39;nilai 3&#39;</span>]
+</span></span><span style="display:flex;"><span>print(listsaya[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">0</span>])
+</span></span><span style="display:flex;"><span>print(listsaya[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">1</span>])
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal3" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal3").click(function(){
+            $('#terminal3').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal3" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 strukturdata.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+nilai 2.1 <br>
+nilai 2.2
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<p>untuk menghitung jumlah elemen yang terdapat didalam list kita bisa menggunkan fungsi <code>len()</code> seperti dibawah ini</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>listsaya <span style="color:#f92672">=</span> [[<span style="color:#e6db74">&#39;nilai 2.1&#39;</span>, <span style="color:#e6db74">&#39;nilai 2.2&#39;</span>], <span style="color:#e6db74">&#39;nilai 1&#39;</span>, <span style="color:#e6db74">&#39;nilai 3&#39;</span>]
+</span></span><span style="display:flex;"><span>len(listsaya)
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal4" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal4").click(function(){
+            $('#terminal4').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal4" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 strukturdata.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+3
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<blockquote>
+<p>teman-teman juga bisa mengakses setiap elemen di dalam list menggunakan perulangan (fngsi for) yang telah dijelaskan pada artikel sebelumnya <a href="https://panduankoding.com/tutorial/python/control-flow-pada-bahasa-pemrograman-python/">disini yaa&hellip;😁</a></p>
+</blockquote>
+<p>oh iya teman-teman list sendiri itu bersifat <code>Mutable (Manipulasi)</code> artinya setiap elemen didalam list bisa kita manipulasi seperti kita ditambah maupun dikurangi.</p>
+<p>bahkan kita bisa merubah nilai elemen di dalam list loh..😁, caranya kita hanya perlu tahu nomor index keberapa dari nilai yang akan kita rubah, misal disini kita akan merubah <code>nilai 1</code> pada list di bawah ini menjadi <code>&quot;1&quot;</code> tetapi dengan tipe data integer, loh apakah bisa merubah nilai yang awalnya bertipe data string menjadi integer🤔? tentu saja bisa loh yuk langsung kita coba</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>listsaya <span style="color:#f92672">=</span> [[<span style="color:#e6db74">&#39;nilai 2.1&#39;</span>, <span style="color:#e6db74">&#39;nilai 2.2&#39;</span>], <span style="color:#e6db74">&#39;nilai 1&#39;</span>, <span style="color:#e6db74">&#39;nilai 3&#39;</span>]
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;sebelum kita rubah nilai dari listsaya adalah&#34;</span>)
+</span></span><span style="display:flex;"><span>print(listsaya)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># kita rubah nilai dari index 1</span>
+</span></span><span style="display:flex;"><span>listsaya[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;setelah kita rubah nilai dari listsaya adalah&#34;</span>)
+</span></span><span style="display:flex;"><span>print(listsaya)
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal04" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal04").click(function(){
+            $('#terminal04').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal04" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 strukturdata.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+sebelum kita rubah nilai dari listsaya adalah <br>
+[['nilai 2.1', 'nilai 2.2'], 'nilai 1', 'nilai 3']<br>
+setelah kita rubah nilai dari listsaya adalah<br>
+[['nilai 2.1', 'nilai 2.2'], 1, 'nilai 3']
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<p>mudah bukan kita hanya perlu menginisialisai ulang saja nilai dari list pada index yang kita inginkan.</p>
+<p><strong>Bagaimana cara menambah elemen ke dalam list?</strong> untuk menambah elemen di dalam list pada bahasa pemrograman python memiliki 3 metode yaitu <code>append</code>, <code>insert</code> dan <code>extend</code>. akan kita bahas satu persatu dari setiap metode tersebut</p>
+<h4 id="11-append">1.1. append</h4>
+<p>metode yang pertama adalah <code>append</code> dimana data yang akan kita tambahkan ke dalam lis akan di masukan menjadi index yang paling besar/terakhir, sebagai contoh kita memiliki sebuah list seperti di bawah ini</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>list <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;merah&#39;</span>, <span style="color:#e6db74">&#39;biru&#39;</span>, <span style="color:#e6db74">&#39;kuning&#39;</span>]
+</span></span></code></pre></div><p>selanjutnya kita akan memasukan warna <code>hitam</code> ke dalam list tersebut dengan metode <code>append</code> seperti di bawah ini</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>list <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;merah&#39;</span>, <span style="color:#e6db74">&#39;biru&#39;</span>, <span style="color:#e6db74">&#39;kuning&#39;</span>]
+</span></span><span style="display:flex;"><span>list<span style="color:#f92672">.</span>append(<span style="color:#e6db74">&#34;hitam&#34;</span>)
+</span></span><span style="display:flex;"><span>print(list)
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal5" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal5").click(function(){
+            $('#terminal5').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal5" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 strukturdata.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+['merah', 'biru', 'kuning', 'hitam']
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<p>dapat kita lihat diatas posisi nilai <code>hitam</code> berada di sebelah kanan paling ujung (nomor index terbesar)</p>
+<h4 id="12-insert">1.2. insert</h4>
+<p>metode yang selanjutnya adalah metode insert dimana nilai yang dimasukan akan berada pada index yang akan kita tentukan, dan elemen-elemen yang sudah ada dengan index lebih besar akan bergeser 1 index, contohnya kita akan memasukan <code>hitam</code> kedalam index 1</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>list <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;merah&#39;</span>, <span style="color:#e6db74">&#39;biru&#39;</span>, <span style="color:#e6db74">&#39;kuning&#39;</span>]
+</span></span><span style="display:flex;"><span>list<span style="color:#f92672">.</span>insert(<span style="color:#ae81ff">1</span>,<span style="color:#e6db74">&#39;hitam&#39;</span>)
+</span></span><span style="display:flex;"><span>print(list)
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal6" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal6").click(function(){
+            $('#terminal6').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal6" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 strukturdata.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+['merah', 'hitam', 'biru', 'kuning']
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<p>dapat kita lihat diatas warna hitam akan berada di sebelah warna merah, dan warna biru dan kuning bergeser 1 index ke kanan (bertambah 1 index).</p>
+<p>pada syntax di atas pada fungsi insert memiliki 2 parameter dimana pada parameter pertama merupakan nilai dari index tujuan sedangkan parameter kedua merupakan nilai yang akan di masukan.</p>
+<h4 id="13-extend">1.3. extend</h4>
+<p>selanjutnya adalah metode extend, metode ini berguna jika kita ingin menggabungkan 2 list menjadi 1, sebagai contoh kita memiliki list seperti dibawah ini</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># list pertama</span>
+</span></span><span style="display:flex;"><span>list1 <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;merah&#39;</span>, <span style="color:#e6db74">&#39;biru&#39;</span>, <span style="color:#e6db74">&#39;kuning&#39;</span>]
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#list kedua</span>
+</span></span><span style="display:flex;"><span>list2 <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;putih&#39;</span>, <span style="color:#e6db74">&#39;hitam&#39;</span>, <span style="color:#e6db74">&#39;hijau&#39;</span>]
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#kita ingin menggabungkan kedua list di atas menjadi seperti dibawah ini</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>list1 <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;merah&#39;</span>, <span style="color:#e6db74">&#39;biru&#39;</span>, <span style="color:#e6db74">&#39;kuning&#39;</span>, <span style="color:#e6db74">&#39;putih&#39;</span>, <span style="color:#e6db74">&#39;hitam&#39;</span>, <span style="color:#e6db74">&#39;hijau&#39;</span>]
+</span></span></code></pre></div><p>maka kode programnya akan seperti dibawah ini</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># list pertama</span>
+</span></span><span style="display:flex;"><span>list1 <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;merah&#39;</span>, <span style="color:#e6db74">&#39;biru&#39;</span>, <span style="color:#e6db74">&#39;kuning&#39;</span>]
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#list kedua</span>
+</span></span><span style="display:flex;"><span>list2 <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;putih&#39;</span>, <span style="color:#e6db74">&#39;hitam&#39;</span>, <span style="color:#e6db74">&#39;hijau&#39;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>list1<span style="color:#f92672">.</span>extend(list2)
+</span></span><span style="display:flex;"><span>print(list1)
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal7" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal7").click(function(){
+            $('#terminal7').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal7" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 strukturdata.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+['merah', 'biru', 'kuning', 'putih', 'hitam', 'hijau']
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<p>Selanajutnya adalah <strong>bagaimana cara mengurangi elemen dari dalam list?</strong> untuk mengurangi elemen dari dalam list ada beberapa metode yang dapat kita gunakan untuk menghapus elemen dari dalam list, seperti <code>remove()</code>, <code>pop()</code>, <code>del</code> dan <code>clear()</code>, yuk kita bahas satu-satu ya.</p>
+<h4 id="14-remove">1.4. remove</h4>
+<p>metode yang pertama untuk menghapus elemen dari dalam list adalah remove, metode ini bisa kita gunakan untuk menghapus elemen dimana kita akan menghapus elemen dengan ketentuan nilai yang spesifik dengan yang kita tentukan di dalam parameter fungsi remove, misal kita akan menghapus nilai <code>hitam</code> pada list di bawah ini</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>listsaya <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;merah&#39;</span>, <span style="color:#e6db74">&#39;biru&#39;</span>, <span style="color:#e6db74">&#39;kuning&#39;</span>, <span style="color:#e6db74">&#39;putih&#39;</span>, <span style="color:#e6db74">&#39;hitam&#39;</span>, <span style="color:#e6db74">&#39;hijau&#39;</span>]
+</span></span></code></pre></div><p>maka kita akan menghapusnya seperti kode di bawah ini</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>listsaya <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;merah&#39;</span>, <span style="color:#e6db74">&#39;biru&#39;</span>, <span style="color:#e6db74">&#39;kuning&#39;</span>, <span style="color:#e6db74">&#39;putih&#39;</span>, <span style="color:#e6db74">&#39;hitam&#39;</span>, <span style="color:#e6db74">&#39;hijau&#39;</span>]
+</span></span><span style="display:flex;"><span>listsaya<span style="color:#f92672">.</span>remove(<span style="color:#e6db74">&#39;hitam&#39;</span>)
+</span></span><span style="display:flex;"><span>print(listsaya)
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal8" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal8").click(function(){
+            $('#terminal8').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal8" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 strukturdata.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+['merah', 'biru', 'kuning', 'putih', 'hijau']
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<p><strong>apa yang terjadi jika kita salah menulisakan nilai didalam parameter remove tersebut?</strong> tentu saja program akan mengalami error dimana nilai tersebut tidak di temukan didalam list hal ini terjadi karena dalam pengisian nilai yang akan dihapus harus spesifik, jika tidak maka nilai tersebut dianggap tidak ada.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>listsaya <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;merah&#39;</span>, <span style="color:#e6db74">&#39;biru&#39;</span>, <span style="color:#e6db74">&#39;kuning&#39;</span>, <span style="color:#e6db74">&#39;putih&#39;</span>, <span style="color:#e6db74">&#39;hitam&#39;</span>, <span style="color:#e6db74">&#39;hijau&#39;</span>]
+</span></span><span style="display:flex;"><span>listsaya<span style="color:#f92672">.</span>remove(<span style="color:#e6db74">&#39;hitamn&#39;</span>)
+</span></span><span style="display:flex;"><span>print(listsaya)
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal9" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal9").click(function(){
+            $('#terminal9').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal9" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 strukturdata.py<span class="cursor1">_</span></p>
+                <p class="terminalErorr">
+File "< stdin >", line 1, in < module > <br>
+ValueError: list.remove(x): x not in list
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<h4 id="15-pop">1.5. pop</h4>
+<p>metode selanjutnya adalah menggunakan metode <code>pop()</code>, metode ini akan menghapus elemen berdasarkan alamat indexnya. seperti dibawah ini</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>listsaya <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;merah&#39;</span>, <span style="color:#e6db74">&#39;biru&#39;</span>, <span style="color:#e6db74">&#39;kuning&#39;</span>, <span style="color:#e6db74">&#39;putih&#39;</span>, <span style="color:#e6db74">&#39;hitam&#39;</span>, <span style="color:#e6db74">&#39;hijau&#39;</span>]
+</span></span><span style="display:flex;"><span>listsaya<span style="color:#f92672">.</span>pop(<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>print(listsaya)
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal10" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal10").click(function(){
+            $('#terminal10').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal10" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 strukturdata.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+['merah', 'kuning', 'putih', 'hitam', 'hijau']
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<p>dapat dilihat hasil di atas saat program dijalankan elemen dengan index nomor 1 (elemen bernilai biru) telah terhapus dari dalam listsaya, meskipun sudah terhapus index nomor 1 sekarang sudah diisi kembali dengan nilai dari index yang lebih tinggi, dimana pada kasus di atas index nomor 1 sekarang berisi dengan nilai kuning dari index nomor 3 sebelumnya begitu juga dengan index selanjutnya akan diisi dengan index selanjutnya juga.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>listsaya <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;merah&#39;</span>, <span style="color:#e6db74">&#39;biru&#39;</span>, <span style="color:#e6db74">&#39;kuning&#39;</span>, <span style="color:#e6db74">&#39;putih&#39;</span>, <span style="color:#e6db74">&#39;hitam&#39;</span>, <span style="color:#e6db74">&#39;hijau&#39;</span>]
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Sebelum dihapus : &#34;</span>,listsaya[<span style="color:#ae81ff">1</span>])
+</span></span><span style="display:flex;"><span>listsaya<span style="color:#f92672">.</span>pop(<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Sesudah dihapus : &#34;</span>,listsaya[<span style="color:#ae81ff">1</span>])
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal11" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal11").click(function(){
+            $('#terminal11').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal11" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 strukturdata.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+Sebelum dihapus :  biru <br>
+Sesudah dihapus :  kuning
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<p>oh iya teman-teman untuk metode pop ini sendiri kita bisa juga loh tidak menentukan index yang akan di hapus didalam parameter fungsi popnya, dimana jika tidak kita tentukan maka elemen dengan index tertinggi atau yang pada urutan terakhir yang akan dihapus, yuk langsung kita coba</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>listsaya <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;merah&#39;</span>, <span style="color:#e6db74">&#39;biru&#39;</span>, <span style="color:#e6db74">&#39;kuning&#39;</span>, <span style="color:#e6db74">&#39;putih&#39;</span>, <span style="color:#e6db74">&#39;hitam&#39;</span>, <span style="color:#e6db74">&#39;hijau&#39;</span>]
+</span></span><span style="display:flex;"><span>listsaya<span style="color:#f92672">.</span>pop()
+</span></span><span style="display:flex;"><span>print(listsaya)
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal12" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal12").click(function(){
+            $('#terminal12').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal12" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 strukturdata.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+['merah', 'biru', 'kuning', 'putih', 'hitam']
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<h4 id="16-clear">1.6. clear</h4>
+<p>selanjutnya adalah metode <code>clear()</code> dimana dengan menggunakan metode ini kita akan menghapus semua elemen yang ada pada list, yuk langsung saja kita coba</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>listsaya <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;merah&#39;</span>, <span style="color:#e6db74">&#39;biru&#39;</span>, <span style="color:#e6db74">&#39;kuning&#39;</span>, <span style="color:#e6db74">&#39;putih&#39;</span>, <span style="color:#e6db74">&#39;hitam&#39;</span>, <span style="color:#e6db74">&#39;hijau&#39;</span>]
+</span></span><span style="display:flex;"><span>listsaya<span style="color:#f92672">.</span>clear()
+</span></span><span style="display:flex;"><span>print(listsaya)
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal13" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal13").click(function(){
+            $('#terminal13').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal13" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 strukturdata.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+[]
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<p>selain untuk mengedit, menambah dan mengurangi elemen pada list, kita juga bisa melakukan sort atau mengurutkan nilai-nilai didalam list. Conto kita memiliki list yang berisi daftar nama seperti di bawah ini</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>[<span style="color:#e6db74">&#39;Delia&#39;</span>, <span style="color:#e6db74">&#39;Ali Alimsyah&#39;</span>, <span style="color:#e6db74">&#39;Hartono&#39;</span>, <span style="color:#e6db74">&#39;Notowidigdo&#39;</span>]
+</span></span></code></pre></div><p>selanjutnya kita akan mengurutkan nama-nama di atas dimulai dari A-Z atau bisa juga di sebut dengan <em>ascending</em>, untuk melakukannya kita akan menggunakan fungsi <code>sort()</code>, fungsi <code>sort()</code> sendiri secara default akan melakukan pengurutan secara <em>ascending</em>, berikut penggunaan dari fungsi sort sendiri</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>listsaya <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;Delia&#39;</span>, <span style="color:#e6db74">&#39;Ali Alimsyah&#39;</span>, <span style="color:#e6db74">&#39;Hartono&#39;</span>, <span style="color:#e6db74">&#39;Notowidigdo&#39;</span>]
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#39;sebelum dilakukan pengurutan secara ascending&#39;</span>)
+</span></span><span style="display:flex;"><span>print(listsaya)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># melakukan pengurutan</span>
+</span></span><span style="display:flex;"><span>listsaya<span style="color:#f92672">.</span>sort()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#39;setelah dilakukan pengurutan secara ascending&#39;</span>)
+</span></span><span style="display:flex;"><span>print(listsaya)
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal14" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal14").click(function(){
+            $('#terminal14').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal14" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 strukturdata.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+sebelum dilakukan pengurutan secara ascending<br>
+['Delia', 'Ali Alimsyah', 'Hartono', 'Notowidigdo']<br>
+setelah dilakukan pengurutan secara ascending<br>
+['Ali Alimsyah', 'Delia', 'Hartono', 'Notowidigdo']<br>
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<p>dapat kita lihat diatas sekarang nama pada list sudah terurut mulai dari A-Z, <strong>terus bagaimana jika kita ingin mengurutkan dari Z-A atau <em>descending</em>?</strong> untuk melakukannya kita tetap menggunakan fungsi <code>sort()</code> tetapi kita akan menggunakan parameter <code>reverse</code> yang akan kita atur nilainya menjadi <code>true</code>, baik langsung saja kita coba ya teman-teman</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>listsaya <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;Delia&#39;</span>, <span style="color:#e6db74">&#39;Ali Alimsyah&#39;</span>, <span style="color:#e6db74">&#39;Hartono&#39;</span>, <span style="color:#e6db74">&#39;Notowidigdo&#39;</span>]
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#39;sebelum dilakukan pengurutan secara descending&#39;</span>)
+</span></span><span style="display:flex;"><span>print(listsaya)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># melakukan pengurutan</span>
+</span></span><span style="display:flex;"><span>listsaya<span style="color:#f92672">.</span>sort(reverse <span style="color:#f92672">=</span> <span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#39;setelah dilakukan pengurutan secara descending&#39;</span>)
+</span></span><span style="display:flex;"><span>print(listsaya)
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal15" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal15").click(function(){
+            $('#terminal15').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal15" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 strukturdata.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+sebelum dilakukan pengurutan secara descending<br>
+['Delia', 'Ali Alimsyah', 'Hartono', 'Notowidigdo']<br>
+setelah dilakukan pengurutan secara descending<br>
+['Notowidigdo', 'Hartono', 'Delia', 'Ali Alimsyah']<br>
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<p>dapat kita lihat sekarang pengurutan dilakukan secara descending atau dari Z-A.</p>
+<h2 id="2-tuple">2. Tuple</h2>
+<p>setelah mempelajari tentang <code>list</code> selanjutnya pada struktur data juga memiliki data <code>Tuple</code> dimana untuk data tuple ini penulisannya hampir mirip dengan list hanya saja jika pada list kita akan menggunakan kurung siku untuk membungkus setiap elemen <code>[]</code>, pada tuple kita akan menggunakan kurung biasa saja untuk membungkus setiap elemen <code>()</code>. <strong>terus perbedaannya apa dong dengan list?</strong> perbedaan list dan tuple sendiri terletak pada sifatnya, dimana list bersifat <code>Mutable (Manipulasi)</code> atau bisa kita manipulsai (edit, tambah dan kurangi) sedangkan pada tuple kita hanya bisa mengakses elemen saja tidak bisa kita edit, kurangi ataupun kita hapus sebuah elemen didalamnya.</p>
+<p>mirip seperti list, cara pengaksesan elemen dari dalam tuple bisa kita lakukan dengan cara seperi di bawah ini</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>tuplesaya <span style="color:#f92672">=</span> (<span style="color:#e6db74">&#39;merah&#39;</span>, <span style="color:#e6db74">&#39;biru&#39;</span>, <span style="color:#e6db74">&#39;kuning&#39;</span>, <span style="color:#e6db74">&#39;putih&#39;</span>, <span style="color:#e6db74">&#39;hitam&#39;</span>, <span style="color:#e6db74">&#39;hijau&#39;</span>)
+</span></span><span style="display:flex;"><span>print(tuplesaya[<span style="color:#ae81ff">1</span>])
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal16" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal16").click(function(){
+            $('#terminal16').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal16" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 strukturdata.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+biru
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<p>dapat kita lihat di atas, dimana kita akan menampilkan elemen pada index nomor 1 maka kita dapat menginisialisasi alamat indexnya di dalam tanda kurungsiku setelah nama variabel tuplenya, kita juga bisa menggunakan perulangan seperti pada artikel sebelumnya <a href="https://panduankoding.com/tutorial/python/control-flow-pada-bahasa-pemrograman-python/">disini</a></p>
+<p>meskipun tuple bersifat tidak bisa di edit, ada sebuah cara agar kita dapat mengedit elemen didalam nya dengan cara sebelum kita edit tuple tersebut kita convert kedalam list terlebihdahulu seperti di bawah ini</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>tuplesaya <span style="color:#f92672">=</span> (<span style="color:#e6db74">&#39;merah&#39;</span>, <span style="color:#e6db74">&#39;biru&#39;</span>, <span style="color:#e6db74">&#39;kuning&#39;</span>, <span style="color:#e6db74">&#39;putih&#39;</span>, <span style="color:#e6db74">&#39;hitam&#39;</span>, <span style="color:#e6db74">&#39;hijau&#39;</span>)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#39;tuple sebelum di edit)</span>
+</span></span><span style="display:flex;"><span>print(tuplesaya)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># convert tuplesaya ke list</span>
+</span></span><span style="display:flex;"><span>temp <span style="color:#f92672">=</span> list(tuplesaya)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>temp[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;pink&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># menjadikan list pada variabel temp menjadi tuple kembali </span>
+</span></span><span style="display:flex;"><span>tuplesaya <span style="color:#f92672">=</span> tuple(temp)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#39;tuple setelah di edit&#39;</span>)
+</span></span><span style="display:flex;"><span>print(tuplesaya)
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal17" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal17").click(function(){
+            $('#terminal17').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal17" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 strukturdata.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+tuple sebelum di edit<br>
+('merah', 'biru', 'kuning', 'putih', 'hitam', 'hijau')<br>
+tuple setelah di edit<br>
+('merah', 'pink', 'kuning', 'putih', 'hitam', 'hijau')<br>
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<p>untuk melakukan edit elemen pada tuple kita memerlukan sebuah variabel sementara dimana pada contoh diatas kita berinama dengan <code>temp</code> untuk penamaannya sendiri ini bebas ya teman-teman, variabel sementara tadi akan kita isi dengan sebuah list yang didapat dari mengconvert tuple kedalam list, silahkan teman-teman coba kode program di bawah ini ya untuk melihat isi dari variabel sementara tadi</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>tuplesaya <span style="color:#f92672">=</span> (<span style="color:#e6db74">&#39;merah&#39;</span>, <span style="color:#e6db74">&#39;biru&#39;</span>, <span style="color:#e6db74">&#39;kuning&#39;</span>, <span style="color:#e6db74">&#39;putih&#39;</span>, <span style="color:#e6db74">&#39;hitam&#39;</span>, <span style="color:#e6db74">&#39;hijau&#39;</span>)
+</span></span><span style="display:flex;"><span>temp <span style="color:#f92672">=</span> list(tuplesaya)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#39;isi dari variabel temp&#39;</span>)
+</span></span><span style="display:flex;"><span>print(temp)
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal18" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal18").click(function(){
+            $('#terminal18').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal18" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 strukturdata.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+tuple sebelum di edit<br>
+isi dari variabel temp<br>
+['merah', 'biru', 'kuning', 'putih', 'hitam', 'hijau']
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<p>dapat kita lihat diatas isi dari variabel sementara tadi akan berubah menjadi list yang ditandai dengan berubahnya tanda kurung biasa menjadi tanda kurung siku, dengan cara seperti ini kita bisa melakukan semua metode manipulasi list pada tuple.</p>
+<h2 id="3-set">3. Set</h2>
+<p>selanjutnya adalah set, set sendiri merupakan sebuah variabel seperti list dan tuple yang bisa menyimpan banyak nilai didalamnya pada set, setiap elemen akan dibungkus menggunakan tanda kurung kurawal <code>{}</code> seperti dibawah ini</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>{<span style="color:#e6db74">&#39;merah&#39;</span>, <span style="color:#e6db74">&#39;biru&#39;</span>, <span style="color:#e6db74">&#39;kuning&#39;</span>, <span style="color:#e6db74">&#39;putih&#39;</span>, <span style="color:#e6db74">&#39;hitam&#39;</span>, <span style="color:#e6db74">&#39;hijau&#39;</span>}
+</span></span></code></pre></div><p>perbedaan kedua setelah itu untuk mengakses setiap elemen yang terdapat didalam set kita tidak bisa menggunakan metode seperti pada list dan tuple dengan menggunakan nomor index, karena pada set tidak terdapat index, <strong>terus bagaimana cara mengakses setiap elemen yang terdapat pada set?</strong> untuk melakukannya kita bisa menggunakan fungsi for seperti di bawah ini</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>setsaya <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;merah&#39;</span>, <span style="color:#e6db74">&#39;biru&#39;</span>, <span style="color:#e6db74">&#39;kuning&#39;</span>, <span style="color:#e6db74">&#39;putih&#39;</span>, <span style="color:#e6db74">&#39;hitam&#39;</span>, <span style="color:#e6db74">&#39;hijau&#39;</span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> setsaya:
+</span></span><span style="display:flex;"><span>  print(x)
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal19" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal19").click(function(){
+            $('#terminal19').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal19" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 strukturdata.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+kuning<br>
+merah<br>
+putih<br>
+hitam<br>
+biru<br>
+hijau<br>
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<p>perbedaan selanjutnya set dengan list dan tuple adalah pada set elemen didalamnya tidak boleh ada yang duplikat, jika terdapat elemen yang duplikat maka nilai tersebut akan dianggap hanya ada 1 saja. contoh pada set dibawah ini kita memiliki 2 elemen dengan nilai <code>merah</code> seperti dibawah ini,</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>setsaya <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;merah&#39;</span>, <span style="color:#e6db74">&#39;biru&#39;</span>, <span style="color:#e6db74">&#39;kuning&#39;</span>, <span style="color:#e6db74">&#39;putih&#39;</span>, <span style="color:#e6db74">&#39;hitam&#39;</span>, <span style="color:#e6db74">&#39;merah&#39;</span>, <span style="color:#e6db74">&#39;hijau&#39;</span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> setsaya:
+</span></span><span style="display:flex;"><span>  print(x)
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal20" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal20").click(function(){
+            $('#terminal20').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal20" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 strukturdata.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+kuning<br>
+merah<br>
+putih<br>
+hitam<br>
+biru<br>
+hijau <br>
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<p>dapat kita lihat di atas pada saat kita menampilkan atau mengakses setiap elemen yang ada pada set menggunakan for loop maka hanya akan ditampilkan 1 kali saja data yang duplikatnya.</p>
+<p>pada set kita juga bisa menambah elemen baru kedalamnya, ada beberapa metode yang dapat kita gunakan untuk menambah elemen didalam set ini seperti <code>add()</code>, <code>update()</code> dan <code>union()</code>, yuk langsung kita bahas satu-persatu metodenya</p>
+<h4 id="31-add">3.1. add</h4>
+<p>metode yang pertama adalah <code>add()</code> metode ini bisa kita gunakan pada saat kita ingin menambahkan satu elemen didalam set, sebagai contoh kita memiliki set seperti dibawah ini</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>setsaya <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;biru&#39;</span>, <span style="color:#e6db74">&#39;merah&#39;</span>, <span style="color:#e6db74">&#39;kuning&#39;</span>}
+</span></span></code></pre></div><p>kita akan menambahkan sebuah elemen baru dengan nilai &ldquo;<code>putih</code>&rdquo; kedalamnya, maka sintaksnya akan seperti ini</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>setsaya <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;biru&#39;</span>, <span style="color:#e6db74">&#39;merah&#39;</span>, <span style="color:#e6db74">&#39;kuning&#39;</span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>setsaya<span style="color:#f92672">.</span>add(<span style="color:#e6db74">&#34;putih&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(setsaya)
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal21" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal21").click(function(){
+            $('#terminal21').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal21" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 strukturdata.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+{'merah', 'putih', 'biru', 'kuning'}
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<p>dapat kita lihat diatas kita memasukan nilai yang akan kita jadikan elemen baru didalam set pada parameter add, mudah bukan teman-teman? kita juga bisa menggunakan variabel juga loh untuk memasukan nilai yang ada pada variabel tersebut ke dalam set kita</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>setsaya <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;biru&#39;</span>, <span style="color:#e6db74">&#39;merah&#39;</span>, <span style="color:#e6db74">&#39;kuning&#39;</span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># variabel yang nilainya akan kita masukan kedalam set</span>
+</span></span><span style="display:flex;"><span>varcontoh <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;putih&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>setsaya<span style="color:#f92672">.</span>add(varcontoh)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(setsaya)
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal22" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal22").click(function(){
+            $('#terminal22').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal22" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 strukturdata.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+{'merah', 'putih', 'biru', 'kuning'}
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<p>pada saat kita ingin memasukan nilai dari sebuah variabel ke dalam set kita hanya perlu memasukan variabel tersebut kedalam parameter add, tanpa ada tanda petik, jika kita menggunakan tanda petik maka yang akan dimasukan kedalam set bukanlah nilai dari variabel tersebut tapi nama dari variabelnya, karena itu akan dianggap sebagai sebuah nilai bukan variabel</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>setsaya <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;biru&#39;</span>, <span style="color:#e6db74">&#39;merah&#39;</span>, <span style="color:#e6db74">&#39;kuning&#39;</span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># variabel yang nilainya akan kita masukan kedalam set</span>
+</span></span><span style="display:flex;"><span>varcontoh <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;putih&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>setsaya<span style="color:#f92672">.</span>add(<span style="color:#e6db74">&#34;varcontoh&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(setsaya)
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal23" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal23").click(function(){
+            $('#terminal23').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal23" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 strukturdata.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+{'varcontoh', 'kuning', 'biru', 'merah'}
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<h4 id="32-update">3.2. update</h4>
+<p>selanjutnya adalah metode update, metode ini kita gunakan pada saat kita akan memasukan elemen-elemen dari list, tuple, set dan bahkan dictionaries (yang akan kita pelajari selanjutnya) sebagai contoh pertama kita akan memasukan sebuah list dibawah ini kedalam set</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># list yang akan kita masukan ke set</span>
+</span></span><span style="display:flex;"><span>listsaya <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;kuning&#39;</span>, <span style="color:#e6db74">&#39;hijau&#39;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># set </span>
+</span></span><span style="display:flex;"><span>setsaya <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;biru&#39;</span>, <span style="color:#e6db74">&#39;merah&#39;</span>}
+</span></span></code></pre></div><p>maka sintaksnya akan seperti ini</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># list yang akan kita masukan ke set</span>
+</span></span><span style="display:flex;"><span>listsaya <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;kuning&#39;</span>, <span style="color:#e6db74">&#39;hijau&#39;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># set </span>
+</span></span><span style="display:flex;"><span>setsaya <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;biru&#39;</span>, <span style="color:#e6db74">&#39;merah&#39;</span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># sintaks update</span>
+</span></span><span style="display:flex;"><span>setsaya<span style="color:#f92672">.</span>update(listsaya)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(setsaya)
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal24" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal24").click(function(){
+            $('#terminal24').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal24" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 strukturdata.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+{'hijau', 'merah', 'kuning', 'biru'}
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<p>begitu juga pada saat kita ingin memasukan elemen dari tuple akan seperti dibawah ini</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># tuple yang akan kita masukan ke set</span>
+</span></span><span style="display:flex;"><span>tuplesaya <span style="color:#f92672">=</span> (<span style="color:#e6db74">&#39;kuning&#39;</span>, <span style="color:#e6db74">&#39;hijau&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># set </span>
+</span></span><span style="display:flex;"><span>setsaya <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;biru&#39;</span>, <span style="color:#e6db74">&#39;merah&#39;</span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># sintaks update</span>
+</span></span><span style="display:flex;"><span>setsaya<span style="color:#f92672">.</span>update(tuplesaya)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(setsaya)
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal25" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal25").click(function(){
+            $('#terminal25').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal25" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 strukturdata.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+{'biru', 'kuning', 'hijau', 'merah'}
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<h4 id="33-union">3.3. union</h4>
+<p>metode selanjutnya adalah metode union, metode ini berguna untuk menggabungkan dua set menjadi satu set baru tanpa harus merubah kedua set lama, yuk langsung saja kita coba</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>set1 <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;a&#34;</span>, <span style="color:#e6db74">&#34;b&#34;</span> , <span style="color:#e6db74">&#34;c&#34;</span>}
+</span></span><span style="display:flex;"><span>set2 <span style="color:#f92672">=</span> {<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>set3 <span style="color:#f92672">=</span> set1<span style="color:#f92672">.</span>union(set2)
+</span></span><span style="display:flex;"><span>print(set3)
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal26" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal26").click(function(){
+            $('#terminal26').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal26" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 strukturdata.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+{'b', 1, 2, 3, 'c', 'a'}
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<p>selanjutnya kita akan mempelajari metode-metode untuk menghapus elemen pada set, dimana ada dua metode yang bisa ita gunakan yaitu <code>remove()</code> dan <code>discard()</code></p>
+<h4 id="34-remove">3.4. remove</h4>
+<p>metode pertama untuk menghapus elemen dari dalam set adalah remove, berikut sintaks penggunaannya</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>setsaya <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;apple&#34;</span>, <span style="color:#e6db74">&#34;banana&#34;</span>, <span style="color:#e6db74">&#34;cherry&#34;</span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>setsaya<span style="color:#f92672">.</span>remove(<span style="color:#e6db74">&#34;banana&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(setsaya)
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal27" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal27").click(function(){
+            $('#terminal27').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal27" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 strukturdata.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+{'apple', 'cherry'}
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<h4 id="35-discard">3.5. discard</h4>
+<p>metode kedua untuk menghapus elemen dari dalam set adalah discard, berikut sintaks penggunaannya</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>setsaya <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;apple&#34;</span>, <span style="color:#e6db74">&#34;banana&#34;</span>, <span style="color:#e6db74">&#34;cherry&#34;</span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>setsaya<span style="color:#f92672">.</span>discard(<span style="color:#e6db74">&#34;banana&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(setsaya)
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal28" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal28").click(function(){
+            $('#terminal28').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal28" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 strukturdata.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+{'apple', 'cherry'}
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<blockquote>
+<p>bisa kita lihat pada dua metode untuk menghapus elemen diatas penggunaannya sama bukan, untuk perbedaannya sendiri jika pada <strong>metode remove jika nilai yang kita tentukan untuk di hapus ternyata tidak ada didalam set maka program akan mengalami error</strong>, berbeda dengan <strong>metode discard jika menggunakan metode discard program tidak akan mengalami error</strong>.</p>
+</blockquote>
+<h2 id="4-dictionaries">4. dictionaries</h2>
+<p>selanjutnya adalah <code>dictionaries</code>, struktur data dictionaries ini mirip dengan set tetapi pada struktur data dictionaries ini elemennya terdiri dari <code>key</code> dan <code>value</code> yang dipisahkan dengan tanda titik dua (<code>:</code>), dimana untuk mengakses valuenya kita memerlukan keynya sebagai index seperti kita mengakses elemen pada <code>list</code>, berikut contoh <code>dictionaries</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>dict <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;nama&#34;</span>: <span style="color:#e6db74">&#34;udin&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;umur&#34;</span>: <span style="color:#ae81ff">20</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;hobi&#34;</span>: [<span style="color:#e6db74">&#34;mancing&#34;</span>, <span style="color:#e6db74">&#34;bersepeda&#34;</span>]
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>bisa kita lihat pada contoh <code>dictionaries</code> di atas text sebelum tanda titik dua merupakan key dimana untuk penaman key ini bebas ya teman-teman, sedangkan setelah titik dua merupakan value dimana untuk setiap value bisa kita masukan deengan tipe data yang berbeda-beda seperti pada contoh di atas untuk key nama valuenya bertipe data <code>char</code>, untuk key umur valuenya bertipe data <code>int</code> dan terakhir pada key hobi valuenya merupakan <code>list</code>.</p>
+<p>key pada <code>dictionaries</code> ini tidak boleh duplikat ya teman-teman, jika terdapat key yang duplikat jika kita mengakses value dari key tersebut maka value dari key duplikat yang terakhir yang akan terakses</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>dict <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;nama&#34;</span>: <span style="color:#e6db74">&#34;udin&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;umur&#34;</span>: <span style="color:#ae81ff">20</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;hobi&#34;</span>: [<span style="color:#e6db74">&#34;mancing&#34;</span>, <span style="color:#e6db74">&#34;bersepeda&#34;</span>],
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;umur&#34;</span>: <span style="color:#e6db74">&#34;dua puluh&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(dict[<span style="color:#e6db74">&#34;umur&#34;</span>])
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal29" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal29").click(function(){
+            $('#terminal29').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal29" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 strukturdata.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+dua puluh
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<p>dapat kita lihat di atas pada saat kita mengakses key umur maka yang akan tampil adalah value dari key umur yang terakhir, baik teman-teman kita akan melanjutkan bagaimana sih cara mengakses elemen-elemen pada <code>dictionaries</code> ini.</p>
+<p>untuk mengakses elemen yang ada pada <code>dictionaries</code> ini terdapat beberapa metode yang bisa kita gunakan, seperti mengakses elemen seperti list dengan menjadikan key sebagai index seperti pada contoh diatas, menggunakan fungsi get, fungsi keys, fungsi values dan fungsi items. Yuk langsung kita bahas satu-persatu dari setiap metodenya</p>
+<h4 id="41-mengakses-langsung-menggunakan-key">4.1. Mengakses langsung menggunakan key</h4>
+<p>yang pertama ini untuk sintaksnya mirip dengan cara mengakses elemen pada list hanya saja pada bagian index didalam kurung sikunya diganti dengan nama keynya, berikut sintaksnya</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>dict <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;nama&#34;</span>: <span style="color:#e6db74">&#34;udin&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;umur&#34;</span>: <span style="color:#ae81ff">20</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;hobi&#34;</span>: [<span style="color:#e6db74">&#34;mancing&#34;</span>, <span style="color:#e6db74">&#34;bersepeda&#34;</span>]
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(dict[<span style="color:#e6db74">&#34;nama&#34;</span>])
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal30" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal30").click(function(){
+            $('#terminal30').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal30" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 strukturdata.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+udin
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<h4 id="42-get">4.2. get</h4>
+<p>selanjutnya kita juga bisa menggunakan fungsi get untuk mengakses elemen dari sebuah <code>dictionaries</code>, sama seperti metode pertama pada metode menggunakan fungsi get ini kita akan mengakses elemen dengan mendefinisikan keynya pada parameter dari get</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>dict <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;nama&#34;</span>: <span style="color:#e6db74">&#34;udin&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;umur&#34;</span>: <span style="color:#ae81ff">20</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;hobi&#34;</span>: [<span style="color:#e6db74">&#34;mancing&#34;</span>, <span style="color:#e6db74">&#34;bersepeda&#34;</span>]
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(dict<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#34;nama&#34;</span>))
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal31" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal31").click(function(){
+            $('#terminal31').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal31" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 strukturdata.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+udin
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<p>dapat kita lihat pada contoh di atas key dari elemen yang akan kita tampilkan/akses kita masukan ke parameter dari fungsi get.</p>
+<h4 id="43-keys">4.3. keys</h4>
+<p>seperti namanya fungsi keys ini berfungsi untuk mengakses setiap key saja yang ada pada <code>dictionaries</code>, maksudnya fungsi keys ini akan mengembalikan nilai key saja dari <code>dictionaries</code> sebagai contoh pada kode program di bawah ini</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>dict <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;nama&#34;</span>: <span style="color:#e6db74">&#34;udin&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;umur&#34;</span>: <span style="color:#ae81ff">20</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;hobi&#34;</span>: [<span style="color:#e6db74">&#34;mancing&#34;</span>, <span style="color:#e6db74">&#34;bersepeda&#34;</span>]
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(dict<span style="color:#f92672">.</span>keys())
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal32" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal32").click(function(){
+            $('#terminal32').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal32" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 strukturdata.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+dict_keys(['nama', 'umur', 'hobi'])
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<p>dapat kita lihat di atas hasil dari kode programnya hanya menghasilkan nama-nama dari key pada <code>dictionaries</code>.</p>
+<p>fungsi keys ini bisa kita gunaan juga untuk menampilkan semua nilai pada <code>dictionaries</code> menggunakan loop loh, berikut kode programnya</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>dict <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;nama&#34;</span>: <span style="color:#e6db74">&#34;udin&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;umur&#34;</span>: <span style="color:#ae81ff">20</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;hobi&#34;</span>: [<span style="color:#e6db74">&#34;mancing&#34;</span>, <span style="color:#e6db74">&#34;bersepeda&#34;</span>]
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> dict<span style="color:#f92672">.</span>keys():
+</span></span><span style="display:flex;"><span>  print(dict[x])
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal33" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal33").click(function(){
+            $('#terminal33').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal33" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 strukturdata.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+udin <br>
+20<br>
+['mancing', 'bersepeda']<br>
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<p>dapat kita lihat di atas dimana x berisi nama-nama dari key pada dictionaries sehingga bisa kita gunakan untuk menampilkan nilai menggunakan metode pertama (4.1. Mengakses langsung menggunakan key).</p>
+<h4 id="44-values">4.4. values</h4>
+<p>selanjutnya adalah fungsi <code>values()</code> fungsi ini akan mengembalikan nilai pada <code>dictionaries</code>, yuk langsung aja kita coba berikut kode programnya ya teman-teman</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>dict <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;nama&#34;</span>: <span style="color:#e6db74">&#34;udin&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;umur&#34;</span>: <span style="color:#ae81ff">20</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;hobi&#34;</span>: [<span style="color:#e6db74">&#34;mancing&#34;</span>, <span style="color:#e6db74">&#34;bersepeda&#34;</span>]
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(dict<span style="color:#f92672">.</span>values())
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal34" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal34").click(function(){
+            $('#terminal34').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal34" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 strukturdata.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+dict_values(['udin', 20, ['mancing', 'bersepeda']])
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<p>jika kita ingin menampilkan menggunakan fungsi for loop juga bisa loh</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>dict <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;nama&#34;</span>: <span style="color:#e6db74">&#34;udin&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;umur&#34;</span>: <span style="color:#ae81ff">20</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;hobi&#34;</span>: [<span style="color:#e6db74">&#34;mancing&#34;</span>, <span style="color:#e6db74">&#34;bersepeda&#34;</span>]
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> dict<span style="color:#f92672">.</span>values():
+</span></span><span style="display:flex;"><span>  print(x)
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal35" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal35").click(function(){
+            $('#terminal35').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal35" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 strukturdata.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+udin <br>
+20<br>
+['mancing', 'bersepeda']<br>
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<p>dapat kita lihat pada kode program di atas sekarang nilai x berisi nilai-nilai dari <code>dictionaries</code> kita, jadi kita hanya tinggal memasukan variabel <code>x</code> kedalam fungsi <code>print()</code> saja.</p>
+<h4 id="45-items">4.5. items</h4>
+<p>selanjutnya adalah metode menggunakan fungsi items, dimana fungsi ini akan mengembalikan key dan value didalam tuple yang akan dimasukan kedalam list, baik sebagai contoh pada kode program di bawah ini</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>dict <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;nama&#34;</span>: <span style="color:#e6db74">&#34;udin&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;umur&#34;</span>: <span style="color:#ae81ff">20</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;hobi&#34;</span>: [<span style="color:#e6db74">&#34;mancing&#34;</span>, <span style="color:#e6db74">&#34;bersepeda&#34;</span>]
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(dict<span style="color:#f92672">.</span>items())
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal36" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal36").click(function(){
+            $('#terminal36').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal36" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 strukturdata.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+dict_items([('nama', 'udin'), ('umur', 20), ('hobi', ['mancing', 'bersepeda'])])
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<p>dapat kita lihat di atas key dan value sekarang menjadi berada di dalam format tuple, dan kumpulan tuple-tuple tadi dimasukan kedalam sebuah list.</p>
+<p>cara menggunakan for loop untuk menampilkan setiap elemen menggunakan fungsi items ini, teman-teman bisa menggunakan cara di bawah ini ya</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>dict <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;nama&#34;</span>: <span style="color:#e6db74">&#34;udin&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;umur&#34;</span>: <span style="color:#ae81ff">20</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;hobi&#34;</span>: [<span style="color:#e6db74">&#34;mancing&#34;</span>, <span style="color:#e6db74">&#34;bersepeda&#34;</span>]
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> x, y <span style="color:#f92672">in</span> dict<span style="color:#f92672">.</span>items():
+</span></span><span style="display:flex;"><span>  print(x, <span style="color:#e6db74">&#34; : &#34;</span>, y)
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal37" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal37").click(function(){
+            $('#terminal37').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal37" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 strukturdata.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+nama  :  udin <br>
+umur  :  20 <br>
+hobi  :  ['mancing', 'bersepeda'] <br>
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<p>dapat kita lihat di atas pada for loop di atas kita memberikan 2 variabel <code>x</code> dan <code>y</code> dimana variabel x akan diisi dengan key dan variabel y akan diisi dengan value dari setiap elemen yang ada pada <code>dictionaries</code>.</p>
+<p>setelah kita mengetahui beberapa metode dalam mengakses nilai dari <code>dictionaries</code>, selanjutnya kita akan mempelajari tentang bagaimana cara mengedit menambah dan menghapus sebuah elemen pada <code>dictionaries</code></p>
+<h3 id="edit-elemen-dictionaries">edit elemen <code>dictionaries</code></h3>
+<p>pertama kita akan membahas metode-metode dalam mengedit elemen pada <code>dictionaries</code></p>
+<h4 id="46-mengedit-secara-langsung">4.6. mengedit secara langsung</h4>
+<p>metode pertama yang bisa kita gunaan untuk mengedit sebuah elemen di dalam <code>dictionaries</code> kita bisa mengedit langsung sebuah elemen dengan hanya mereferensikan nama dari keynya, contoh pada <code>dictionaries</code> di bawah kita akan mengedit nilai dari umur yang semula adlah 20 akan kita edit menjadi 30</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>dict <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;nama&#34;</span>: <span style="color:#e6db74">&#34;udin&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;umur&#34;</span>: <span style="color:#ae81ff">20</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;hobi&#34;</span>: [<span style="color:#e6db74">&#34;mancing&#34;</span>, <span style="color:#e6db74">&#34;bersepeda&#34;</span>]
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># sintaks mengedit elemen secara langsung</span>
+</span></span><span style="display:flex;"><span>dict[<span style="color:#e6db74">&#34;umur&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">30</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(dict[<span style="color:#e6db74">&#34;umur&#34;</span>])
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal38" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal38").click(function(){
+            $('#terminal38').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal38" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 strukturdata.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+30
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<h4 id="47-menggunakan-fungsi-update">4.7. menggunakan fungsi update</h4>
+<p>metode kedua kita bisa menggunakan metode yang menggunakan fungsi update, pada metode ini kita akan memasukan sebuah <code>dictionaries</code> yang berisi key yang sama dengan key dari <code>dictionaries</code> yang akan kita edit dan sebuah nilai yang akan menggantikannya</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>dict <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;nama&#34;</span>: <span style="color:#e6db74">&#34;udin&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;umur&#34;</span>: <span style="color:#ae81ff">20</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;hobi&#34;</span>: [<span style="color:#e6db74">&#34;mancing&#34;</span>, <span style="color:#e6db74">&#34;bersepeda&#34;</span>]
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># sintaks mengedit elemen menggunakan fungsi update</span>
+</span></span><span style="display:flex;"><span>dict<span style="color:#f92672">.</span>update({<span style="color:#e6db74">&#34;umur&#34;</span>: <span style="color:#ae81ff">30</span>})
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(dict[<span style="color:#e6db74">&#34;umur&#34;</span>])
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal39" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal39").click(function(){
+            $('#terminal39').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal39" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 strukturdata.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+30
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<p>memang terlihat lebih rumit bukan metode yang satu ini, tetapi metode ini akan sangat berguna jika kita akan membuat program yang lebih kompleks karena ini akan memudahkan kita atau orang lain dalam memahami kode program kita jika kita atau orang akan mereview kode program kita. dan <strong>jika menggunakan metode ini juga kita akan lebih efisien dalam mengetik sebuah kode program</strong>.</p>
+<h3 id="menambah-elemen-dictionaries">menambah elemen <code>dictionaries</code></h3>
+<p>untuk menambah elemen baru di dalam <code>dictionaries</code> metode yang digunakan sama dengan metode pada saat kita mengedit <code>dictionaries</code> tersebut hanya pada key yang kita tentukan nantinya pada kedua metode tadi dipastikan bukan key yang duplikat atau yang sudah ada pada <code>dictionaries</code>.</p>
+<h4 id="48-menambah-secara-langsung">4.8. menambah secara langsung</h4>
+<p>metode pertama ini sintaksnya sama dengan metode pertama untuk mengedit elemen pada <code>dictionaries</code>, hanya bedanya untuk key yang kita referensikan haruslah unik atau belum ada di dalam <code>dictionaries</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>dict <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;nama&#34;</span>: <span style="color:#e6db74">&#34;udin&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;umur&#34;</span>: <span style="color:#ae81ff">20</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;hobi&#34;</span>: [<span style="color:#e6db74">&#34;mancing&#34;</span>, <span style="color:#e6db74">&#34;bersepeda&#34;</span>]
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;dict sebelum menambah elemen&#34;</span>)
+</span></span><span style="display:flex;"><span>print(dict)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># sintaks menambah elemen secara langsung</span>
+</span></span><span style="display:flex;"><span>dict[<span style="color:#e6db74">&#34;bio&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;seorang yang ingin berbagi ilmu&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;dict setelah menambah elemen&#34;</span>)
+</span></span><span style="display:flex;"><span>print(dict)
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal40" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal40").click(function(){
+            $('#terminal40').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal40" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 strukturdata.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+dict sebelum menambah elemen <br>
+{'nama': 'udin', 'umur': 20, 'hobi': ['mancing', 'bersepeda']} <br>
+dict setelah menambah elemen<br>
+{'nama': 'udin', 'umur': 20, 'hobi': ['mancing', 'bersepeda'], 'bio': 'seorang yang ingin berbagi ilmu'}
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<h4 id="49-menggunakan-fungsi-update">4.9. menggunakan fungsi update</h4>
+<p>sama seperti metode sebelumnya pada metode menggunakan fungsi <code>update()</code> ini juga key yang harus kita referensikan haruslah belum ada pada <code>dictionaries</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>dict <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;nama&#34;</span>: <span style="color:#e6db74">&#34;udin&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;umur&#34;</span>: <span style="color:#ae81ff">20</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;hobi&#34;</span>: [<span style="color:#e6db74">&#34;mancing&#34;</span>, <span style="color:#e6db74">&#34;bersepeda&#34;</span>]
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;dict sebelum menambah elemen&#34;</span>)
+</span></span><span style="display:flex;"><span>print(dict)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># sintaks menambah elemen secara langsung</span>
+</span></span><span style="display:flex;"><span>dict<span style="color:#f92672">.</span>update({
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;bio&#34;</span>: <span style="color:#e6db74">&#34;seorang yang ingin berbagi ilmu&#34;</span>
+</span></span><span style="display:flex;"><span>})
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;dict setelah menambah elemen&#34;</span>)
+</span></span><span style="display:flex;"><span>print(dict)
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal41" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal41").click(function(){
+            $('#terminal41').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal41" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 strukturdata.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+dict sebelum menambah elemen <br>
+{'nama': 'udin', 'umur': 20, 'hobi': ['mancing', 'bersepeda']} <br>
+dict setelah menambah elemen<br>
+{'nama': 'udin', 'umur': 20, 'hobi': ['mancing', 'bersepeda'], 'bio': 'seorang yang ingin berbagi ilmu'}
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<h3 id="menghapus-elemen-dictionaries">menghapus elemen <code>dictionaries</code></h3>
+<p>untuk menghapus elemen pada <code>dictionaries</code>, ada beberapa metode yang bisa kita gunakan seperti menggunakan fungsi <code>pop()</code>, menggunakan fungsi <code>popitem()</code>, <code>del</code> dan menggunakan fungsi <code>clear()</code>, langsung saja kita bahas satu-persatu metodenya</p>
+<h4 id="410-menggunakan-fungsi-pop">4.10. menggunakan fungsi pop</h4>
+<p>metode pertama untuk menghapus elemen pada <code>dictionaries</code> adalah menggunakan fungsi pop, dimana untuk menggunakan fungsi ini kita bisa menghapus sebuah elemen dengan mereferensikan key dari elemen yang akan kita hapus kedalam parameter fungsi <code>pop()</code>, yuk silahkan teman-teman coba kode program di bawah ini dimana kita akan coba menghapus elemen dengan key &ldquo;hobi&rdquo;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>dict <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;nama&#34;</span>: <span style="color:#e6db74">&#34;udin&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;umur&#34;</span>: <span style="color:#ae81ff">20</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;hobi&#34;</span>: [<span style="color:#e6db74">&#34;mancing&#34;</span>, <span style="color:#e6db74">&#34;bersepeda&#34;</span>]
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;dict sebelum menghapus sebuah elemen&#34;</span>)
+</span></span><span style="display:flex;"><span>print(dict)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># sintaks menghapus elemen menggunakan fungsi pop</span>
+</span></span><span style="display:flex;"><span>dict<span style="color:#f92672">.</span>pop(<span style="color:#e6db74">&#34;hobi&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;dict setelah menghapus sebuah elemen&#34;</span>)
+</span></span><span style="display:flex;"><span>print(dict)
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal42" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal42").click(function(){
+            $('#terminal42').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal42" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 strukturdata.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+dict sebelum menghapus sebuah elemen <br>
+{'nama': 'udin', 'umur': 20, 'hobi': ['mancing', 'bersepeda']}<br>
+dict setelah menghapus sebuah elemen<br>
+{'nama': 'udin', 'umur': 20}<br>
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<h4 id="411-menggunakan-fungsi-popitem">4.11. menggunakan fungsi popitem</h4>
+<p>selanjutnya merupakan metode yang akan menggunakan fungsi popitem dimana pada metode ini kita tidak perlu mereferensikan key yang akan dihapus, karena fungsi popitem ini adalah untuk <strong>menghapus elemen dengan urutan terakhir</strong>, yuk langsung saja kita coba di bawah ini</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>dict <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;nama&#34;</span>: <span style="color:#e6db74">&#34;udin&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;umur&#34;</span>: <span style="color:#ae81ff">20</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;hobi&#34;</span>: [<span style="color:#e6db74">&#34;mancing&#34;</span>, <span style="color:#e6db74">&#34;bersepeda&#34;</span>]
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>print(dict)
+</span></span><span style="display:flex;"><span>dict<span style="color:#f92672">.</span>popitem()
+</span></span><span style="display:flex;"><span>print(dict)
+</span></span><span style="display:flex;"><span>dict<span style="color:#f92672">.</span>popitem()
+</span></span><span style="display:flex;"><span>print(dict)
+</span></span><span style="display:flex;"><span>dict<span style="color:#f92672">.</span>popitem()
+</span></span><span style="display:flex;"><span>print(dict)
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal43" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal43").click(function(){
+            $('#terminal43').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal43" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 strukturdata.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+{'nama': 'udin', 'umur': 20, 'hobi': ['mancing', 'bersepeda']} <br>
+{'nama': 'udin', 'umur': 20}<br>
+{'nama': 'udin'}<br>
+{}<br>
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<p>dapat kita lihat pada hasil dari program di atas setiap kita menjalankan perintah popitem maka elemen yang terakhir dari urutan yang kita definisikan di atas akan terhapus.</p>
+<h4 id="412-menggunakan-keyword-del">4.12. menggunakan keyword del</h4>
+<p>metode selanjutnya adalah dengan menggunakan keyword del, dimana pada metode ini kita bisa menghapus salah satu elemen atau bahkan menghapus <code>dictionaries</code>-nya</p>
+<p>pertama untuk menghapus sebuah elemen kita cukup mereferensikan key dari elemen yang akan kita hapus seperti di bawah ini dimana kita akan menghapus elemen dengan key &ldquo;umur&rdquo;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>dict <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;nama&#34;</span>: <span style="color:#e6db74">&#34;udin&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;umur&#34;</span>: <span style="color:#ae81ff">20</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;hobi&#34;</span>: [<span style="color:#e6db74">&#34;mancing&#34;</span>, <span style="color:#e6db74">&#34;bersepeda&#34;</span>]
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;dict sebelum menghapus sebuah elemen&#34;</span>)
+</span></span><span style="display:flex;"><span>print(dict)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># sintaks menghapus elemen menggunakan del</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">del</span> dict[<span style="color:#e6db74">&#34;umur&#34;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;dict setelah menghapus sebuah elemen&#34;</span>)
+</span></span><span style="display:flex;"><span>print(dict)
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal44" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal44").click(function(){
+            $('#terminal44').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal44" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 strukturdata.py<span class="cursor1">_</span></p>
+                <p class="terminalSukses">
+dict sebelum menghapus sebuah elemen <br>
+{'nama': 'udin', 'umur': 20, 'hobi': ['mancing', 'bersepeda']} <br>
+dict setelah menghapus sebuah elemen <br>
+{'nama': 'udin', 'hobi': ['mancing', 'bersepeda']} <br>
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<p>selanjutnya untuk menghapus <code>dictionaries</code> menggunakan keyword del ini maksudnya adalah benar-benar menghapus variabel <code>dictionaries</code>-nya sehingga jika kita gunakan fungsi print maka program yang akan kita buat akan error, yuk langsung saja kita coba</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>dictkita <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;nama&#34;</span>: <span style="color:#e6db74">&#34;udin&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;umur&#34;</span>: <span style="color:#ae81ff">20</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;hobi&#34;</span>: [<span style="color:#e6db74">&#34;mancing&#34;</span>, <span style="color:#e6db74">&#34;bersepeda&#34;</span>]
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># sintaks menghapus elemen menggunakan del</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">del</span> dictkita
+</span></span><span style="display:flex;"><span>print(dictkita)
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal45" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal45").click(function(){
+            $('#terminal45').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal45" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 strukturdata.py<span class="cursor1">_</span></p>
+                <p class="terminalErorr">
+Traceback (most recent call last): <br>
+  File "./strukturdata.py", line 9, in < module ><br>
+NameError: name 'dictkita' is not defined<br>
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<p>dapat kita lihat di atas saat program di jalankan maka akan terdapat error <em><strong>is not defined</strong></em> atau variabel <code>dictionaries</code> tidak ditemukan karena tidak didefinisikan di awal (karena sudah di hapus dengan keyword <code>del</code>).</p>
+<h4 id="413-menggunakan-fungsi-clear">4.13. menggunakan fungsi clear</h4>
+<p>terakhir adalah metode yang menggunakan fungsi clear, dimana hasil yang kita dapatkan setelah menggunakan metode ini adalah variabel <code>dictionaries</code> yang kita definisikan akan kosong atau tidak ada lagi elemen di dalamnya, berbeda dengan metode yang menggunakan keyword <code>del</code> yang akan menghapus variabelnya.</p>
+<p>yuk langsung kita coba kode program di bawah ini ya teman-teman</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>dictkita <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;nama&#34;</span>: <span style="color:#e6db74">&#34;udin&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;umur&#34;</span>: <span style="color:#ae81ff">20</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;hobi&#34;</span>: [<span style="color:#e6db74">&#34;mancing&#34;</span>, <span style="color:#e6db74">&#34;bersepeda&#34;</span>]
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># menampilkan dict sebelum di hapus</span>
+</span></span><span style="display:flex;"><span>print(dictkita)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># sintaks menghapus elemen menggunakan del</span>
+</span></span><span style="display:flex;"><span>dictkita<span style="color:#f92672">.</span>clear()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># menampilkan dict setelah di hapus</span>
+</span></span><span style="display:flex;"><span>print(dictkita)
+</span></span></code></pre></div><br>
+<button type="button" id="btn-terminal46" class="btn btn-primary"><i class="bi bi-terminal-plus"></i> run terminal</button>
+    <script>
+        $("#btn-terminal46").click(function(){
+            $('#terminal46').toggleClass('terminal');
+        });
+    </script>
+        <div id="terminal46" class="terminal">
+            <div class=fakeMenu>
+                <center>terminal</center>
+              </div>
+              <div class="fakeScreen">
+                <p class="line1">$python3 strukturdata.py<span class="cursor1">_</span></p>
+                <p class="terminalErorr">
+{'nama': 'udin', 'umur': 20, 'hobi': ['mancing', 'bersepeda']} <br>
+{}
+<span class="cursor3">_</span></p>
+                <p class="line4">$<span class="cursor4">_</span></p>
+              </div>
+        </div>
+<p>dapat kita lihat di atas pada hasil baris kedua fungsi print hanya menampilkan tanda kurung kurawal saja.</p>
+<p>begitulah teman-teman materi tentang struktur data menggunakan bahasa pemrograman python, dimana dengan menggunakan struktur data ini kita bisa membuat sebuah program yang kompleks untuk mengolah kumpulan data.</p>
+
+
+                <div style="margin-top: 100px;">
+                    <div id="disqus_thread"></div>
+<script>
+    
+
+    
+
+    (function() { 
+    var d = document, s = d.createElement('script');
+    s.src = 'https://panduankoding-2.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col">
+                        <div class="p-4 mb-3 card rounded" style="width: 100vn;">
+  <div class="related-content">
+      <h3>Related Posts</h3>
+          <a href="/lab/lab-python3-dengan-pyscript/">
+            
+                      <div class="row card-body">
+                         
+                          <div>
+                            <h5 class="card-title">Lab Python3 Dengan Pyscript</h5>
+                             <p class="card-text">⌚ : <time>13-01-2023</time></p>
+                          </div>
+                          
+                      </div>
+                  
+            </a>
+            <br>
+        
+          <a href="/lab/python3/">
+            
+                      <div class="row card-body">
+                         
+                          <div>
+                            <h5 class="card-title">Lab Python3</h5>
+                             <p class="card-text">⌚ : <time>01-01-2023</time></p>
+                          </div>
+                          
+                      </div>
+                  
+            </a>
+            <br>
+        
+          <a href="/tutorial/python/variabel-pada-bahasa-pemrograman-python/">
+            
+                      <div class="row card-body">
+                         
+                          <div>
+                            <h5 class="card-title">Tutorial Python Bagian 3: Variabel Pada Bahasa Pemrograman Python</h5>
+                             <p class="card-text">⌚ : <time>28-12-2022</time></p>
+                          </div>
+                          
+                      </div>
+                  
+            </a>
+            <br>
+        
+      </div>
+    </div>
+    </div>
+  </div>
+
+                <div class="sticky-top sidebar">
+                  
+                  <aside>
+<div class="p-4 mb-3 card rounded">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5541603196469443"
+     crossorigin="anonymous"></script>
+
+
+                    <h5 class="fst-italic">About</h4>
+                    <p class="mb-0">bagaimana cara penggunaan struktur data seperti list, set, tuple dan dictionary pada bahasa pemrograman python</p>
+                  </div>
+          
+                    
+
+                  
+          
+                  
+    
+    </aside>
+                </div>
+                
+              </div>
+            </div>
+
+        
+
+            
+        
+</main>
+
+<div class="line-divider"></div>
+<footer>
+  
+  <center>
+    <p>
+      Panduan Koding &copy; 2023 koleksiprihadi <br>
+      &#183; Made with ❤️ using <a href=https://gohugo.io class=hover:text-teal-400 target=_blank rel=noopener>Hugo</a> &#183;
+    </p>
+  </center>
+</footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+<script src="/js/jquery.toc.min.js"></script>
+<script type="text/javascript">
+    $("#toc").toc({content: "article", headings: "h1,h2,h3,h4,h5,h6"});
+</script>
+    </body>
+</html>
