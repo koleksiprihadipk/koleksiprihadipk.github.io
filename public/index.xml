@@ -5,7 +5,17 @@
     <link>https://panduankoding.com/</link>
     <description>Recent content on Panduan Koding</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 13 Jan 2023 10:07:36 +0700</lastBuildDate><atom:link href="https://panduankoding.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 02 Jun 2023 13:28:10 +0700</lastBuildDate><atom:link href="https://panduankoding.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Numpy Pada Python</title>
+      <link>https://panduankoding.com/tutorial/python/numpy-pada-python/</link>
+      <pubDate>Fri, 02 Jun 2023 13:28:10 +0700</pubDate>
+      
+      <guid>https://panduankoding.com/tutorial/python/numpy-pada-python/</guid>
+      <description>Numpy merupakan sebuah library pada python yang umum digunakan untuk memproses data array. Numpy sering digunakan untuk melakukan komputasi ilmiah pada python karena numpy menyediakan performa yang tinggi untuk memproses multidimensi array.
+Array Pada Numpy Array di Numpy adalah tabel elemen (biasanya angka), semuanya bertipe sama, diindeks oleh tupel bilangan bulat positif. Di Numpy, jumlah dimensi array disebut dimensi array. Tupel bilangan bulat yang memberikan ukuran array di sepanjang setiap dimensi dikenal sebagai bentuk array.</description>
+    </item>
+    
     <item>
       <title>Tutorial Python Bagian 5: Struktur Data Pada Bahasa Pemrograman Python</title>
       <link>https://panduankoding.com/tutorial/python/struktur-data-pada-bahasa-pemrograman-python/</link>

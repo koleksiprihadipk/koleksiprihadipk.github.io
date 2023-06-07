@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="/css/pysc.css" />
+<button id="sc" class="pyscript btn btn-primary" title="click me to run python IDE"><i class="bi bi-filetype-py"></i> Run IDE</button>
+<py-config type="json">
+  {
+    "packages": [
+      "numpy",
+      "sympy"
+    ],
+    "plugins": [
+      "https://pyscript.net/latest/plugins/python/py_tutor.py"
+    ]
+  }
+</py-config>    
+<py-repl output="pyscout">
+        {{ .Inner }}
+    </py-repl>
+    <py-terminal></py-terminal>
+    <div id="pyscout"></div>
+    <br>
+    <script>
+      $("button#sc.pyscript").click(function(){
+        $.getScript("https://pyscript.net/latest/pyscript.js");
+        $("button.pyscript").text('Python Startup...')
+        setTimeout(() => {
+          $("button.pyscript").toggleClass("hidebutton");
+        }, 3000);
+      }); 
+    </script>
