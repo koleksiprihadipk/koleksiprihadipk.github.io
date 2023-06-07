@@ -1,40 +1,40 @@
 <aside>
 
-  {{ if $.Scratch.Get "has_related" }}
-<div class="related-content">
-<h3>Related Posts</h3>
-{{- $num_to_show := .Site.Params.related_content_limit | default 3 -}}
-{{ range first $num_to_show (where (where .Site.Pages ".Params.tags" "intersect" .Params.tags) "Permalink" "!=" .Permalink) }}
-<a href="{{ .RelPermalink }}">
-
-      <div class="row card-body">
-         <!-- <div class="col-sm-6"> -->
-          <div>
-            <h5 class="card-title">{{ .Title }}</h5>
-             <p class="card-text">⌚ : <time>{{ .Date.Format "02-01-2006" }}</time></p>
-          </div>
-          <!-- <img class="col-sm-6 rounded-circle img-thumbnail" src='{{ if eq .Params.Image "" }}/images/koleksiprihadi.jpeg{{else}}{{ .Params.Image}}{{end}}'
-          alt='{{ .Title }}'  alt="sans" style="width: 100px; border-color: transparent;"/> -->
+                  {{ if $.Scratch.Get "has_related" }}
+  <div class="related-content">
+      <h3>Related Posts</h3>
+          {{- $num_to_show := .Site.Params.related_content_limit | default 3 -}}
+          {{ range first $num_to_show (where (where .Site.Pages ".Params.tags" "intersect" .Params.tags) "Permalink" "!=" .Permalink) }}
+          <a href="{{ .RelPermalink }}">
+            
+                      <div class="row card-body">
+                         <!-- <div class="col-sm-6"> -->
+                          <div>
+                            <h5 class="card-title">{{ .Title }}</h5>
+                             <p class="card-text">⌚ : <time>{{ .Date.Format "02-01-2006" }}</time></p>
+                          </div>
+                          <!-- <img class="col-sm-6 rounded-circle img-thumbnail" src='{{ if eq .Params.Image "" }}/images/koleksiprihadi.jpeg{{else}}{{ .Params.Image}}{{end}}'
+                          alt='{{ .Title }}'  alt="sans" style="width: 100px; border-color: transparent;"/> -->
+                      </div>
+                  
+            </a>
+            <br>
+        {{ end }}
       </div>
-  
-</a>
-<br>
-{{ end }}
-</div>
-<!-- </div>
-</div>
-</div> -->
-{{ end }}
-
-    
-
-  
-
-  <!-- <div class="p-4">
-    <h4 class="fst-italic">Author Link</h4>
-    <ol class="list-unstyled">
-      <li><a href="github.com/koleksiprihadi">GitHub</a></li>
-    </ol>
+    <!-- </div>
+    </div>
   </div> -->
+{{ end }}
+          
+                    
 
-</aside>
+                  
+          
+                  <!-- <div class="p-4">
+                    <h4 class="fst-italic">Author Link</h4>
+                    <ol class="list-unstyled">
+                      <li><a href="github.com/koleksiprihadi">GitHub</a></li>
+                    </ol>
+                  </div> -->
+    
+    </aside>
