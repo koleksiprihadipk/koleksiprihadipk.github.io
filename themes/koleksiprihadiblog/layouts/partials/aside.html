@@ -1,30 +1,40 @@
 <aside>
-  <div class="p-4 mb-3 card rounded">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5541603196469443"
-       crossorigin="anonymous"></script>
-  <!-- sidebar -->
-  <ins class="adsbygoogle"
-       style="display:block"
-       data-ad-client="ca-pub-5541603196469443"
-       data-ad-slot="3242188549"
-       data-ad-format="auto"
-       data-full-width-responsive="true"></ins>
-  <script>
-       (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
-                      <h5 class="fst-italic">About</h4>
-                      <p class="mb-0">{{ .Description }}</p>
-                    </div>
-            
-                      
+
+  {{ if $.Scratch.Get "has_related" }}
+<div class="related-content">
+<h3>Related Posts</h3>
+{{- $num_to_show := .Site.Params.related_content_limit | default 3 -}}
+{{ range first $num_to_show (where (where .Site.Pages ".Params.tags" "intersect" .Params.tags) "Permalink" "!=" .Permalink) }}
+<a href="{{ .RelPermalink }}">
+
+      <div class="row card-body">
+         <!-- <div class="col-sm-6"> -->
+          <div>
+            <h5 class="card-title">{{ .Title }}</h5>
+             <p class="card-text">⌚ : <time>{{ .Date.Format "02-01-2006" }}</time></p>
+          </div>
+          <!-- <img class="col-sm-6 rounded-circle img-thumbnail" src='{{ if eq .Params.Image "" }}/images/koleksiprihadi.jpeg{{else}}{{ .Params.Image}}{{end}}'
+          alt='{{ .Title }}'  alt="sans" style="width: 100px; border-color: transparent;"/> -->
+      </div>
   
-                    
-            
-                    <!-- <div class="p-4">
-                      <h4 class="fst-italic">Author Link</h4>
-                      <ol class="list-unstyled">
-                        <li><a href="github.com/koleksiprihadi">GitHub</a></li>
-                      </ol>
-                    </div> -->
-      
-      </aside>
+</a>
+<br>
+{{ end }}
+</div>
+<!-- </div>
+</div>
+</div> -->
+{{ end }}
+
+    
+
+  
+
+  <!-- <div class="p-4">
+    <h4 class="fst-italic">Author Link</h4>
+    <ol class="list-unstyled">
+      <li><a href="github.com/koleksiprihadi">GitHub</a></li>
+    </ol>
+  </div> -->
+
+</aside>
