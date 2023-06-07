@@ -1,7 +1,7 @@
 ---
 draft: false
 date: 2023-06-02T13:28:10+07:00
-title: "Numpy Pada Python"
+title: "Tutorial Python Bagian 6: Numpy Pada Python"
 slug: numpy-pada-python
 
 tags:
