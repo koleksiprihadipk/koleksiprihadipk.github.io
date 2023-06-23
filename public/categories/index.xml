@@ -5,7 +5,11 @@
     <link>https://panduankoding.com/categories/</link>
     <description>Recent content in Categories on Panduan Koding</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 02 Jun 2023 13:28:10 +0700</lastBuildDate><atom:link href="https://panduankoding.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 02 Jun 2023 13:28:10 +0700</lastBuildDate>
+    
+	<atom:link href="https://panduankoding.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Tutorial Python</title>
       <link>https://panduankoding.com/categories/tutorial-python/</link>
@@ -13,6 +17,7 @@
       
       <guid>https://panduankoding.com/categories/tutorial-python/</guid>
       <description></description>
+      <image></image>
     </item>
     
   </channel>

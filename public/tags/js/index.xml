@@ -5,7 +5,11 @@
     <link>https://panduankoding.com/tags/js/</link>
     <description>Recent content in js on Panduan Koding</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 09 Jan 2023 21:14:31 +0700</lastBuildDate><atom:link href="https://panduankoding.com/tags/js/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 09 Jan 2023 21:14:31 +0700</lastBuildDate>
+    
+	<atom:link href="https://panduankoding.com/tags/js/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Membuat Whatsapp Bot Dengan Nodejs</title>
       <link>https://panduankoding.com/artikel/javascript/membuat-whatsapp-bot-dengan-nodejs/</link>
@@ -15,6 +19,7 @@
       <description>halo teman-teman, pada artikel ini author akan memberikan sebuah tutorial bagaimana cara membuat whatsapp bot, untuk membuat whatsapp bot ini kita akan menggunakan bahasa pemrograman javascript dan menggunakan platform node.js.
 NOTE: I can&amp;rsquo;t guarantee you will not be blocked by using this method, although it has worked for me. WhatsApp does not allow bots or unofficial clients on their platform, so this shouldn&amp;rsquo;t be considered totally safe.
 CATATAN: Saya tidak dapat menjamin Anda tidak akan diblokir dengan menggunakan metode ini, meskipun cara ini berhasil untuk saya.</description>
+      <image>/images/Membuat-whatsapp-bot-sederhana-dengan-nodejs.png</image>
     </item>
     
     <item>
@@ -24,6 +29,7 @@ CATATAN: Saya tidak dapat menjamin Anda tidak akan diblokir dengan menggunakan m
       
       <guid>https://panduankoding.com/lab/html-css-js/</guid>
       <description> </description>
+      <image>https://koleksiprihadi.github.io/images/koleksiprihadi.jpeg</image>
     </item>
     
   </channel>

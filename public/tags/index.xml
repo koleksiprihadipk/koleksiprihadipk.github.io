@@ -5,7 +5,11 @@
     <link>https://panduankoding.com/tags/</link>
     <description>Recent content in Tags on Panduan Koding</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 02 Jun 2023 13:28:10 +0700</lastBuildDate><atom:link href="https://panduankoding.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 02 Jun 2023 13:28:10 +0700</lastBuildDate>
+    
+	<atom:link href="https://panduankoding.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Python</title>
       <link>https://panduankoding.com/tags/python/</link>
@@ -13,6 +17,7 @@
       
       <guid>https://panduankoding.com/tags/python/</guid>
       <description></description>
+      <image></image>
     </item>
     
     <item>
@@ -22,6 +27,7 @@
       
       <guid>https://panduankoding.com/tags/javascript/</guid>
       <description></description>
+      <image></image>
     </item>
     
     <item>
@@ -31,6 +37,7 @@
       
       <guid>https://panduankoding.com/tags/js/</guid>
       <description></description>
+      <image></image>
     </item>
     
     <item>
@@ -40,6 +47,7 @@
       
       <guid>https://panduankoding.com/tags/nodejs/</guid>
       <description></description>
+      <image></image>
     </item>
     
     <item>
@@ -49,6 +57,7 @@
       
       <guid>https://panduankoding.com/tags/css/</guid>
       <description></description>
+      <image></image>
     </item>
     
     <item>
@@ -58,6 +67,7 @@
       
       <guid>https://panduankoding.com/tags/html/</guid>
       <description></description>
+      <image></image>
     </item>
     
   </channel>

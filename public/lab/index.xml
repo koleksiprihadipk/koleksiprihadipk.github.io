@@ -5,7 +5,11 @@
     <link>https://panduankoding.com/lab/</link>
     <description>Recent content in Labs on Panduan Koding</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 13 Jan 2023 09:49:12 +0700</lastBuildDate><atom:link href="https://panduankoding.com/lab/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 13 Jan 2023 09:49:12 +0700</lastBuildDate>
+    
+	<atom:link href="https://panduankoding.com/lab/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Lab Python3 Dengan Pyscript</title>
       <link>https://panduankoding.com/lab/lab-python3-dengan-pyscript/</link>
@@ -13,6 +17,7 @@
       
       <guid>https://panduankoding.com/lab/lab-python3-dengan-pyscript/</guid>
       <description>Lab python3 ini dibangun menggunakan teknologi pyscript, teman-teman bisa mempelajari tentang pyscript di website resminya ya pyscript.net</description>
+      <image>/images/koleksiprihadi.jpeg</image>
     </item>
     
     <item>
@@ -22,6 +27,7 @@
       
       <guid>https://panduankoding.com/lab/python3/</guid>
       <description>Powered by trinket</description>
+      <image>/images/koleksiprihadi.jpeg</image>
     </item>
     
     <item>
@@ -31,6 +37,7 @@
       
       <guid>https://panduankoding.com/lab/html-css-js/</guid>
       <description> </description>
+      <image>https://koleksiprihadi.github.io/images/koleksiprihadi.jpeg</image>
     </item>
     
   </channel>
