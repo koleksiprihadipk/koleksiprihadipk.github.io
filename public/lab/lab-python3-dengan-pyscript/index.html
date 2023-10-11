@@ -53,6 +53,7 @@
   </script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5541603196469443"
   crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/ua-parser-js@0/dist/ua-parser.min.js"></script>
     </head>
     <body>
 
@@ -257,14 +258,45 @@
     </p>
   </center>
 </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+  integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+  integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <script src="/js/jquery.toc.min.js"></script>
 <script type="text/javascript">
-    $("#toc").toc({content: "article", headings: "h1,h2,h3,h4,h5,h6"});
+  alertvisitor();
+  $("#toc").toc({content: "article", headings: "h1,h2,h3,h4,h5,h6"});
+  function getCurrentURL() {
+    return window.location.href
+  }
+
+  function alertvisitor() {
+    var parser = new UAParser();
+    let parserResults = parser.getResult();
+    var data = {
+      "url": window.location.href,
+      "browser": parserResults.ua,
+      "dVendor": parserResults.device.vendor,
+      "dModel": parserResults.device.model,
+      "dTipe": parserResults.device.type,
+      "dOs": parserResults.os.name + parserResults.os.version
+    }
+    $.ajax({
+      type: "GET",
+      url: `https:
+      "url": "${window.location.href}",
+      "browser": "${parserResults.ua}",
+      "dVendor": "${parserResults.device.vendor}",
+      "dModel": "${parserResults.device.model}",
+      "dTipe": "${parserResults.device.type}",
+      "dOs": "${parserResults.os.name + parserResults.os.version}"
+    }`,
+    });
+  }
 </script>
     </body>
 </html>
