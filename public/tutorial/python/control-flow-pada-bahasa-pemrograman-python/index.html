@@ -755,7 +755,20 @@ p
 <script>
     
 
-    
+
+    var disqus_config = function () {
+      this.page.url = window.location.href;  
+      this.page.identifier = "id-"+window.location.href; 
+      this.callbacks.onNewComment = [function(comment) { 
+        $.ajax({
+          type: "GET",
+          url: `https:
+          "url": "${window.location.href}",
+          "komen": "${comment.text}"
+        }`,
+        });
+      }];
+    };
 
     (function() { 
     var d = document, s = d.createElement('script');
